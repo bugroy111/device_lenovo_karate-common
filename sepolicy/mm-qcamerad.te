@@ -6,3 +6,7 @@ allow mm-qcamerad sensorservice_service:service_manager find;
 allow mm-qcamerad system_server:unix_stream_socket { read write };
 
 allow mm-qcamerad system_data_file:dir { read write };
+
+# /data/vendor/qcam/fdAlbum
+type_transition mm-qcamerad system_data_file:file vendor_camera_data_file "fdAlbum";
+allow mm-qcamerad vendor_camera_data_file:file create_file_perms;
