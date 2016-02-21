@@ -47,14 +47,8 @@ char const*const LCD_FILE
 char const*const GREEN_LED_FILE
         = "/sys/class/leds/green/brightness";
 
-char const*const RED_LED_FILE
-        = "/sys/class/leds/red/brightness";
-
 char const*const GREEN_BLINK_FILE
         = "/sys/class/leds/green/pwm_us";
-
-char const*const RED_BLINK_FILE
-        = "/sys/class/leds/red/pwm_us";
 
 /**
  * device methods
@@ -181,8 +175,8 @@ set_light_locked(struct light_state_t const* state)
         //write_int(GREEN_BLINK_FILE, blink);
         write_int(GREEN_LED_FILE, brightness_level);
     } else {
-        //write_int(RED_BLINK_FILE, blink);
-        write_int(RED_LED_FILE, brightness_level);
+        write_int(GREEN_LED_FILE, LED_LIGHT_OFF);
+        write_int(GREEN_LED_FILE, brightness_level);
     }
 
     return 0;
