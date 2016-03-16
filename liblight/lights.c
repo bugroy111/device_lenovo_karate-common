@@ -136,6 +136,7 @@ set_light_locked(struct light_state_t const* state)
     int onMS, offMS;
     int blink, fake_pwm, pwm;
     int brightness_level;
+    int is_battery = 0;
 
     switch (state->flashMode) {
         case LIGHT_FLASH_TIMED:
@@ -175,15 +176,20 @@ set_light_locked(struct light_state_t const* state)
     else
         brightness_level = LED_LIGHT_OFF;
 
+    if (state == &g_lights[BATTERY])
+        is_battery = 1;
+
+    // turn led off
+    write_int(GREEN_LED_FILE, LED_LIGHT_OFF);
+
     if (blink) {
         // brightness equals to led on in ms
-        write_int(GREEN_LED_FILE, fake_pwm);
+        is_battery = write_int(GREEN_LED_FILE, fake_pwm);
         // pwn uquals to led off in us
-        write_int(GREEN_PWM_FILE, pwm);
+        is_battery = write_int(GREEN_PWM_FILE, pwm);
     } else {
-        write_int(GREEN_LED_FILE, LED_LIGHT_OFF);
-        write_int(GREEN_PWM_FILE, 100);
-        write_int(GREEN_LED_FILE, brightness_level);
+        is_battery = write_int(GREEN_LED_FILE, brightness_level);
+        is_battery = write_int(GREEN_PWM_FILE, 100);
     }
 
     return 0;
