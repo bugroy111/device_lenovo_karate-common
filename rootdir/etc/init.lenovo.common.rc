@@ -2,6 +2,9 @@ on init
     # Touchscreen
     chown system system /sys/class/input/input1/device/ftsmcaptest
     chown system system /sys/class/input/input1/device/ftsdumpinfo
+    # Keydisabler
+    chown system system /sys/class/input/input1/device/disable_keys
+    chmod 0664 /sys/class/input/input1/device/disable_keys
     # wake gesture
     chown system system /sys/class/input/input1/device/wake_gesture
     chmod 0664 /sys/class/input/input1/device/wake_gesture
