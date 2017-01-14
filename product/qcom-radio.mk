@@ -27,3 +27,7 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libcnefeatureconfig \
     libxml2
+
+# Libshims
+PRODUCT_PACKAGES += \
+    libshims_ims
