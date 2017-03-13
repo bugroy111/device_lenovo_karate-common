@@ -41,14 +41,10 @@ static pthread_once_t g_init = PTHREAD_ONCE_INIT;
 static pthread_mutex_t g_lock = PTHREAD_MUTEX_INITIALIZER;
 static struct light_state_t g_lights[LIGHT_MAX];
 
-char const*const LCD_FILE
-        = "/sys/class/leds/lcd-backlight/brightness";
+#define LCD_BRIGHTNESS_FILE "/sys/class/leds/lcd-backlight/brightness"
 
-char const*const GREEN_LED_FILE
-        = "/sys/class/leds/green/brightness";
-
-char const*const GREEN_PWM_FILE
-        = "/sys/class/leds/green/pwm_us";
+#define GREEN_LED_BRIGHTNESS_FILE "/sys/class/leds/green/brightness"
+#define GREEN_LED_PWM_FILE "/sys/class/leds/green/pwm_us"
 
 /**
  * device methods
@@ -60,8 +56,7 @@ void init_globals(void)
     pthread_mutex_init(&g_lock, NULL);
 }
 
-static int
-write_int(char const* path, int value)
+static int write_int(char const* path, int value)
 {
     int fd;
     static int already_warned = 0;
@@ -75,15 +70,14 @@ write_int(char const* path, int value)
         return amt == -1 ? -errno : 0;
     } else {
         if (already_warned == 0) {
-            ALOGE("write_int failed to open %s\n", path);
+            ALOGE("%s: failed to open %s\n", __func__, path);
             already_warned = 1;
         }
         return -errno;
     }
 }
 
-static int
-write_str(char const* path, char *value)
+static int write_str(char const* path, char *value)
 {
     int fd;
     static int already_warned = 0;
@@ -97,41 +91,37 @@ write_str(char const* path, char *value)
         return amt == -1 ? -errno : 0;
     } else {
         if (already_warned == 0) {
-            ALOGE("write_str failed to open %s\n", path);
+            ALOGE("%s: failed to open %s\n", __func__, path);
             already_warned = 1;
         }
         return -errno;
     }
 }
 
-static int
-is_lit(struct light_state_t const* state)
+static int is_lit(struct light_state_t const* state)
 {
     return state->color & 0x00ffffff;
 }
 
-static int
-rgb_to_brightness(struct light_state_t const* state)
+static int rgb_to_brightness(struct light_state_t const* state)
 {
     int color = state->color & 0x00ffffff;
-    return ((77*((color>>16)&0x00ff))
-            + (150*((color>>8)&0x00ff)) + (29*(color&0x00ff))) >> 8;
+    return ((77 * ((color >> 16) & 0x00ff))
+            + (150 * ((color >> 8) & 0x00ff)) + (29 * (color & 0x00ff))) >> 8;
 }
 
-static int
-set_light_backlight(__attribute__((unused)) struct light_device_t* dev,
+static int set_light_backlight(__attribute__((unused)) struct light_device_t* dev,
         struct light_state_t const* state)
 {
     int err = 0;
     int brightness = rgb_to_brightness(state);
     pthread_mutex_lock(&g_lock);
-    err = write_int(LCD_FILE, brightness);
+    err = write_int(LCD_BRIGHTNESS_FILE, brightness);
     pthread_mutex_unlock(&g_lock);
     return err;
 }
 
-static int
-set_light_locked(struct light_state_t const* state)
+static int set_light_locked(struct light_state_t const* state)
 {
     int onMS, offMS;
     int blink, fake_pwm, pwm;
@@ -139,16 +129,16 @@ set_light_locked(struct light_state_t const* state)
     int is_battery = 0;
 
     switch (state->flashMode) {
-        case LIGHT_FLASH_TIMED:
-        case LIGHT_FLASH_HARDWARE:
-            onMS = state->flashOnMS;
-            offMS = state->flashOffMS;
-            break;
-        case LIGHT_FLASH_NONE:
-        default:
-            onMS = 0;
-            offMS = 0;
-            break;
+    case LIGHT_FLASH_TIMED:
+    case LIGHT_FLASH_HARDWARE:
+        onMS = state->flashOnMS;
+        offMS = state->flashOffMS;
+        break;
+    case LIGHT_FLASH_NONE:
+    default:
+        onMS = 0;
+        offMS = 0;
+        break;
     }
 
     if (onMS > 0 && offMS > 0) {
@@ -172,7 +162,7 @@ set_light_locked(struct light_state_t const* state)
 
     if (is_lit(state))
         brightness_level = (state->color & 0xff000000) ?
-                           (state->color & 0xff000000) >> 24 : LED_LIGHT_ON;
+                (state->color & 0xff000000) >> 24 : LED_LIGHT_ON;
     else
         brightness_level = LED_LIGHT_OFF;
 
@@ -180,37 +170,34 @@ set_light_locked(struct light_state_t const* state)
         is_battery = 1;
 
     // turn led off
-    write_int(GREEN_LED_FILE, LED_LIGHT_OFF);
+    write_int(GREEN_LED_BRIGHTNESS_FILE, LED_LIGHT_OFF);
 
     if (blink) {
         // brightness equals to led on in ms
-        is_battery = write_int(GREEN_LED_FILE, fake_pwm);
+        is_battery = write_int(GREEN_LED_BRIGHTNESS_FILE, fake_pwm);
         // pwn uquals to led off in us
-        is_battery = write_int(GREEN_PWM_FILE, pwm);
+        is_battery = write_int(GREEN_LED_PWM_FILE, pwm);
     } else {
-        is_battery = write_int(GREEN_LED_FILE, brightness_level);
-        is_battery = write_int(GREEN_PWM_FILE, 100);
+        is_battery = write_int(GREEN_LED_BRIGHTNESS_FILE, brightness_level);
+        is_battery = write_int(GREEN_LED_PWM_FILE, 100);
     }
 
     return 0;
 }
 
-static int
-handle_led_prioritized_locked(struct light_state_t const* state)
+static int handle_led_prioritized_locked(struct light_state_t const* state)
 {
-    if (is_lit(&g_lights[ATTENTION])) {
+    if (is_lit(&g_lights[ATTENTION]))
         return set_light_locked(&g_lights[ATTENTION]);
-    } else if (is_lit(&g_lights[NOTIFICATION])) {
+    else if (is_lit(&g_lights[NOTIFICATION]))
         return set_light_locked(&g_lights[NOTIFICATION]);
-    } else if (is_lit(&g_lights[BATTERY])) {
+    else if (is_lit(&g_lights[BATTERY]))
         return set_light_locked(&g_lights[BATTERY]);
-    } else {
+    else
         return set_light_locked(state);
-    }
 }
 
-static int
-set_light_notifications(__attribute__((unused)) struct light_device_t* dev,
+static int set_light_notifications(__attribute__((unused)) struct light_device_t* dev,
         struct light_state_t const* state)
 {
     int err = 0;
@@ -221,8 +208,7 @@ set_light_notifications(__attribute__((unused)) struct light_device_t* dev,
     return err;
 }
 
-static int
-set_light_attention(__attribute__((unused)) struct light_device_t* dev,
+static int set_light_attention(__attribute__((unused)) struct light_device_t* dev,
         struct light_state_t const* state)
 {
     int err = 0;
@@ -233,8 +219,7 @@ set_light_attention(__attribute__((unused)) struct light_device_t* dev,
     return err;
 }
 
-static int
-set_light_battery(__attribute__((unused)) struct light_device_t* dev,
+static int set_light_battery(__attribute__((unused)) struct light_device_t* dev,
         struct light_state_t const* state)
 {
     int err = 0;
@@ -247,12 +232,11 @@ set_light_battery(__attribute__((unused)) struct light_device_t* dev,
 
 
 /** Close the lights device */
-static int
-close_lights(struct light_device_t *dev)
+static int close_lights(struct light_device_t *dev)
 {
-    if (dev) {
+    if (dev)
         free(dev);
-    }
+
     return 0;
 }
 
