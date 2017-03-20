@@ -785,12 +785,6 @@ service thermal-engine /system/vendor/bin/thermal-engine
     socket thermal-recv-passive-client stream 0666 system system
     group root
 
-service time_daemon /system/bin/time_daemon
-    class late_start
-    user root
-    group root
-    writepid /dev/cpuset/system-background/tasks
-
 service audiod /system/bin/audiod
     class late_start
     user system
@@ -905,8 +899,7 @@ service mdtpd /system/vendor/bin/mdtpd
     user root
     group system radio drmrpc
 
-on property:vold.decrypt=trigger_restart_min_framework
-    start time_daemon
-
-on property:vold.decrypt=trigger_restart_framework
-    restart time_daemon
+service time_daemon /system/bin/time_daemon
+    class main
+    user root
+    group root
