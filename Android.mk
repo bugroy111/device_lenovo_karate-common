@@ -19,3 +19,4 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),karate)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif
+include device/lenovo/karate/tftp.mk
