@@ -6,8 +6,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths_karate_a42.xml:system/etc/mixer_paths_karate_a42.xml \
     $(LOCAL_PATH)/audio/mixer_paths_karate_a48.xml:system/etc/mixer_paths_karate_a48.xml \
     $(LOCAL_PATH)/audio/mixer_paths_karate_b36.xml:system/etc/mixer_paths_karate_b36.xml \
-    $(LOCAL_PATH)/audio/mixer_paths_qrd_skum.xml:system/etc/mixer_paths_qrd_skum.xml \
-    $(LOCAL_PATH)/audio/mixer_paths_qrd_skun.xml:system/etc/mixer_paths_qrd_skun.xml \
     $(LOCAL_PATH)/audio/mixer_paths_karate.xml:system/etc/mixer_paths_karate.xml
 
 PRODUCT_PACKAGES += \
