@@ -18,6 +18,7 @@ ril.subscription.types=NV,RUIM
 DEVICE_PROVISIONED=1
 # Start in cdma mode
 ro.telephony.default_network=9,9
+persist.radio.aosp_usr_pref_sel=true
 
 debug.sf.hw=1
 debug.egl.hw=1
