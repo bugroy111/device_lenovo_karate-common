@@ -55,7 +55,6 @@ camera.display.lmax=1280x720
 persist.camera.HAL3.enabled=0
 persist.camera.is_type=1
 persist.camera.gyro.android=1
-media.camera.ts.monotonic=0
 vidc.debug.perf.mode=2
 vidc.enc.dcvs.extra-buff-count=2
 vidc.enc.disable.pq=true
