@@ -25,6 +25,8 @@ BOARD_VENDOR := lenovo
 PRODUCT_DEVICE := karate
 PRODUCT_MANUFACTURER := LENOVO
 
+TARGET_VENDOR_PRODUCT_NAME := karate
+
 # Overlays (inherit after vendor/cm to ensure we override it)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
