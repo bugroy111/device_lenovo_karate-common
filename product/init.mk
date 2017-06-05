@@ -6,7 +6,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.qcom.class_core.sh:root/init.qcom.class_core.sh \
     $(LOCAL_PATH)/rootdir/init.qcom.early_boot.sh:root/init.qcom.early_boot.sh \
     $(LOCAL_PATH)/rootdir/init.qcom.factory.rc:root/init.qcom.factory.rc \
-    $(LOCAL_PATH)/rootdir/init.qcom.modem_links.sh:system/etc/init.qcom.modem_links.sh \
     $(LOCAL_PATH)/rootdir/init.qcom.power.rc:root/init.qcom.power.rc \
     $(LOCAL_PATH)/rootdir/init.qcom.rc:root/init.qcom.rc \
     $(LOCAL_PATH)/rootdir/init.qcom.sensors.sh:root/init.qcom.sensors.sh \
