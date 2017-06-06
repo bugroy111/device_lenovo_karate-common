@@ -266,3 +266,6 @@ camera.hal1.packagelist=com.skype.raider,com.google.android.talk
 #properties for limiting preview size in camera
 camera.display.umax=1920x1080
 camera.display.lmax=1280x720
+
+# WIFI
+wifi.interface=wlan0
