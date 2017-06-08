@@ -29,6 +29,7 @@
 
 #include <fcntl.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 #include "vendor_init.h"
 #include "property_service.h"
@@ -36,6 +37,12 @@
 #include "util.h"
 
 #include <sys/sysinfo.h>
+
+#define ISMATCH(a,b)    (!strncmp(a,b,PROP_VALUE_MAX))
+
+#define CMDLINE_SIZE 1024
+
+void gsm_properties(bool msim);
 
 char const *heapstartsize;
 char const *heapgrowthlimit;
@@ -100,6 +107,84 @@ void check_device()
 
 void vendor_load_properties()
 {
+    std::string platform;
+    std::string device;
+    char cmdlinebuff[CMDLINE_SIZE];
+    char board_id[32];
+    FILE *fp;
+    platform = property_get("ro.board.platform");
+
+    if (platform != ANDROID_TARGET) {
+        return;
+    }
+
+    if ((fp = fopen("/proc/cmdline", "r")) == NULL) {
+        printf("Failed to open /proc/cmdline");
+        return;
+    }
+
+    if (fgets(cmdlinebuff, CMDLINE_SIZE, fp) == NULL) {
+        return;
+    }
+    char *boardindex = strstr(cmdlinebuff, "board_id=");
+    if (boardindex != NULL) {
+        strncpy(board_id, strtok(boardindex + 9, ":"), 32);
+    }
+    fclose(fp);
+
+    /* S82937AA1 */
+    if (ISMATCH(board_id, "S82937AA1")){
+    property_set("ro.product.device", "K33a48");
+    property_set("ro.build.product", "K33a48");
+    property_set("ro.product.model", "Lenovo K33a48");
+    property_set("persist.radio.multisim.config", "dsds");
+    property_set("ro.telephony.default_network", "9,9");
+    property_set("ro.build.fingerprint", "Lenovo/karate/K33a48:7.0/NRD90N/K33_S222_170523_ROW:user/release-keys");
+
+    /* S82937CA1 */
+    } else if (ISMATCH(board_id, "S82937CA1")){
+    property_set("ro.product.device", "K33a48");
+    property_set("ro.build.product", "K33a48");
+    property_set("ro.product.model", "Lenovo K33a48");
+    property_set("ro.telephony.default_network", "9");
+    property_set("ro.build.fingerprint", "Lenovo/karate/K33a48:7.0/NRD90N/K33_S222_170523_ROW:user/release-keys");
+
+    /* S82937DA1 */
+    } else if (ISMATCH(board_id, "S82937DA1")){
+    property_set("ro.product.device", "K33b36");
+    property_set("ro.build.product", "K33b36");
+    property_set("ro.product.model", "Lenovo K33b36");
+    property_set("persist.radio.multisim.config", "dsds");
+    property_set("ro.telephony.default_network", "9,9");
+    property_set("ro.build.fingerprint", "Lenovo/karate/K33b36:7.0/NRD90N/K33_S222_170523_ROW:user/release-keys");
+
+    /* S82937EA1 */
+    } else if (ISMATCH(board_id, "S82937EA1")){
+    property_set("ro.product.device", "K33a37");
+    property_set("ro.build.product", "K33a37");
+    property_set("ro.product.model", "Lenovo K33b37");
+    property_set("ro.telephony.default_network", "9");
+    property_set("ro.build.fingerprint", "Lenovo/karate/K33b37:7.0/NRD90N/K33_S222_170523_ROW:user/release-keys");
+
+    /* S82938AA1 */
+    } else if (ISMATCH(board_id, "S82938AA1")){
+    property_set("ro.product.device", "K33a42");
+    property_set("ro.build.product", "K33a42");
+    property_set("ro.product.model", "Lenovo K33a42");
+    property_set("persist.radio.multisim.config", "dsds");
+    property_set("ro.telephony.default_network", "9,9");
+    property_set("ro.build.fingerprint", "Lenovo/karate/K33a42:7.0/NRD90N/K33_S222_170523_ROW:user/release-keys");
+
+    /* S82938BA1 */
+    } else {
+    property_set("ro.product.device", "K33a42");
+    property_set("ro.build.product", "K33a42");
+    property_set("ro.product.model", "Lenovo K33a42");
+    property_set("persist.radio.multisim.config", "dsds");
+    property_set("ro.telephony.default_network", "9,9");
+    property_set("ro.build.fingerprint", "Lenovo/karate/K33a42:7.0/NRD90N/K33_S222_170523_ROW:user/release-keys");
+    }
+
     init_alarm_boot_properties();
     check_device();
 

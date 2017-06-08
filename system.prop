@@ -158,12 +158,10 @@ persist.ims.volte=true
 persist.ims.vt=false
 persist.ims.vt.epdg=false
 persist.vt.supported=0
-persist.radio.multisim.config=dsds
 ril.subscription.types=NV,RUIM
 rild.libargs=-d /dev/smd0
 rild.libpath=/vendor/lib/libril-qc-qmi-1.so
 ro.telephony.call_ring.multiple=false
-ro.telephony.default_network=22,22
 telephony.lteOnCdmaDevice=1
 
 # Time Services
