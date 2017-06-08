@@ -1005,7 +1005,10 @@
     </path>
 
     <path name="handset-stereo-dmic-ef">
-        <path name="speaker-dmic-endfire" />
+        <ctl name="DEC1 MUX" value="ADC2" />
+        <ctl name="DEC2 MUX" value="ADC1" />
+        <ctl name="MI2S_TX Channels" value="Two" />
+        <ctl name="ADC2 MUX" value="INP3" />
     </path>
 
     <path name="speaker-stereo-dmic-ef">
