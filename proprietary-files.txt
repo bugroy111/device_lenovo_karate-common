@@ -511,6 +511,8 @@ vendor/lib/libtzdrmgenprov.so
 # Display calibration
 lib/hw/displaypanel.default.so
 -etc/qdcm_calib_data_ili7807d_1080p_video_YAS.xml
+-etc/qdcm_calib_data_ili7807d_2nd_1080p_video_YAS.xml
+-etc/qdcm_calib_data_otm1901a_1080p_video_TianMa_G6.xml
 -etc/qdcm_calib_data_otm1901a_1080p_video_TianMa.xml
 
 # FM
@@ -625,6 +627,12 @@ etc/firmware/a530v1_pm4.fw
 etc/firmware/a530v2_seq.fw2
 etc/firmware/a530v3_gpmu.fw2
 etc/firmware/a530v3_seq.fw2
+
+# Hbtp firmware
+etc/firmware/hbtp/hbtpcfg_8917.dat
+etc/firmware/hbtp/hbtpcfg.dat
+etc/firmware/hbtp/qtc800s_dsp.bin
+vendor/bin/hbtp_daemon
 
 # Keystore
 vendor/lib/hw/keystore.msm8937.so
@@ -868,6 +876,9 @@ vendor/lib/libTimeService.so
 # USB
 etc/firmware/ice40.bin
 
+# Uinputtv
+lib/libuinputtv.so
+
 # Widevine
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/qcdrm/playready/lib/drm/libdrmprplugin_customer.so
@@ -890,4 +901,10 @@ etc/wifi/p2p_supplicant_overlay.conf
 etc/wifi/wpa_supplicant_overlay.conf
 
 # TO-DO
+etc/ftm_test_config
+etc/ftm_test_config_wcd9335
+etc/fts_test_karate_ofilm.ini
+etc/fts_test_karate_plus_ofilm.ini
 lib/libivc_smartengine.so
+lib/libteeclientjni.so
+lib/libteeclient.so
