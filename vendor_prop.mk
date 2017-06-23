@@ -64,6 +64,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.gralloc.enable_fb_ubwc=1 \
+    debug.sf.enable_hwc_vds=1 \
     ro.opengles.version=196610 \
     ro.vendor.display.cabl=2 \
     ro.sf.lcd_density=480 \
