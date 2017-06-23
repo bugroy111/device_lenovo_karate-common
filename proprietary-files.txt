@@ -734,7 +734,6 @@ vendor/lib/libdisp-aba.so
 bin/ATFWD-daemon
 bin/irsc_util
 etc/permissions/qti_permissions.xml
-etc/sec_config
 vendor/lib/libdiag.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
@@ -862,7 +861,6 @@ vendor/lib/sensors.ssc.so
 bin/ssr_diag
 
 # Thermal
-etc/thermal-engine.conf
 vendor/bin/thermal-engine
 vendor/lib/libthermalclient.so
 vendor/lib/libthermalioctl.so
