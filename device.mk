@@ -16,6 +16,12 @@
 
 LOCAL_PATH := device/lenovo/karate
 
+# These are set by init
+PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \
+    ro.build.product \
+    ro.produce.device \
+    ro.product.model
+
 # Include device-specific product fragments
 include $(LOCAL_PATH)/product/*.mk
 
