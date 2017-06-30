@@ -203,9 +203,6 @@ on post-fs-data
     mkdir /data/shared 0755
     chown system system /data/shared
 
-    # Create /data/vendor/time folder for time-services
-    mkdir /data/vendor/time/ 0700 system system
-
     setprop vold.post_fs_data_done 1
 
     # Create a folder for SRS to be able to create a usercfg file

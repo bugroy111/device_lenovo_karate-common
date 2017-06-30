@@ -150,6 +150,7 @@ service.qti.ims.enabled=1
 telephony.lteOnCdmaDevice=1
 
 # Time Services
+persist.delta_time.enable=true
 persist.timed.enable=true
 
 # Trim properties
