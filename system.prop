@@ -6,10 +6,13 @@ k#
 af.fast_track_multiplier=1
 audio.deep_buffer.media=true
 audio.dolby.ds2.enabled=true
+audio.dolby.ds2.hardbypass=true
 audio.offload.buffer.size.kb=64
+audio.offload.disable=true
 audio.offload.gapless.enabled=true
 audio.offload.min.duration.secs=30
 audio.offload.multiple.enabled=false
+audio.offload.passthrough=false
 audio.offload.pcm.16bit.enable=true
 audio.offload.pcm.24bit.enable=true
 audio.offload.track.enable=true
@@ -35,6 +38,7 @@ audio.safx.pbe.enabled=true
 tunnel.audio.encode = false
 audio.parser.ip.buffer.size=262144
 ro.qc.sdk.audio.ssr=false
+media.stagefright.audio.sink=280
 
 # Bluetooth
 qcom.bluetooth.soc=smd
