@@ -2,10 +2,13 @@
 /dev/block/bootdevice/by-name/persist                                u:object_r:persist_block_device:s0
 /dev/block/bootdevice/by-name/userdata                               u:object_r:userdata_block_device:s0
 
+/sys/devices/soc/1c00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/max_gpuclk      u:object_r:sysfs:s0
+
 # Fingerprint
 /dev/socket/fpce(/.*)?                                               u:object_r:fingerprint_socket:s0
 /data/fpc(/.*)?                                                      u:object_r:fingerprint_data_file:s0
-/sys/devices/soc.0/f9923000.spi/spi_master/spi0/spi0.1/spi_prepare   u:object_r:sysfs_devices_fingerprint:s0
-/sys/devices/soc.0/f9923000.spi/spi_master/spi0/spi0.1/clk_enable    u:object_r:sysfs_devices_fingerprint:s0
-/sys/devices/soc.0/f9923000.spi/spi_master/spi0/spi0.1/wakeup_enable u:object_r:sysfs_devices_fingerprint:s0
-/sys/devices/soc.0/f9923000.spi/spi_master/spi0/spi0.1/irq           u:object_r:sysfs_devices_fingerprint:s0
+/sys/devices/soc/soc:fpc1020(/.*)?		                     u:object_r:sysfs_devices_fingerprint:s0
+#/sys/devices/soc.0/f9923000.spi/spi_master/spi0/spi0.1/spi_prepare   u:object_r:sysfs_devices_fingerprint:s0
+#/sys/devices/soc.0/f9923000.spi/spi_master/spi0/spi0.1/clk_enable    u:object_r:sysfs_devices_fingerprint:s0
+#/sys/devices/soc.0/f9923000.spi/spi_master/spi0/spi0.1/wakeup_enable u:object_r:sysfs_devices_fingerprint:s0
+#/sys/devices/soc.0/f9923000.spi/spi_master/spi0/spi0.1/irq           u:object_r:sysfs_devices_fingerprint:s0
