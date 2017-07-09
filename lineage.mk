@@ -31,3 +31,10 @@ TARGET_VENDOR_PRODUCT_NAME := karate
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 PRODUCT_GMS_CLIENTID_BASE := android-lenovo
+
+## Use the latest approved GMS identifiers unless running a signed build
+ifneq ($(SIGN_BUILD),true)
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BUILD_FINGERPRINT=Lenovo/karate/K33:7.0/NRD90N/K33_S223_170610_ROW:user/release-keys \
+    PRIVATE_BUILD_DESC="karate-user 7.0 NRD90N K33_S223_170610_ROW release-keys"
+endif
