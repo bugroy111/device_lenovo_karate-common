@@ -202,6 +202,9 @@
     -->
     <integer name="config_longPressOnAppSwitchBehavior">1</integer>
 
+    <!-- Disable button brightness settings -->
+    <integer name="config_buttonBrightnessSettingDefault">0</integer>
+
     <!-- Set to true if the wifi display supports compositing content stored
          in gralloc protected buffers.  For this to be true, there must exist
          a protected hardware path for surface flinger to composite and send
