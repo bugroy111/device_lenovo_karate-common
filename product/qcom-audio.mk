@@ -6,10 +6,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:system/etc/audio_platform_info.xml \
     $(LOCAL_PATH)/audio/audio_platform_info_extcodec.xml:system/etc/audio_platform_info_extcodec.xml \
     $(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf \
-    $(LOCAL_PATH)/audio/mixer_paths_karate.xml:system/etc/mixer_paths_karate.xml \
-    $(LOCAL_PATH)/audio/mixer_paths_karate_a42.xml:system/etc/mixer_paths_karate_a42.xml \
-    $(LOCAL_PATH)/audio/mixer_paths_karate_a48.xml:system/etc/mixer_paths_karate_a48.xml \
-    $(LOCAL_PATH)/audio/mixer_paths_karate_b36.xml:system/etc/mixer_paths_karate_b36.xml \
     $(LOCAL_PATH)/audio/mixer_paths_mtp.xml:system/etc/mixer_paths_mtp.xml \
     $(LOCAL_PATH)/audio/mixer_paths_qrd_sku1.xml:system/etc/mixer_paths_qrd_sku1.xml \
     $(LOCAL_PATH)/audio/mixer_paths_qrd_sku2.xml:system/etc/mixer_paths_qrd_sku2.xml \
