@@ -158,15 +158,16 @@ vendor/lib/libxml.so
 # Camera
 bin/mm-qcamera-daemon
 lib/hw/camera.msm8937.so
-lib/libmmcamera_interface.so
-lib/libmmjpeg_interface.so
-lib/libmm-qcamera.so
-lib/libqomx_core.so
 lib/libarcsoft_beautyshot.so
 lib/libarcsoft_hdr.so
 lib/libarcsoft_night_shot.so
 lib/libarcsoft_panorama_burstcapture.so
+lib/libivc_smartengine.so
+lib/libmmcamera_interface.so
+lib/libmmjpeg_interface.so
+lib/libmm-qcamera.so
 lib/libmpbase.so
+lib/libqomx_core.so
 vendor/lib/libchromaflash.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libjpegdhw.so
@@ -419,7 +420,6 @@ vendor/lib/libssd.so
 vendor/lib/libtzdrmgenprov.so
 
 # Display calibration
-lib/hw/displaypanel.default.so
 -etc/qdcm_calib_data_ili7807d_1080p_video_YAS.xml
 -etc/qdcm_calib_data_ili7807d_2nd_1080p_video_YAS.xml
 -etc/qdcm_calib_data_otm1901a_1080p_video_TianMa_G6.xml
@@ -575,40 +575,6 @@ vendor/lib/libOmxWmaDec.so
 vendor/lib/libmm-color-convertor.so
 vendor/lib/libmmosal.so
 vendor/lib/libvqzip.so
-
-# MMI
-vendor/lib/libmmiipstreammmihttp.so
-vendor/lib/libmmipl.so
-vendor/lib/libmmipstreamaal.so
-vendor/lib/libmmipstreamnetwork.so
-vendor/lib/libmmipstreamsourcehttp.so
-vendor/lib/libmmipstreamutils.so
-vendor/lib/libmmi.so
-vendor/lib/mmi_audio.so
-vendor/lib/mmi_battery.so
-vendor/lib/mmi_bluetooth.so
-vendor/lib/mmi_camera.so
-vendor/lib/mmi_cpu.so
-vendor/lib/mmi_finger_print.so
-vendor/lib/mmi_sarsensor.so
-vendor/lib/mmi_flashlight.so
-vendor/lib/mmi_sensor.so
-vendor/lib/mmi_fm.so
-vendor/lib/mmi_gps.so
-vendor/lib/mmi_headset.so
-vendor/lib/mmi_key.so
-vendor/lib/mmi_lcd.so
-vendor/lib/mmi_light.so
-vendor/lib/mmi_memory.so
-vendor/lib/mmi_nfc.so
-vendor/lib/mmi_otg.so
-vendor/lib/mmi_sim.so
-vendor/lib/mmi_storage.so
-vendor/lib/mmi_sysinfo.so
-vendor/lib/mmi_touchext.so
-vendor/lib/mmi_touch.so
-vendor/lib/mmi_vibrator.so
-vendor/lib/mmi_wifi.so
 
 # Modem
 vendor/lib/libwms.so
@@ -807,12 +773,3 @@ etc/wifi/WCNSS_qcom_cfg.ini
 etc/wifi/fstman.ini
 etc/wifi/p2p_supplicant_overlay.conf
 etc/wifi/wpa_supplicant_overlay.conf
-
-# TO-DO
-etc/ftm_test_config
-etc/ftm_test_config_wcd9335
-etc/fts_test_karate_ofilm.ini
-etc/fts_test_karate_plus_ofilm.ini
-lib/libivc_smartengine.so
-lib/libteeclientjni.so
-lib/libteeclient.so
