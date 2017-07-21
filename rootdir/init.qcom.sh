@@ -52,9 +52,21 @@ cur_version_info=`cat /firmware/verinfo/ver_info.txt`
 if [ ! -f /firmware/verinfo/ver_info.txt -o "$prev_version_info" != "$cur_version_info" ]; then
     rm -rf /data/misc/radio/modem_config
     mkdir /data/misc/radio/modem_config
+    mkdir /data/misc/radio/modem_config/mcfg_sw
     chmod 770 /data/misc/radio/modem_config
-    cp -r /firmware/image/modem_pr/mcfg/configs/* /data/misc/radio/modem_config
+    chmod 770 /data/misc/radio/modem_config/mcfg_sw
     chown -hR radio.radio /data/misc/radio/modem_config
+    chown -hR radio.radio /data/misc/radio/modem_config/mcfg_sw
+
+    cp /firmware/image/3uk.mbn /data/misc/radio/modem_config/mcfg_sw/3uk.mbn
+    cp /firmware/image/gcf.mbn /data/misc/radio/modem_config/mcfg_sw/gcf.mbn
+    cp /firmware/image/mexico.mbn /data/misc/radio/modem_config/mcfg_sw/mexico.mbn
+    cp /firmware/image/ntel.mbn /data/misc/radio/modem_config/mcfg_sw/ntel.mbn
+    cp /firmware/image/rjil.mbn /data/misc/radio/modem_config/mcfg_sw/rjil.mbn
+    cp /firmware/image/row.mbn /data/misc/radio/modem_config/mcfg_sw/row.mbn
+    cp /firmware/image/smtf.mbn /data/misc/radio/modem_config/mcfg_sw/smtf.mbn
+    cp /firmware/image/ytl.mbn /data/misc/radio/modem_config/mcfg_sw/ytl.mbn
+
     cp /firmware/verinfo/ver_info.txt /data/misc/radio/ver_info.txt
     chown radio.radio /data/misc/radio/ver_info.txt
 fi
