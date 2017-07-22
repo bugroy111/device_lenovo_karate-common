@@ -151,7 +151,6 @@ persist.radio.aosp_usr_pref_sel=true
 persist.radio.calls.on.ims=0
 persist.radio.csvt.enabled=false
 persist.radio.jbims=1
-persist.radio.multisim.config=dsds
 persist.radio.primarycard=true
 persist.radio.sap_silent_pin=1
 persist.radio.start_ota_daemon=1
@@ -164,7 +163,6 @@ rild.libargs=-d /dev/smd0
 rild.libpath=/vendor/lib/libril-qc-qmi-1.so
 ro.telephony.call_ring.multiple=false
 service.qti.ims.enabled=1
-ro.telephony.default_network=22,22
 telephony.lteOnCdmaDevice=1
 
 # Time Services
