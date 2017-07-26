@@ -147,7 +147,6 @@ persist.rild.nitz_short_ons_3=
 # Radio
 DEVICE_PROVISIONED=1
 persist.radio.always_send_plmn=1
-persist.radio.aosp_usr_pref_sel=true
 persist.radio.calls.on.ims=0
 persist.radio.csvt.enabled=false
 persist.radio.jbims=1
