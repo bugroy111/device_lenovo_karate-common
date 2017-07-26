@@ -24,6 +24,12 @@ def IncrementalOTA_Assertions(info):
   AddTrustZoneAssertion(info)
   return
 
+def IncrementalOTA_InstallEnd(info):
+  ReplaceDeviceConfig(info)
+
+def FullOTA_InstallEnd(info):
+  ReplaceDeviceConfig(info)
+
 def AddTrustZoneAssertion(info):
   android_info = info.input_zip.read("OTA/android-info.txt")
   m = re.search(r'require\s+version-trustzone\s*=\s*(\S+)', android_info)
@@ -33,3 +39,9 @@ def AddTrustZoneAssertion(info):
       cmd = 'assert(qcom.verify_trustzone(' + ','.join(['"%s"' % tz for tz in versions]) + ') == "1" || abort("Your firmware is incompatible with this ROM version. Please update it to newest available version"););'
       info.script.AppendExtra(cmd)
   return
+
+def ReplaceDeviceConfig(info):
+  info.script.Mount("/system")
+  info.script.AppendExtra('ui_print("Checking Single SIM variant");')
+  info.script.AppendExtra('run_program("/sbin/sh", "/tmp/install/bin/check_features.sh");')
+  info.script.Unmount("/system")
