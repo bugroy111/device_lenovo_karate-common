@@ -449,7 +449,7 @@ etc/xtwifi.conf
 etc/permissions/com.qti.location.sdk.xml
 etc/permissions/com.qualcomm.location.xml
 etc/permissions/izat.xt.srv.xml
--framework/com.qti.location.sdk.jar
+-framework/com.qti.location.sdk.jar|0c2809bc3127a7cfb09d7e51edbc0e962387926c
 framework/izat.xt.srv.jar
 lib/libloc_api_v02.so
 lib/libloc_ds_api.so
@@ -602,7 +602,7 @@ vendor/lib/libperipheral_client.so
 # Postprocessing
 etc/permissions/com.qti.snapdragon.sdk.display.xml
 framework/com.qti.snapdragon.sdk.display.jar
--vendor/app/colorservice/colorservice.apk
+-vendor/app/colorservice/colorservice.apk|270dd3835d0814305e5d1ca4c5c0ada41ffa2fd3
 vendor/bin/mm-pp-dpps
 vendor/lib/libdisp-aba.so
 
@@ -632,10 +632,10 @@ vendor/lib/libsmemlog.so
 vendor/lib/libvqzip.so
 
 # Radio
--app/datastatusnotification/datastatusnotification.apk
--app/fastdormancy/fastdormancy.apk
--app/QtiTelephonyService/QtiTelephonyService.apk
--app/shutdownlistener/shutdownlistener.apk
+-app/datastatusnotification/datastatusnotification.apk|987bc2e24a13d3c28ee6b2dc14d08913bf916934
+-app/fastdormancy/fastdormancy.apk|55b8362875f4b5b34973f52c2c73c8f3dd6934d6
+-app/QtiTelephonyService/QtiTelephonyService.apk|398317ac6827c04016f7f2adac664a667efce5fb
+-app/shutdownlistener/shutdownlistener.apk|26817717c92bc829ddda8010713af3a569a97aa1
 bin/ipacm-diag
 bin/netmgrd
 bin/radish
@@ -648,9 +648,9 @@ etc/permissions/qcrilhook.xml
 etc/permissions/telephonyservice.xml
 framework/embmslibrary.jar
 # -framework/qcnvitems.jar
--framework/qcrilhook.jar
-framework/qti-telephony-common.jar
-framework/QtiTelephonyServicelibrary.jar
+-framework/qcrilhook.jar|3b1cee9fd118bd180204865b10069dfa13d1c915
+framework/qti-telephony-common.jar|88212913c0c44893e05e7003ec2f3e0a432a356d
+framework/QtiTelephonyServicelibrary.jar|62c8a97fe23c1df1975ee071c566f4a56a36fcfd
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/qti
 vendor/lib/libconfigdb.so
@@ -698,8 +698,9 @@ bin/imsqmidaemon
 etc/permissions/ims.xml
 etc/permissions/imscm.xml
 -framework/imscmlibrary.jar
--vendor/app/ims/ims.apk
--vendor/app/imssettings/imssettings.apk
+framework/rcsimssettings.jar|566a0f637344ca3182aca33753e404977fc77ecc
+-vendor/app/ims/ims.apk|6dbf78b64d5f449e1fe41f4940393809a68158be
+-vendor/app/imssettings/imssettings.apk|3725449467c1bc2e2457eba465f9375c64f6c991
 vendor/lib/lib-dplmedia.so
 vendor/lib/libimscamera_jni.so
 vendor/lib/libimsmedia_jni.so
