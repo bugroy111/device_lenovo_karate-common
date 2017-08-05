@@ -137,6 +137,7 @@ void check_boardinfo()
 		property_set("persist.radio.multisim.config", "dsds");
 		property_set("ro.telephony.default_network", "9,9");
 		property_override("ro.build.fingerprint", "Lenovo/karate/K33a42:7.0/NRD90N/K33_S223_170610_ROW:user/release-keys");
+                property_set("ro.power_profile.override", "power_profile_k6p");
 	}
 	else if (strcmp(board_id, "S82938BA1") == 0) {
 		property_override("ro.product.board", "S82938BA1");
@@ -146,6 +147,7 @@ void check_boardinfo()
 		property_set("persist.radio.multisim.config", "dsds");
 		property_set("ro.telephony.default_network", "9,9");
 		property_override("ro.build.fingerprint", "Lenovo/karate/K33a42:7.0/NRD90N/K33_S223_170610_ROW:user/release-keys");
+                property_set("ro.power_profile.override", "power_profile_k6p");
 	}
 	else if (strcmp(board_id, "S82937AA1") == 0) {
 		property_override("ro.product.board", "S82937AA1");
