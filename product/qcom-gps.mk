@@ -2,7 +2,8 @@
 PRODUCT_PACKAGES += \
     gps.msm8937 \
     gps.conf \
-    libcurl
+    libcurl \
+    libgnsspps
 
 PRODUCT_BOOT_JARS += \
     com.qti.location.sdk
