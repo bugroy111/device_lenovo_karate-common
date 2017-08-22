@@ -22,5 +22,8 @@ include $(LOCAL_PATH)/board/*.mk
 # Inherit the proprietary files
 -include vendor/lenovo/karate-common/BoardConfigVendor.mk
 
+# Manifest
+DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/configs/manifest.xml
+
 # Properties
 TARGET_SYSTEM_PROP += device/lenovo/karate-common/system.prop
