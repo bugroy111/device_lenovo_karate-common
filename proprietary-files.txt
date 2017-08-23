@@ -539,6 +539,9 @@ vendor/bin/hbtp_daemon
 # Keystore
 vendor/lib/hw/keystore.msm8937.so
 
+# Lights
+lib/hw/lights.msm8937.so
+
 # Listen
 vendor/lib/hw/sound_trigger.primary.msm8937.so
 vendor/lib/libadpcmdec.so
