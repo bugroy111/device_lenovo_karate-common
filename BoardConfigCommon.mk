@@ -19,8 +19,6 @@ LOCAL_PATH := device/lenovo/karate-common
 # Inherit device-specific board fragments
 include $(LOCAL_PATH)/board/*.mk
 
-TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
-
 # Inherit the proprietary files
 -include vendor/lenovo/karate-common/BoardConfigVendor.mk
 

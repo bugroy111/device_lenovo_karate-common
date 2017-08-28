@@ -11,3 +11,5 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # Extended Filesystem Support
 TARGET_EXFAT_DRIVER := exfat
+
+TARGET_FS_CONFIG_GEN := $(LOCAL_PATH)/config.fs
