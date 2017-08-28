@@ -22,7 +22,6 @@ vendor/lib/rfsa/adsp/libscveTextReco_skel.so
 # Audio
 etc/surround_sound_3mic/surround_sound_rec_AZ.cfg
 etc/surround_sound_3mic/surround_sound_rec_5.1.cfg
-vendor/etc/audio_output_policy.conf
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbmapper.so
@@ -144,9 +143,9 @@ etc/cne/SwimConfig.xml
 etc/permissions/ConnectivityExt.xml
 etc/permissions/cneapiclient.xml
 etc/permissions/com.quicinc.cne.xml
-framework/ConnectivityExt.jar
-framework/cneapiclient.jar
-framework/com.quicinc.cne.jar
+-framework/ConnectivityExt.jar
+-framework/cneapiclient.jar
+-framework/com.quicinc.cne.jar
 -priv-app/CNEService/CNEService.apk
 vendor/lib/libcne.so
 vendor/lib/libcneapiclient.so
@@ -386,9 +385,9 @@ etc/dpm/dpm.conf
 etc/dpm/nsrm/NsrmConfiguration.xml
 etc/permissions/com.qti.dpmframework.xml
 etc/permissions/dpmapi.xml
-framework/com.qti.dpmframework.jar
-framework/dpmapi.jar
-framework/tcmclient.jar
+-framework/com.qti.dpmframework.jar
+-framework/dpmapi.jar
+-framework/tcmclient.jar
 -priv-app/dpmserviceapp/dpmserviceapp.apk
 vendor/lib/libdpmctmgr.so
 vendor/lib/libdpmfdmgr.so
@@ -441,13 +440,14 @@ bin/loc_launcher|c3f490bbedb68a34f74c30f0f9d766eb716805f4
 bin/lowi-server
 bin/xtwifi-client|d05faf67480a979b62d89c62918a6e41360af809
 bin/xtwifi-inet-agent|100420b8061b64363716b5f08a6d9a42967fd2b9
+etc/xtra_root_cert.pem|f55a31ec4d9cf8ce2724acadecf00c779f8767db
 etc/permissions/com.qti.location.sdk.xml|cb68a566bd77dcc75bb7547199d528289fac01cb
 etc/permissions/com.qualcomm.location.vzw_library.xml|c25d37a4aa23cfd98d01d5d3121e43d0b6b37f05
 etc/permissions/com.qualcomm.location.xml|8896841bc23fa47bb26fb3dacfa82747f6966330
 etc/permissions/izat.xt.srv.xml|a0f460056f27b5495a4d6e959eecf0e429c42a57
 -framework/com.qti.location.sdk.jar|716b9cf54f7fd2172f17eeb4e1a4e825ee20a59f
 -framework/com.qualcomm.location.vzw_library.jar|71c51a9affc7550af82e2fd9e591be1d335c6baa
-framework/izat.xt.srv.jar|da31c6183f8d29251ce5656ddab6d4b386934382
+-framework/izat.xt.srv.jar|da31c6183f8d29251ce5656ddab6d4b386934382
 lib/libloc_api_v02.so|c5ab64765f624bb3fa7245725700a614d78dcb9c
 lib/libloc_ds_api.so|1d5c24520b5f292a20c3fd11e01f34364dd399b0
 -priv-app/com.qualcomm.location/com.qualcomm.location.apk|7176352e715321bae9b873e338476d1b7c908bcd
@@ -596,10 +596,8 @@ vendor/lib/libperipheral_client.so
 
 # Postprocessing
 etc/permissions/com.qti.snapdragon.sdk.display.xml
-framework/com.qti.snapdragon.sdk.display.jar
+-framework/com.qti.snapdragon.sdk.display.jar
 -vendor/app/colorservice/colorservice.apk|270dd3835d0814305e5d1ca4c5c0ada41ffa2fd3
-vendor/bin/mm-pp-dpps
-vendor/lib/libdisp-aba.so
 
 # QMI
 bin/ATFWD-daemon
@@ -641,11 +639,11 @@ etc/permissions/embms.xml
 #etc/permissions/qcnvitems.xml
 etc/permissions/qcrilhook.xml
 etc/permissions/telephonyservice.xml
-framework/embmslibrary.jar
-# -framework/qcnvitems.jar
+-framework/embmslibrary.jar
+-framework/qcnvitems.jar
 -framework/qcrilhook.jar|3b1cee9fd118bd180204865b10069dfa13d1c915
-framework/qti-telephony-common.jar|88212913c0c44893e05e7003ec2f3e0a432a356d
-framework/QtiTelephonyServicelibrary.jar|62c8a97fe23c1df1975ee071c566f4a56a36fcfd
+-framework/qti-telephony-common.jar|88212913c0c44893e05e7003ec2f3e0a432a356d
+-framework/QtiTelephonyServicelibrary.jar|62c8a97fe23c1df1975ee071c566f4a56a36fcfd
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/qti
 vendor/lib/libconfigdb.so
@@ -693,7 +691,7 @@ bin/imsqmidaemon
 etc/permissions/ims.xml
 etc/permissions/imscm.xml
 -framework/imscmlibrary.jar
-framework/rcsimssettings.jar|566a0f637344ca3182aca33753e404977fc77ecc
+-framework/rcsimssettings.jar|566a0f637344ca3182aca33753e404977fc77ecc
 -vendor/app/ims/ims.apk|6dbf78b64d5f449e1fe41f4940393809a68158be
 -vendor/app/imssettings/imssettings.apk|3725449467c1bc2e2457eba465f9375c64f6c991
 vendor/lib/lib-dplmedia.so
@@ -722,6 +720,7 @@ vendor/lib/libvoice-svc.so
 
 # Sensors
 bin/sensors.qcom
+lib/libsensor_cal.so
 vendor/lib/hw/activity_recognition.msm8937.so
 vendor/lib/libmotocalibration.so
 vendor/lib/libsensor1.so
