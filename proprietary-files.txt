@@ -1,16 +1,20 @@
-# ADSP
+# ADSP - from karatep
 bin/adsprpcd
-vendor/lib/libadsprpc.so
 vendor/lib/libadsp_default_listener.so
+vendor/lib/libadsprpc.so
 vendor/lib/libfastcvadsp_stub.so
 vendor/lib/libfastcvopt.so
+vendor/lib64/libadsp_default_listener.so
+vendor/lib64/libadsprpc.so
+vendor/lib64/libfastcvadsp_stub.so
+vendor/lib64/libfastcvopt.so
 
-# ADSP modules
-vendor/lib/libmdsprpc.so
+# ADSP modules - from karatep
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libdspCV_skel.so
 vendor/lib/rfsa/adsp/libfastcvadsp.so
 vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
+vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so
 vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_skel.so
 vendor/lib/rfsa/adsp/libobjectMattingApp_skel.so
 vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
@@ -19,9 +23,11 @@ vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/rfsa/adsp/libscveTextReco_skel.so
 
-# Audio
-etc/surround_sound_3mic/surround_sound_rec_AZ.cfg
+# Audio - from karatep
+etc/drc/drc_cfg_5.1.txt
+etc/drc/drc_cfg_AZ.txt
 etc/surround_sound_3mic/surround_sound_rec_5.1.cfg
+etc/surround_sound_3mic/surround_sound_rec_AZ.cfg
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbmapper.so
@@ -35,12 +41,23 @@ vendor/lib/libdrc.so
 vendor/lib/libhwdaphal.so
 vendor/lib/libqct_resampler.so
 vendor/lib/libsurround_3mic_proc.so
-vendor/lib/libswvdec.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
+vendor/lib64/libacdb-fts.so
+vendor/lib64/libacdbloader.so
+vendor/lib64/libacdbmapper.so
+vendor/lib64/libacdbrtac.so
+vendor/lib64/libadiertac.so
+vendor/lib64/libaudcal.so
+vendor/lib64/libaudioalsa.so
+vendor/lib64/libaudiodevarb.so
+vendor/lib64/libhwdaphal.so
+vendor/lib64/soundfx/libqcbassboost.so
+vendor/lib64/soundfx/libqcreverb.so
+vendor/lib64/soundfx/libqcvirt.so
 
-# Audio ACDB
+# Audio ACDB - from karate
 etc/acdbdata/msm8937-karate-snd-card/Bluetooth_cal.acdb
 etc/acdbdata/msm8937-karate-snd-card/General_cal.acdb
 etc/acdbdata/msm8937-karate-snd-card/Global_cal.acdb
@@ -69,6 +86,8 @@ etc/acdbdata/msm8937-karate-snd-card-b36/Handset_cal.acdb
 etc/acdbdata/msm8937-karate-snd-card-b36/Hdmi_cal.acdb
 etc/acdbdata/msm8937-karate-snd-card-b36/Headset_cal.acdb
 etc/acdbdata/msm8937-karate-snd-card-b36/Speaker_cal.acdb
+
+# Audio ACDB - from karatep
 etc/acdbdata/MTP/msm8952-tasha-snd-card/MTP_WCD9335_Bluetooth_cal.acdb
 etc/acdbdata/MTP/msm8952-tasha-snd-card/MTP_WCD9335_General_cal.acdb
 etc/acdbdata/MTP/msm8952-tasha-snd-card/MTP_WCD9335_Global_cal.acdb
@@ -119,12 +138,14 @@ etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
 etc/acdbdata/QRD/QRD_Headset_cal.acdb
 etc/acdbdata/QRD/QRD_Speaker_cal.acdb
 
-# Bluetooth
+# Bluetooth - from karatep
 bin/btnvtool
 bin/hci_qcomm_init
+bin/wcnss_filter
 vendor/lib/libbtnv.so
+vendor/lib64/libbtnv.so
 
-# Bluetooth FIrmware
+# Bluetooth Firmware - from karatep
 etc/firmware/nvm_tlv.bin
 etc/firmware/nvm_tlv_1.3.bin
 etc/firmware/nvm_tlv_2.1.bin
@@ -136,25 +157,46 @@ etc/firmware/rampatch_tlv_2.1.tlv
 etc/firmware/rampatch_tlv_3.0.tlv
 etc/firmware/rampatch_tlv_3.2.tlv
 
-# CNE
+# CNE - from santoni
+-priv-app/CNEService/CNEService.apk
 bin/cnd
-etc/cne/andsfCne.xml
 etc/cne/SwimConfig.xml
+etc/cne/andsfCne.xml
+etc/cne/wqeclient/ATT/ATT_profile1.xml
+etc/cne/wqeclient/ATT/ATT_profile2.xml
+etc/cne/wqeclient/ATT/ATT_profile3.xml
+etc/cne/wqeclient/ATT/ATT_profile4.xml
+etc/cne/wqeclient/ROW/ROW_profile1.xml
+etc/cne/wqeclient/ROW/ROW_profile2.xml
+etc/cne/wqeclient/ROW/ROW_profile3.xml
+etc/cne/wqeclient/ROW/ROW_profile4.xml
+etc/cne/wqeclient/ROW/ROW_profile5.xml
+etc/cne/wqeclient/VZW/VZW_profile1.xml
+etc/cne/wqeclient/VZW/VZW_profile2.xml
+etc/cne/wqeclient/VZW/VZW_profile3.xml
+etc/cne/wqeclient/VZW/VZW_profile4.xml
+etc/cne/wqeclient/VZW/VZW_profile5.xml
+etc/cne/wqeclient/VZW/VZW_profile6.xml
 etc/permissions/ConnectivityExt.xml
 etc/permissions/cneapiclient.xml
 etc/permissions/com.quicinc.cne.xml
--framework/ConnectivityExt.jar
--framework/cneapiclient.jar
--framework/com.quicinc.cne.jar
--priv-app/CNEService/CNEService.apk
+framework/ConnectivityExt.jar
+framework/cneapiclient.jar
+framework/com.quicinc.cne.jar
 vendor/lib/libcne.so
 vendor/lib/libcneapiclient.so
 vendor/lib/libcneqmiutils.so
 vendor/lib/libvendorconn.so
 vendor/lib/libwqe.so
 vendor/lib/libxml.so
+vendor/lib64/libcne.so
+vendor/lib64/libcneapiclient.so
+vendor/lib64/libcneqmiutils.so
+vendor/lib64/libvendorconn.so
+vendor/lib64/libwqe.so
+vendor/lib64/libxml.so
 
-# Camera
+# Camera - from karate
 bin/mm-qcamera-daemon
 lib/hw/camera.msm8937.so
 lib/libarcsoft_beautyshot.so
@@ -238,11 +280,11 @@ vendor/lib/libts_detected_face_hal.so
 vendor/lib/libts_face_beautify_hal.so
 vendor/lib/libubifocus.so
 
-# Camera actuators
+# Camera actuators - from karate
 vendor/lib/libactuator_dw9767_karateof.so
 vendor/lib/libactuator_dw9767_karateqt.so
 
-# Camera chromatix
+# Camera chromatix - from karate
 vendor/lib/libchromatix_csidtg_common.so
 vendor/lib/libchromatix_csidtg_cpp_preview.so
 vendor/lib/libchromatix_csidtg_postproc.so
@@ -329,7 +371,7 @@ vendor/lib/libchromatix_imx258_karateqt_video_4k.so
 vendor/lib/libchromatix_imx258_karateqt_zsl_preview_dw9767.so
 vendor/lib/libchromatix_imx258_karateqt_zsl_video_dw9767.so
 
-# Camera firmware
+# Camera firmware - from karate
 etc/firmware/cpp_firmware_v1_1_1.fw
 etc/firmware/cpp_firmware_v1_1_6.fw
 etc/firmware/cpp_firmware_v1_10_0.fw
@@ -340,7 +382,7 @@ etc/firmware/cpp_firmware_v1_5_2.fw
 etc/firmware/cpp_firmware_v1_6_0.fw
 etc/firmware/cpp_firmware_v1_8_0.fw
 
-# Camera sensors
+# Camera sensors - from karate
 vendor/lib/libmmcamera_isp_abf40.so
 vendor/lib/libmmcamera_isp_bcc40.so
 vendor/lib/libmmcamera_isp_be_stats44.so
@@ -376,188 +418,239 @@ vendor/lib/libmmcamera_isp_sub_module.so
 vendor/lib/libmmcamera_isp_template.so
 vendor/lib/libmmcamera_isp_wb40.so
 
-# Charger
+# Charger - from karatep
 bin/hvdcp_opti
 
-# DPM
+# DPM - from santoni
 bin/dpmd
 etc/dpm/dpm.conf
 etc/dpm/nsrm/NsrmConfiguration.xml
 etc/permissions/com.qti.dpmframework.xml
 etc/permissions/dpmapi.xml
--framework/com.qti.dpmframework.jar
--framework/dpmapi.jar
--framework/tcmclient.jar
--priv-app/dpmserviceapp/dpmserviceapp.apk
+framework/com.qti.dpmframework.jar
+framework/dpmapi.jar
+framework/tcmclient.jar
 vendor/lib/libdpmctmgr.so
 vendor/lib/libdpmfdmgr.so
 vendor/lib/libdpmframework.so
 vendor/lib/libdpmnsrm.so
 vendor/lib/libdpmtcm.so
+vendor/lib64/libdpmctmgr.so
+vendor/lib64/libdpmfdmgr.so
+vendor/lib64/libdpmframework.so
+vendor/lib64/libdpmnsrm.so
+vendor/lib64/libdpmtcm.so
 
-# DRM
+# DRM - from santoni
 bin/qseecomd
-vendor/bin/mdtpd
 vendor/bin/qseeproxydaemon
-vendor/lib/libcppf.so
-vendor/lib/lib-sec-disp.so
-vendor/lib/libGPreqcancel.so
-vendor/lib/libGPreqcancel_svc.so
-vendor/lib/libGPTEE.so
-vendor/lib/libmdtp.so
-vendor/lib/libmdtp_crypto.so
 vendor/lib/libQSEEComAPI.so
-vendor/lib/libSecureUILib.so
-vendor/lib/libStDrvInt.so
-vendor/lib/libdrmfs.so
-vendor/lib/libdrmtime.so
-vendor/lib/libqisl.so
-vendor/lib/librpmb.so
-vendor/lib/libsecureui.so
-vendor/lib/libsecureui_svcsock.so
-vendor/lib/libssd.so
-vendor/lib/libtzdrmgenprov.so
+vendor/lib/libcppf.so
+vendor/lib64/lib-sec-disp.so
+vendor/lib64/libGPTEE.so
+vendor/lib64/libGPreqcancel.so
+vendor/lib64/libGPreqcancel_svc.so
+vendor/lib64/libQSEEComAPI.so
+vendor/lib64/libSecureUILib.so
+vendor/lib64/libStDrvInt.so
+vendor/lib64/libdrmfs.so
+vendor/lib64/libdrmtime.so
+vendor/lib64/libqisl.so
+vendor/lib64/librpmb.so
+vendor/lib64/libsecureui.so
+vendor/lib64/libsecureui_svcsock.so
+vendor/lib64/libsecureuisvc_jni.so
+vendor/lib64/libssd.so
+vendor/lib64/libtzdrmgenprov.so
 
-# Display calibration
+# Display calibration - from karate
 -etc/qdcm_calib_data_ili7807d_1080p_video_YAS.xml
 -etc/qdcm_calib_data_ili7807d_2nd_1080p_video_YAS.xml
 -etc/qdcm_calib_data_otm1901a_1080p_video_TianMa_G6.xml
 -etc/qdcm_calib_data_otm1901a_1080p_video_TianMa.xml
 
-# FM
-bin/fm_qsoc_patches
-
-# Fingerprint
+# Fingerprint - from karatep
 lib/hw/fingerprint.default.so
 lib/libcom_fingerprints_service.so
 lib/lib_fpc_tac_shared.so
+lib64/hw/fingerprint.default.so
+lib64/libcom_fingerprints_service.so
+lib64/lib_fpc_tac_shared.so
 
-# Gatekeeper
+# Gatekeeper - from karatep
 vendor/lib/hw/gatekeeper.msm8937.so
+vendor/lib64/hw/gatekeeper.msm8937.so
 
-# GPS - from addison
-bin/loc_launcher|c3f490bbedb68a34f74c30f0f9d766eb716805f4
+# GPS - from garlic
+-framework/com.qti.location.sdk.jar
+-framework/com.qualcomm.location.vzw_library.jar
+-framework/izat.xt.srv.jar
+-lib64/libloc_api_v02.so
+-lib64/libloc_ds_api.so
+-priv-app/com.qualcomm.location/com.qualcomm.location.apk
+bin/loc_launcher
 bin/lowi-server
-bin/xtwifi-client|d05faf67480a979b62d89c62918a6e41360af809
-bin/xtwifi-inet-agent|100420b8061b64363716b5f08a6d9a42967fd2b9
-etc/xtra_root_cert.pem|f55a31ec4d9cf8ce2724acadecf00c779f8767db
-etc/permissions/com.qti.location.sdk.xml|cb68a566bd77dcc75bb7547199d528289fac01cb
-etc/permissions/com.qualcomm.location.vzw_library.xml|c25d37a4aa23cfd98d01d5d3121e43d0b6b37f05
-etc/permissions/com.qualcomm.location.xml|8896841bc23fa47bb26fb3dacfa82747f6966330
-etc/permissions/izat.xt.srv.xml|a0f460056f27b5495a4d6e959eecf0e429c42a57
--framework/com.qti.location.sdk.jar|716b9cf54f7fd2172f17eeb4e1a4e825ee20a59f
--framework/com.qualcomm.location.vzw_library.jar|71c51a9affc7550af82e2fd9e591be1d335c6baa
--framework/izat.xt.srv.jar|da31c6183f8d29251ce5656ddab6d4b386934382
-lib/libloc_api_v02.so|c5ab64765f624bb3fa7245725700a614d78dcb9c
-lib/libloc_ds_api.so|1d5c24520b5f292a20c3fd11e01f34364dd399b0
--priv-app/com.qualcomm.location/com.qualcomm.location.apk|7176352e715321bae9b873e338476d1b7c908bcd
-vendor/bin/slim_daemon|2b5e622eee2708a5518493f37713ada9c495a7d3
-vendor/lib/hw/flp.default.so|37e45ccd8b3689457e449167d64d85c4e72363b5
-vendor/lib/libalarmservice_jni.so|10b0d211f34ad1480e4c5a97429c4888ed47bbe3
-vendor/lib/libasn1cper.so|2f94c96194ca37bfbe4103010d40ea4acac84a4b
-vendor/lib/libasn1crt.so|76bd5820026922d463941a9d70be80bbe93d0fe3
-vendor/lib/libasn1crtx.so|4e7d1772ea4c97fb3b523f417a20a3ed2e755161
-vendor/lib/libdataitems.so|50d27e8273ce31fa04e6f0dc2cfd40bbcc73d496
-vendor/lib/libdrplugin_client.so|24bf5aa887959e93375161088c56c6a15e719dcd
-vendor/lib/libDRPlugin.so|29c4339837434686543953da294e58b52a001843
-vendor/lib/libevent_observer.so|9f7afb950d9087934fc541e62b70689cdb5f8491
-vendor/lib/libflp.so|8204599a144bcda68c1c599d8f51a5967ca86697
-vendor/lib/libgdtap.so|0b0450ae5a1a9374b7979d25062c7c43e2934be8
-vendor/lib/libgeofence.so|770629a8600b16c6baad62ca01eb95d38da180d4
-vendor/lib/libizat_client_api.so|580e137f25c6f42e87c48ffbba0fadd464c180fc
-vendor/lib/libizat_core.so|7f5b8e06bd4a1fe240b7f2550200b5c7ea9c0cee
-vendor/lib/liblbs_core.so|14704ca0f4b17518e68bc01ed2415a8560f42bd2
-vendor/lib/liblocationservice_glue.so|a25613d07db8fc4d62e7be8ed92be5c91df1ca3d
-vendor/lib/liblocationservice.so|36388b1b283c36a697d69edc658ce4a8304d6618
-vendor/lib/libloc_externalDr.so|1b12ecab089f16f25612ef2bb1be74dd5b321ebe
-vendor/lib/libloc_ext.so|7d06906ec26228af047b7f7e73fb1cb6cc3bf88d
-vendor/lib/liblowi_client.so|a97759869517e0d9c2fa9e256bf168cca2f88ac2
-vendor/lib/liblowi_wifihal.so
-vendor/lib/liblowi_wifihal_nl.so
-vendor/lib/libulp2.so|74001176508f21930de4ed10582d98eb435ba9b1
-vendor/lib/libxtadapter.so|8e31ec2dad718327448d571daec7c9ca226508a9
-vendor/lib/libxt_native.so|4f1d7af74397d8038aa9d9f6de414d0430099de7
-vendor/lib/libxtwifi_ulp_adaptor.so|fa4a6e1f019a60633754e72376f43bc02c82f1d1
+bin/xtwifi-client
+bin/xtwifi-inet-agent
+etc/permissions/com.qti.location.sdk.xml
+etc/permissions/com.qualcomm.location.vzw_library.xml
+etc/permissions/com.qualcomm.location.xml
+etc/permissions/izat.xt.srv.xml
+etc/xtra_root_cert.pem
+vendor/bin/slim_daemon
+vendor/lib64/hw/flp.default.so
+vendor/lib64/libalarmservice_jni.so
+vendor/lib64/libasn1cper.so
+vendor/lib64/libasn1crt.so
+vendor/lib64/libasn1crtx.so
+vendor/lib64/libdataitems.so
+vendor/lib64/libDRPlugin.so
+vendor/lib64/libdrplugin_client.so
+vendor/lib64/libevent_observer.so
+vendor/lib64/libflp.so
+vendor/lib64/libgdtap.so
+vendor/lib64/libgeofence.so
+vendor/lib64/libizat_client_api.so
+vendor/lib64/libizat_core.so
+vendor/lib64/liblbs_core.so
+vendor/lib64/libloc_ext.so
+vendor/lib64/libloc_externalDr.so
+vendor/lib64/liblocationservice.so
+vendor/lib64/liblocationservice_glue.so
+vendor/lib64/liblowi_client.so
+vendor/lib64/liblowi_wifihal.so
+vendor/lib64/liblowi_wifihal_nl.so
+vendor/lib64/libslimclient.so
+vendor/lib64/libulp2.so
+vendor/lib64/libxt_native.so
+vendor/lib64/libxtadapter.so
+vendor/lib64/libxtwifi_ulp_adaptor.so
 
-# Graphics - from tenshi
-vendor/lib/egl/eglsubAndroid.so|5e0f349211d7beacb3a3ba196c57f12b5535f9b2
-vendor/lib/egl/eglSubDriverAndroid.so|e9791a55473c71f7b6ce3f084f638ddf76d7f11d
-vendor/lib/egl/libEGL_adreno.so|cfd56d8550fa5558ab8e44a54537c940345580c3
-vendor/lib/egl/libESXEGL_adreno.so|472190f4a7219245f75b644be004f57089ebce8a
-vendor/lib/egl/libESXGLESv1_CM_adreno.so|110d1a34cd4a285bc46c2ad59617c6a68129d643
-vendor/lib/egl/libESXGLESv2_adreno.so|38df24a6afba9176a04f1f061945e7632390e9fb
-vendor/lib/egl/libGLESv1_CM_adreno.so|c3ee8a4861ac907eb892aba54c6672eb05500ed5
-vendor/lib/egl/libGLESv2_adreno.so|7cd477d4722920e2b4848aa4d5c54e0ad9ecc65a
-vendor/lib/egl/libq3dtools_adreno.so|a38ac8d88dcd087b55137bf1549c95e31da695a3
-vendor/lib/egl/libq3dtools_esx.so|fd1948494bbc2b7c63e1d4776ee4394641f52128
-vendor/lib/egl/libQTapGLES.so|dc58c77132d635e6c8f95a6ea9ac1f3a4ce2da0b
-vendor/lib/egl/libRBEGL_adreno.so|c9fc7f750e7e56e6e097230554e01b6c081afbba
-vendor/lib/egl/libRBGLESv1_CM_adreno.so|5b59412e86f2ec20d924a0a89581264eeb812d2a
-vendor/lib/egl/libRBGLESv2_adreno.so|64826d07d64f49c0e23048e16a1e48f0f127a06a
-vendor/lib/hw/vulkan.msm8937.so|46f1bbe0491524e7e0a34ddd480262eed331ba94
-vendor/lib/libadreno_utils.so|5e08564566cc29f6730a0ca3ecc950a4417d26f1
-vendor/lib/libbccQTI.so|19ab8268addaa5b73631551dbc61154581636eca
-vendor/lib/libC2D2.so|eb55372ad7b1b89f78d96fd77bd82c6e467c7df0
-vendor/lib/libc2d30-a5xx.so|c190120a6ae39a1bbb9f41417d9b1dd1f6b5d307
-vendor/lib/libc2d30_bltlib.so|ad5f0dfd3a5fbb7f22618fbc2d8283a42ed8d1b7
-vendor/lib/libCB.so|80b4df75e00529fbe14b15dc4b1fc4302c9474b6
-vendor/lib/libgsl.so|50df76b4f05da56d9e47362d3b337dd8daa4b193
-vendor/lib/libllvm-glnext.so|da745a2171879858fc9a788dc02aafa9cc4077d8
-vendor/lib/libllvm-qcom.so|62ed7bc45e41039e7626ae6434f7d2f259b899ff
-vendor/lib/libmmQSM.so|7200c0d3a419a8492817ea3a1193cbe6fb7db3e2
-vendor/lib/libOpenCL.so|e1f8c3fdb58fa9fbb1465d909e9ab7ba31176bd6
-vendor/lib/librs_adreno_sha1.so|d5f09dbf5b9f4a9760dda1a328a94f81b9b4b4c1
-vendor/lib/librs_adreno.so|d943d919b21c91f8cd80542f6a497e37c4e8635c
-vendor/lib/libRSDriver_adreno.so|963776e5323e0896693827fd6fecf5df4c8f174b
-vendor/lib/libscale.so|7dbf1c523fa9c00656c4e19eea53e643cc0c119f
-vendor/lib/libsc-a3xx.so|d5d3ca425a4d9adaaaef2242ae92b76dc50556b2
-vendor/lib/libsd_sdk_display.so|23b1ef85654178da98e4f950d26736759cf069c1
-vendor/lib/libmm-hdcpmgr.so|41b152c57d1bb7a4269ec1cd23f565d9b53b2a74
-vendor/lib/libscalar.so|f6ee7fa6e9ea230e960406369c76fd6c998db9df
-vendor/lib/libsdm-color.so|fa907f8d480261fdb3b78057c7352bc1e3899a92
-vendor/lib/libsdm-diag.so|5169f31e832d19af78ac0045c725ce2d3f1da640
-vendor/lib/libsdm-disp-apis.so|72f6db2b249a47a6ac83d4dfc7d2e9f76b349920
-vendor/lib/libsdmextension.so|e52ca803e2e07dc675ea65974de55fa0d9e9dd88
-vendor/lib/libsd_sdk_display.so|23b1ef85654178da98e4f950d26736759cf069c1
+# Graphics - from santoni
+-vendor/lib/libsdm-disp-apis.so
+vendor/lib/egl/eglsubAndroid.so
+vendor/lib/egl/eglSubDriverAndroid.so
+vendor/lib/egl/libEGL_adreno.so
+vendor/lib/egl/libESXEGL_adreno.so
+vendor/lib/egl/libESXGLESv1_CM_adreno.so
+vendor/lib/egl/libESXGLESv2_adreno.so
+vendor/lib/egl/libGLESv1_CM_adreno.so
+vendor/lib/egl/libGLESv2_adreno.so
+vendor/lib/egl/libQTapGLES.so
+vendor/lib/egl/libRBEGL_adreno.so
+vendor/lib/egl/libRBGLESv1_CM_adreno.so
+vendor/lib/egl/libRBGLESv2_adreno.so
+vendor/lib/egl/libq3dtools_adreno.so
+vendor/lib/egl/libq3dtools_esx.so
+vendor/lib/hw/vulkan.msm8937.so
+vendor/lib/libC2D2.so
+vendor/lib/libCB.so
+vendor/lib/libOpenCL.so
+vendor/lib/libRSDriver_adreno.so
+vendor/lib/libadreno_utils.so
+vendor/lib/libbccQTI.so
+vendor/lib/libc2d30-a3xx.so
+vendor/lib/libc2d30-a4xx.so
+vendor/lib/libc2d30-a5xx.so
+vendor/lib/libc2d30_bltlib.so
+vendor/lib/libgsl.so
+vendor/lib/libllvm-glnext.so
+vendor/lib/libllvm-qcom.so
+vendor/lib/libllvm-qgl.so
+vendor/lib/libmm-disp-apis.so
+vendor/lib/libmm-hdcpmgr.so
+vendor/lib/libmm-qdcm.so
+vendor/lib/libmmQSM.so
+vendor/lib/librs_adreno.so
+vendor/lib/librs_adreno_sha1.so
+vendor/lib/libsc-a2xx.so
+vendor/lib/libsc-a3xx.so
+vendor/lib/libscalar.so
+vendor/lib/libscale.so
+vendor/lib/libsdm-color.so
+vendor/lib/libsdm-diag.so
+vendor/lib/libsdmextension.so
+vendor/lib/libsd_sdk_display.so
+vendor/lib64/egl/eglsubAndroid.so
+vendor/lib64/egl/eglSubDriverAndroid.so
+vendor/lib64/egl/libEGL_adreno.so
+vendor/lib64/egl/libESXEGL_adreno.so
+vendor/lib64/egl/libESXGLESv1_CM_adreno.so
+vendor/lib64/egl/libESXGLESv2_adreno.so
+vendor/lib64/egl/libGLESv1_CM_adreno.so
+vendor/lib64/egl/libGLESv2_adreno.so
+vendor/lib64/egl/libQTapGLES.so
+vendor/lib64/egl/libq3dtools_adreno.so
+vendor/lib64/egl/libq3dtools_esx.so
+vendor/lib64/egl/libRBEGL_adreno.so
+vendor/lib64/egl/libRBGLESv1_CM_adreno.so
+vendor/lib64/egl/libRBGLESv2_adreno.so
+vendor/lib64/hw/vulkan.msm8937.so
+-vendor/lib64/libsdm-disp-apis.so
+vendor/lib64/libC2D2.so
+vendor/lib64/libCB.so
+vendor/lib64/libOpenCL.so
+vendor/lib64/libRSDriver_adreno.so
+vendor/lib64/libadreno_utils.so
+vendor/lib64/libbccQTI.so
+vendor/lib64/libc2d30-a3xx.so
+vendor/lib64/libc2d30-a4xx.so
+vendor/lib64/libc2d30-a5xx.so
+vendor/lib64/libc2d30_bltlib.so
+vendor/lib64/libgsl.so
+vendor/lib64/libllvm-glnext.so
+vendor/lib64/libllvm-qcom.so
+vendor/lib64/libllvm-qgl.so
+vendor/lib64/libmm-disp-apis.so
+vendor/lib64/libmm-hdcpmgr.so
+vendor/lib64/libmm-qdcm.so
+vendor/lib64/libmmQSM.so
+vendor/lib64/librs_adreno.so
+vendor/lib64/librs_adreno_sha1.so
+vendor/lib64/libsc-a2xx.so
+vendor/lib64/libsc-a3xx.so
+vendor/lib64/libscalar.so
+vendor/lib64/libscale.so
+vendor/lib64/libsd_sdk_display.so
+vendor/lib64/libsdm-color.so
+vendor/lib64/libsdm-diag.so
+vendor/lib64/libsdmextension.so
+vendor/lib64/libuiblur.so|4b3fabf5ded7c4af531abde681676fc5e9248494
 
-# Graphics firmware
-etc/firmware/a530_gpmu.fw2|706da8d5ee565dcf456341f805ee75a40773f65a
-etc/firmware/a530_pfp.fw|448f9db8271fefb08348cbc50409e8e95bd93f78
-etc/firmware/a530_pm4.fw|5741a28752355b478d455635bab008028ff7e1c6
-etc/firmware/a530v1_pfp.fw|0864291b99bed712edfcffa94be7b4595d3af306
-etc/firmware/a530v1_pm4.fw|6a82a4fb4035fa2a933c1a26b5535d7ec7c0ac4c
-etc/firmware/a530v2_seq.fw2|63b6d25594a5c1f4217d996a2b636e17a29fc840
-etc/firmware/a530v3_gpmu.fw2|0a2f6f450231673d75ba39e5d28776db3becf810
-etc/firmware/a530v3_seq.fw2|8963a53acc689725dee4b22881a4dd4b80e5def8
+# Graphics firmware - from santoni
+etc/firmware/a530_gpmu.fw2
+etc/firmware/a530_pfp.fw
+etc/firmware/a530_pm4.fw
+etc/firmware/a530v1_pfp.fw
+etc/firmware/a530v1_pm4.fw
+etc/firmware/a530v2_seq.fw2
+etc/firmware/a530v3_gpmu.fw2
+etc/firmware/a530v3_seq.fw2
+etc/firmware/a540_gpmu.fw2
 
-# Hbtp firmware
-etc/firmware/hbtp/hbtpcfg_8917.dat
-etc/firmware/hbtp/hbtpcfg.dat
-etc/firmware/hbtp/qtc800s_dsp.bin
-vendor/bin/hbtp_daemon
-
-# Keystore
+# Keystore - from karatep
 vendor/lib/hw/keystore.msm8937.so
+vendor/lib64/hw/keystore.msm8937.so
 
-# Lights
+# Lights - from karatep
 lib/hw/lights.msm8937.so
+lib64/hw/lights.msm8937.so
 
-# Listen
+# Listen - from karatep
 vendor/lib/hw/sound_trigger.primary.msm8937.so
 vendor/lib/libadpcmdec.so
 vendor/lib/libsmwrapper.so
 
-# Media
-etc/firmware/DE.o.msm8937
-lib/libOmxSwVdec.so
-lib/libOmxSwVencMpeg4.so
+# Media - from karatep
 lib/libOmxVpp.so
+lib/libstagefright_soft_flacdec.so
 lib/libvpplibrary.so
+lib64/libstagefright_soft_flacdec.so
+lib64/libvpplibrary.so
 vendor/lib/libAlacSwDec.so
 vendor/lib/libApeSwDec.so
 vendor/lib/libFlacSwDec.so
 vendor/lib/libI420colorconvert.so
--vendor/lib/libMpeg4SwEncoder.so
 vendor/lib/libOmxAacDec.so
 vendor/lib/libOmxAlacDec.so
 vendor/lib/libOmxAlacDecSw.so
@@ -565,44 +658,81 @@ vendor/lib/libOmxAmrwbplusDec.so
 vendor/lib/libOmxApeDec.so
 vendor/lib/libOmxApeDecSw.so
 vendor/lib/libOmxEvrcDec.so
+vendor/lib/libOmxMux.so
 vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxWmaDec.so
 vendor/lib/libmm-color-convertor.so
 vendor/lib/libmmosal.so
+vendor/lib/libmmsw_detail_enhancement.so
+vendor/lib/libmmsw_math.so
+vendor/lib/libmmsw_opencl.so
+vendor/lib/libmmsw_platform.so
 vendor/lib/libvqzip.so
+vendor/lib64/libFlacSwDec.so
+vendor/lib64/libI420colorconvert.so
+vendor/lib64/libOmxAacDec.so
+vendor/lib64/libOmxEvrcDec.so
+vendor/lib64/libOmxQcelp13Dec.so
+vendor/lib64/libmm-color-convertor.so
+vendor/lib64/libmmosal.so
 
-# Modem
+# Modem - from santoni
 vendor/lib/libwms.so
+vendor/lib64/libwms.so
 
-# Network
+# Network - from santoni
 -priv-app/QtiTetherService/QtiTetherService.apk
 vendor/lib/libconnctrl.so
 vendor/lib/libQtiTether.so
+vendor/lib64/libconnctrl.so
+vendor/lib64/libQtiTether.so
 
-# Perf
+# Perf - from karatep
 bin/iop
 bin/msm_irqbalance
 vendor/bin/perfd
-vendor/etc/msm_irqbalance.conf
-vendor/lib/libqti_performance.so
-vendor/lib/libqti-iop.so
 vendor/lib/libqti-iop-client.so
 vendor/lib/libqti-perfd-client.so
+vendor/lib64/libqti-iop-client.so
+vendor/lib64/libqti-perfd-client.so
 
-# Peripheral manager
+# Peripheral manager - from karatep
 bin/pm-proxy
 bin/pm-service
 vendor/lib/libperipheral_client.so
+vendor/lib64/libperipheral_client.so
 
-# Postprocessing
-etc/permissions/com.qti.snapdragon.sdk.display.xml
--framework/com.qti.snapdragon.sdk.display.jar
--vendor/app/colorservice/colorservice.apk|270dd3835d0814305e5d1ca4c5c0ada41ffa2fd3
+# Postprocessing - from karatep
+framework/com.qti.snapdragon.sdk.display.jar
+vendor/bin/mm-pp-dpps
+vendor/lib/libdisp-aba.so
+vendor/lib64/libdisp-aba.so
 
-# QMI
+# QMI - from garlic
 bin/ATFWD-daemon
 bin/irsc_util
 etc/permissions/qti_permissions.xml
+vendor/lib64/lib_rsu.so
+vendor/lib64/libdiag.so
+vendor/lib64/libdsi_netctrl.so
+vendor/lib64/libdsutils.so
+vendor/lib64/libidl.so
+vendor/lib64/libqcci_legacy.so
+vendor/lib64/libqcmaputils.so
+vendor/lib64/libqdi.so
+vendor/lib64/libqdp.so
+vendor/lib64/libqmi.so
+vendor/lib64/libqmi_cci.so
+vendor/lib64/libqmi_client_helper.so
+vendor/lib64/libqmi_client_qmux.so
+vendor/lib64/libqmi_common_so.so
+vendor/lib64/libqmi_csi.so
+vendor/lib64/libqmi_encdec.so
+vendor/lib64/libqmiservices.so
+vendor/lib64/libqti-wl.so
+vendor/lib64/libquipc_os_api.so
+vendor/lib64/libsmemlog.so
+vendor/lib/lib_rsu.so
 vendor/lib/libdiag.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
@@ -619,144 +749,111 @@ vendor/lib/libqmi_common_so.so
 vendor/lib/libqmi_csi.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
-vendor/lib/libqti-wl.so
 vendor/lib/libquipc_os_api.so
 vendor/lib/libsmemlog.so
-vendor/lib/libvqzip.so
 
-# Radio
--app/datastatusnotification/datastatusnotification.apk|987bc2e24a13d3c28ee6b2dc14d08913bf916934
--app/fastdormancy/fastdormancy.apk|55b8362875f4b5b34973f52c2c73c8f3dd6934d6
--app/QtiTelephonyService/QtiTelephonyService.apk|398317ac6827c04016f7f2adac664a667efce5fb
--app/shutdownlistener/shutdownlistener.apk|26817717c92bc829ddda8010713af3a569a97aa1
-bin/ipacm-diag
+# Radio - from garlic
+-app/datastatusnotification/datastatusnotification.apk
+-app/fastdormancy/fastdormancy.apk
+-app/QtiTelephonyService/QtiTelephonyService.apk
+-app/shutdownlistener/shutdownlistener.apk
+-framework/embmslibrary.jar
+-framework/qcrilhook.jar
+-framework/qti-telephony-common.jar|37d692fb171d0ee3269676a9e9998d2e3bfd9488
+-framework/QtiTelephonyServicelibrary.jar
+-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 bin/netmgrd
 bin/radish
 bin/rmt_storage
-bin/port-bridge
 bin/tftp_server
+etc/data/dsi_config.xml
+etc/data/netmgr_config.xml
 etc/permissions/embms.xml
-#etc/permissions/qcnvitems.xml
 etc/permissions/qcrilhook.xml
 etc/permissions/telephonyservice.xml
--framework/embmslibrary.jar
--framework/qcnvitems.jar
--framework/qcrilhook.jar|3b1cee9fd118bd180204865b10069dfa13d1c915
--framework/qti-telephony-common.jar|88212913c0c44893e05e7003ec2f3e0a432a356d
--framework/QtiTelephonyServicelibrary.jar|62c8a97fe23c1df1975ee071c566f4a56a36fcfd
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/qti
-vendor/lib/libconfigdb.so
-vendor/lib/liblqe.so
+vendor/lib64/libconfigdb.so
+vendor/lib64/libdatactrl.so
+vendor/lib64/liblqe.so
+vendor/lib64/libmdmdetect.so
+vendor/lib64/libnetmgr.so
+vendor/lib64/libril-qc-ltedirectdisc.so
+vendor/lib64/libril-qc-qmi-1.so
+vendor/lib64/libril-qc-radioconfig.so
+vendor/lib64/libril-qcril-hook-oem.so
+vendor/lib64/librilqmiservices.so
+vendor/lib64/libsettings.so
+vendor/lib64/libsystem_health_mon.so
 vendor/lib/libmdmdetect.so
-vendor/lib/libnetmgr.so
-vendor/lib/libril-qc-ltedirectdisc.so
-vendor/lib/libril-qc-qmi-1.so
-vendor/lib/libril-qc-radioconfig.so
-vendor/lib/libril-qcril-hook-oem.so
-vendor/lib/librilqmiservices.so
-vendor/lib/libsettings.so
-vendor/lib/libsystem_health_mon.so
 vendor/qcril.db
 
-# SCVE
-vendor/lib/libscveBlobDescriptor.so
-vendor/lib/libscveBlobDescriptor_stub.so
-vendor/lib/libscveCleverCapture.so
-vendor/lib/libscveCleverCapture_stub.so
-vendor/lib/libscveCommon.so
-vendor/lib/libscveCommon_stub.so
-vendor/lib/libscveFaceRecognition.so
-vendor/lib/libscveImageCloning.so
-vendor/lib/libscveImageCorrection.so
-vendor/lib/libscveImageRemoval.so
-vendor/lib/libscveMotionVector.so
-vendor/lib/libscveObjectMatting.so
-vendor/lib/libscveObjectMatting_stub.so
-vendor/lib/libscveObjectSegmentation.so
-vendor/lib/libscveObjectSegmentation_stub.so
-vendor/lib/libscveObjectTracker.so
-vendor/lib/libscveObjectTracker_stub.so
-vendor/lib/libscvePanorama_lite.so
-vendor/lib/libscvePanorama.so
-vendor/lib/libscveTextRecoPostProcessing.so
-vendor/lib/libscveTextReco.so
-vendor/lib/libscveTextReco_stub.so
-
-# Radio | IMS
+# Radio - IMS - from garlic
+-framework/imscmlibrary.jar
+-priv-app/ims/ims.apk|66fa3ab695d7be55a334cbee6e9c94d60089ac2a
+-vendor/app/imssettings/imssettings.apk
+-vendor/framework/qti-vzw-ims-internal.jar
 bin/ims_rtp_daemon
 bin/imscmservice
 bin/imsdatadaemon
 bin/imsqmidaemon
-etc/permissions/ims.xml
 etc/permissions/imscm.xml
--framework/imscmlibrary.jar
--framework/rcsimssettings.jar|566a0f637344ca3182aca33753e404977fc77ecc
--vendor/app/ims/ims.apk|6dbf78b64d5f449e1fe41f4940393809a68158be
--vendor/app/imssettings/imssettings.apk|3725449467c1bc2e2457eba465f9375c64f6c991
-vendor/lib/lib-dplmedia.so
-vendor/lib/libimscamera_jni.so
-vendor/lib/libimsmedia_jni.so
-vendor/lib/lib-imscamera.so
-vendor/lib/lib-imsdpl.so
-vendor/lib/lib-imsqimf.so
-vendor/lib/lib-imsrcs.so
-vendor/lib/lib-imsrcscm.so
-vendor/lib/lib-imsrcscmclient.so
-vendor/lib/lib-ims-rcscmjni.so
-vendor/lib/lib-imsrcscmservice.so
-vendor/lib/lib-imss.so
-vendor/lib/lib-imsSDP.so
-vendor/lib/lib-imsvt.so
-vendor/lib/lib-imsxml.so
-vendor/lib/lib-rcsimssjni.so
-vendor/lib/lib-rcsjni.so
-vendor/lib/lib-rtpcommon.so
-vendor/lib/lib-rtpcore.so
-vendor/lib/lib-rtpdaemoninterface.so
-vendor/lib/lib-rtpsl.so
-vendor/lib/librcc.so
-vendor/lib/libvoice-svc.so
+etc/permissions/qti-vzw-ims-internal.xml
+vendor/lib64/lib-dplmedia.so
+vendor/lib64/lib-ims-rcscmjni.so
+vendor/lib64/lib-imscamera.so
+vendor/lib64/lib-imsdpl.so
+vendor/lib64/lib-imsqimf.so
+vendor/lib64/lib-imsrcs.so
+vendor/lib64/lib-imsrcscm.so
+vendor/lib64/lib-imsrcscmclient.so
+vendor/lib64/lib-imsrcscmservice.so
+vendor/lib64/lib-imss.so
+vendor/lib64/lib-imsSDP.so
+vendor/lib64/lib-imsvt.so
+vendor/lib64/lib-imsxml.so
+vendor/lib64/lib-rcsimssjni.so
+vendor/lib64/lib-rcsjni.so
+vendor/lib64/lib-rtpcommon.so
+vendor/lib64/lib-rtpcore.so
+vendor/lib64/lib-rtpdaemoninterface.so
+vendor/lib64/lib-rtpsl.so
+vendor/lib64/libimscamera_jni.so
+vendor/lib64/libimsmedia_jni.so
+vendor/lib64/librcc.so
+vendor/lib64/libvoice-svc.so
 
-# Sensors
+# Sensors - from karatep
 bin/sensors.qcom
-lib/libsensor_cal.so
 vendor/lib/hw/activity_recognition.msm8937.so
 vendor/lib/libmotocalibration.so
 vendor/lib/libsensor1.so
 vendor/lib/libsensor_reg.so
 vendor/lib/sensor_calibrate.so
 vendor/lib/sensors.ssc.so
+vendor/lib64/hw/activity_recognition.msm8937.so
+vendor/lib64/libsensor1.so
+vendor/lib64/libsensor_reg.so
+vendor/lib64/sensor_calibrate.so
+vendor/lib64/sensors.ssc.so
 
-# Subsystem restart
-bin/ssr_diag
-
-# Thermal
+# Thermal - from karatep
 vendor/bin/thermal-engine
 vendor/lib/libthermalclient.so
-vendor/lib/libthermalioctl.so
+vendor/lib64/libthermalclient.so
+vendor/lib64/libthermalioctl.so
 
-# Time services
+# Time services - from karatep
 -app/TimeService/TimeService.apk
 bin/time_daemon
 -vendor/lib/libtime_genoff.so
 vendor/lib/libTimeService.so
+-vendor/lib64/libtime_genoff.so
+vendor/lib64/libTimeService.so
 
-# USB
-etc/firmware/ice40.bin
+# Widevine - from mido
+vendor/lib/libWVStreamControlAPI_L3.so|61673304827483d44b735a3dd08f0783d10ce92d
+vendor/lib/libwvdrm_L3.so|7e77482481197997294a834bfbc817a01b6075cd
+vendor/lib/mediadrm/libwvdrmengine.so|70419ce1f8eb6bd3aa36234f8d7e8003569efc9c
 
-# Uinputtv
-lib/libuinputtv.so
-
-# Widevine
-vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib/qcdrm/playready/lib/drm/libdrmprplugin_customer.so
-vendor/lib/qcdrm/playready/lib/libprdrmdecrypt_customer.so
-vendor/lib/qcdrm/playready/lib/libtzplayready_customer.so
-vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmdecrypt_customer.so
-vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmplugin_customer.so
-
-# Wi-Fi
-bin/cnss-daemon
-bin/fstman
+# Wi-Fi - from karatep
 bin/wcnss_service
