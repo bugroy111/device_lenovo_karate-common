@@ -3,7 +3,7 @@ on boot
     chown system system /sys/class/leds/green/brightness
     chown system system /sys/class/leds/green/pwm_us
 
-service light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.karate
+service vendor.light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.karate
     interface android.hardware.light@2.0::ILight default
     class hal
     user system
