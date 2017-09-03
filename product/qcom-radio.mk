@@ -28,10 +28,6 @@ PRODUCT_PACKAGES += \
     libcnefeatureconfig \
     libxml2
 
-# Libshims
-PRODUCT_PACKAGES += \
-    libshims_ims
-
 # Single SIM patch
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/check_features.sh:install/bin/check_features.sh
