@@ -27,7 +27,3 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libcnefeatureconfig \
     libxml2
-
-# Single SIM patch
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/check_features.sh:install/bin/check_features.sh
