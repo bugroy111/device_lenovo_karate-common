@@ -1,7 +1,6 @@
-# Snap
+# Camera
 PRODUCT_PACKAGES += \
-    Snap \
-    libbson
+    Snap
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/imx219_karateof_chromatix.xml:system/etc/camera/imx219_karateof_chromatix.xml \
