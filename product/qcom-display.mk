@@ -5,5 +5,6 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8937 \
     libjni_livedisplay \
     liboverlay \
+    libgenlock \
     libtinyxml \
     memtrack.msm8937
