@@ -205,14 +205,6 @@ on post-fs-data
     mkdir /data/misc/fm 0770 system system
     chmod 0770 /data/misc/fm
 
-    # RIDL data
-    mkdir /data/misc/SelfHost/ 0710 system shell
-    mkdir /data/misc/SelfHost/QCLogs/ 2750 system shell
-    mkdir /data/misc/SelfHost/QCLogs/temp/ 0700 system shell
-    kdir /data/misc/SelfHost/storage/ 0700 system shell
-    #mkdir /data/misc/SelfHost/Running/ 2750 system shell
-    mkdir /data/misc/SelfHost/socket/ 2770 system system
-
     # begin 2015/06/23 zyh add read authority for cache/FTM_AP/mmi.res
     chmod 0701 /cache/FTM_AP
     chmod 0704 /cache/FTM_AP/mmi.res
