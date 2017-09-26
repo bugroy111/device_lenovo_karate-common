@@ -104,8 +104,6 @@ on post-fs-data
 
     mkdir /data/misc/ipa 0700 net_admin net_admin
 
-    mkdir /data/misc/bluetooth 0770 bluetooth bluetooth
-
     # Create the directories used by the Wireless subsystem
     mkdir /data/misc/wifi 0770 wifi wifi
     mkdir /data/misc/wifi/sockets 0770 wifi wifi
@@ -204,10 +202,6 @@ on post-fs-data
     #Create FM dir for patchdownloader
     mkdir /data/misc/fm 0770 system system
     chmod 0770 /data/misc/fm
-
-    # begin 2015/06/23 zyh add read authority for cache/FTM_AP/mmi.res
-    chmod 0701 /cache/FTM_AP
-    chmod 0704 /cache/FTM_AP/mmi.res
 
     #Create PERFD deamon related dirs
     mkdir /data/system/perfd 0770 root system
@@ -494,22 +488,6 @@ on property:persist.debug.trace=1
     mkdir /data/core 0777 root root
     write /proc/sys/kernel/core_pattern "/data/core/%E.%p.%e"
 
-on property:init.svc.wpa_supplicant=stopped
-    stop dhcpcd
-
-on property:bluetooth.dun.status=running
-    start bt-dun
-
-on property:bluetooth.dun.status=stopped
-    stop bt-dun
-
-on property:ro.bluetooth.ftm_enabled=true
-    start ftmd
-
-on property:vold.decrypt=trigger_restart_framework
-    start config_bt_addr
-    start wcnss-service
-
 on property:persist.env.fastdorm.enabled=true
     setprop persist.radio.data_no_toggle 1
 
@@ -559,19 +537,6 @@ on property:bluetooth.hciattach=true
 
 on property:bluetooth.hciattach=false
     setprop bluetooth.status off
-
-service ftmd /system/bin/logwrapper /system/bin/ftmdaemon
-    class late_start
-    user root
-    group bluetooth net_bt_admin misc net_bt_stack qcom_diag net_bt
-    disabled
-    oneshot
-
-service port-bridge /system/bin/port-bridge
-    class main
-    user radio system
-    group radio system inet
-    oneshot
 
 # FM
 on property:hw.fm.init=0
