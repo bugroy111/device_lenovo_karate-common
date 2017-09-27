@@ -20,7 +20,8 @@ include $(CLEAR_VARS)
 
 LOCAL_C_INCLUDES := \
     system/core/base/include \
-    system/core/init
+    system/core/init \
+    external/selinux/libselinux/include
 LOCAL_MODULE := libinit_msm8937
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := init_msm8937.cpp
@@ -28,5 +29,8 @@ LOCAL_SRC_FILES := init_msm8937.cpp
 ifneq ($(TARGET_LIBINIT_MSM8937_DEFINES_FILE),)
   LOCAL_SRC_FILES += ../../../../$(TARGET_LIBINIT_MSM8937_DEFINES_FILE)
 endif
+
+LOCAL_STATIC_LIBRARIES := \
+    libbase
 
 include $(BUILD_STATIC_LIBRARY)
