@@ -181,14 +181,62 @@ void check_boardinfo()
 		property_set("ro.telephony.default_network", "9");
 		property_override("ro.build.fingerprint", "Lenovo/karate/K33a48:7.0/NRD90N/K33_S227_170801_ROW:user/release-keys");
 	}
-	else {
-		property_override("ro.product.device", "K33b36");
+	else if (strcmp(board_id, "S82937DA1") == 0) {
 		property_override("ro.product.board", "S82937DA1");
+		property_override("ro.product.device", "K33b36");
 		property_override("ro.build.product", "K33b36");
 		property_override("ro.product.model", "Lenovo K33b36");
 		property_set("persist.radio.multisim.config", "dsds");
 		property_set("ro.telephony.default_network", "9,9");
 		property_override("ro.build.fingerprint", "Lenovo/karate/K33b36:7.0/NRD90N/K33_S227_170801_ROW:user/release-keys");
+        }
+        else if (strcmp(board_id, "S82939AA1") == 0) {
+		property_override("ro.product.board", "S82939AA1");
+		property_override("ro.product.device", "K53a48");
+		property_override("ro.build.product", "K53a48");
+		property_override("ro.product.model", "Lenovo K53a48");
+		property_set("persist.radio.multisim.config", "dsds");
+		property_set("ro.telephony.default_network", "9,9");
+		property_override("ro.build.fingerprint", "Lenovo/karatep/K53a48:7.0/NRD90N/K53_S225_170811_ROW:user/release-keys");
+                property_set("ro.power_profile.override", "power_profile_k6p");
+	}
+        else if (strcmp(board_id, "S82939BA1") == 0) {
+		property_override("ro.product.board", "S82939BA1");
+		property_override("ro.product.device", "K53a48");
+		property_override("ro.build.product", "K53a48");
+		property_override("ro.product.model", "Lenovo K53a48");
+		property_set("persist.radio.multisim.config", "dsds");
+		property_set("ro.telephony.default_network", "9,9");
+		property_override("ro.build.fingerprint", "Lenovo/karatep/K53a48:7.0/NRD90N/K53_S225_170811_ROW:user/release-keys");
+                property_set("ro.power_profile.override", "power_profile_k6p");
+	}
+        else if (strcmp(board_id, "S82939CA1") == 0) {
+		property_override("ro.product.board", "S82939CA1");
+		property_override("ro.product.device", "K53a48");
+		property_override("ro.build.product", "K53a48");
+		property_override("ro.product.model", "Lenovo K53a48");
+		property_set("ro.telephony.default_network", "9");
+		property_override("ro.build.fingerprint", "Lenovo/karatep/K53a48:7.0/NRD90N/K53_S225_170811_ROW:user/release-keys");
+                property_set("ro.power_profile.override", "power_profile_k6p");
+	}
+        else if (strcmp(board_id, "S82939FA1") == 0) {
+		property_override("ro.product.board", "S82939FA1");
+		property_override("ro.product.device", "K53b36");
+		property_override("ro.build.product", "K53b36");
+		property_override("ro.product.model", "Lenovo K53b36");
+		property_set("persist.radio.multisim.config", "dsds");
+		property_set("ro.telephony.default_network", "9,9");
+		property_override("ro.build.fingerprint", "Lenovo/karatep/K53b36:7.0/NRD90N/K53_S225_170811_ROW:user/release-keys");
+                property_set("ro.power_profile.override", "power_profile_k6p");
+	}
+        else {
+		property_override("ro.product.board", "S82939GA1");
+		property_override("ro.product.device", "K53b37");
+		property_override("ro.build.product", "K53b37");
+		property_override("ro.product.model", "Lenovo K53b37");
+		property_set("ro.telephony.default_network", "9");
+		property_override("ro.build.fingerprint", "Lenovo/karatep/K53b37:7.0/NRD90N/K53_S225_170811_ROW:user/release-keys");
+                property_set("ro.power_profile.override", "power_profile_k6p");
 	}
 }
 
