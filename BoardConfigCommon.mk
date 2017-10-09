@@ -12,6 +12,17 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_karate.mk
+LOCAL_PATH := device/lenovo/karate-common
+
+# Inherit device-specific board fragments
+include $(LOCAL_PATH)/board/*.mk
+
+TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
+
+# Inherit the proprietary files
+-include vendor/lenovo/karate-common/BoardConfigVendor.mk
+
+# Properties
+TARGET_SYSTEM_PROP += device/lenovo/karate-common/system.prop

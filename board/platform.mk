@@ -1,6 +1,6 @@
 # Platform
 TARGET_BOARD_PLATFORM := msm8937
-TARGET_BOARD_INFO_FILE := device/lenovo/karate/board-info.txt
+TARGET_BOARD_INFO_FILE :=  $(LOCAL_PATH)/board-info.txt
 
 # Architecture
 TARGET_ARCH := arm64

@@ -1,5 +1,3 @@
-ifeq ($(TARGET_DEVICE),karate)
+LOCAL_PATH := $(call my-dir)
 
-include $(call all-subdir-makefiles)
-
-endif
+include $(call first-makefiles-under,$(LOCAL_PATH))

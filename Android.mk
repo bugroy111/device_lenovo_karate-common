@@ -16,8 +16,10 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),karate)
+ifneq ($(filter karate karatep,$(TARGET_DEVICE)),)
+
 include $(call all-makefiles-under,$(LOCAL_PATH))
+
 include $(CLEAR_VARS)
 
 LOCAL_MODULE := wifi_symlinks
@@ -262,12 +264,12 @@ ALL_DEFAULT_INSTALLED_MODULES += $(RFS_MSM_ADSP_SYMLINKS) $(RFS_MSM_MPSS_SYMLINK
 
 IMS_LIBS := libimscamera_jni.so libimsmedia_jni.so
 
-IMS_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR_APPS)/ims/lib/arm/,$(notdir $(IMS_LIBS)))
+IMS_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR_APPS)/ims/lib/arm64/,$(notdir $(IMS_LIBS)))
 $(IMS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "IMS lib link: $@"
 	@mkdir -p $(dir $@)
 	@rm -rf $@
-	$(hide) ln -sf /system/vendor/lib/$(notdir $@) $@
+	$(hide) ln -sf /system/vendor/lib64/$(notdir $@) $@
 
 ALL_DEFAULT_INSTALLED_MODULES += $(IMS_SYMLINKS)
 
