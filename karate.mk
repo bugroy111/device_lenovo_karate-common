@@ -14,10 +14,17 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/lenovo/karate
+LOCAL_PATH := device/lenovo/karate-common
 
-# Inherit device-specific board fragments
-include $(LOCAL_PATH)/board/*.mk
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit the proprietary files
--include vendor/lenovo/karate/BoardConfigVendor.mk
+# Include device-specific product fragments
+include $(LOCAL_PATH)/product/*.mk
+
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
+# Inherit proprietary files
+$(call inherit-product-if-exists, vendor/lenovo/karate-common/karate-common-vendor.mk)
