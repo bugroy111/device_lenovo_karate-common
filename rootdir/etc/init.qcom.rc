@@ -389,9 +389,13 @@ on boot
     # Fpc
     chown system system /sys/devices/soc/soc:fpc1020/irq
     chown system system /sys/devices/soc/soc:fpc1020/wakeup_enable
+
+    # Touchscreen
     chown system system /sys/class/input/input1/device/ftsmcaptest
     chown system system /sys/class/input/input1/device/ftsdumpinfo
+    # wake gesture
     chown system system /sys/class/input/input1/device/wake_gesture
+    chmod 0664 /sys/class/input/input1/device/wake_gesture
 
     # sar sensor
     chown system system /sys/bus/i2c/drivers/sx9310/8-0028/reg
