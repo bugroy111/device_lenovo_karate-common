@@ -43,6 +43,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.voice.conc.fallbackpath=deep-buffer \
     vendor.voice.path.for.pcm.voip=true
 
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    use.voice.path.for.pcm.voip=false
+
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.bluetooth.soc=smd \
