@@ -867,6 +867,8 @@
 
     <path name="handset-mic">
         <path name="adc1" />
+        <ctl name="DEC1 Volume" value="96" />
+	<ctl name="DEC2 Volume" value="96" />
         <ctl name="IIR1 INP1 MUX" value="DEC1" />
     </path>
 
@@ -882,6 +884,7 @@
 
     <path name="headset-mic">
         <path name="adc2" />
+        <ctl name="ADC2 MUX" value="INP2" />
         <ctl name="IIR1 INP1 MUX" value="DEC1" />
     </path>
 
@@ -1007,6 +1010,8 @@
     <path name="handset-stereo-dmic-ef">
         <ctl name="DEC1 MUX" value="ADC2" />
         <ctl name="DEC2 MUX" value="ADC1" />
+        <ctl name="DEC1 Volume" value="96" />
+        <ctl name="DEC2 Volume" value="96" />
         <ctl name="MI2S_TX Channels" value="Two" />
         <ctl name="ADC2 MUX" value="INP3" />
     </path>
