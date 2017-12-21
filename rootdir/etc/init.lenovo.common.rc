@@ -23,8 +23,3 @@ on boot
     # Fpc
     chown system system /sys/devices/soc/soc:fpc1020/irq
     chown system system /sys/devices/soc/soc:fpc1020/wakeup_enable
-
-service fingerprintd /system/bin/fingerprintd
-    class late_start
-    user system
-    group system

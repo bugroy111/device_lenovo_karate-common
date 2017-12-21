@@ -1,4 +1,4 @@
-#!/system/bin/sh
+#! /vendor/bin/sh
 # Copyright (c) 2009-2017, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -44,34 +44,34 @@ echo 1 > /data/misc/radio/db_check_done
 #
 # Make modem config folder and copy firmware config to that folder for RIL
 #
-if [ -f /data/misc/radio/ver_info.txt ]; then
-    prev_version_info=`cat /data/misc/radio/ver_info.txt`
+if [ -f /data/vendor/radio/ver_info.txt ]; then
+    prev_version_info=`cat /data/vendor/radio/ver_info.txt`
 else
     prev_version_info=""
 fi
 
-cur_version_info=`cat /firmware/verinfo/ver_info.txt`
+cur_version_info=`cat /firmware/verinfo/ver_info.txt
 if [ ! -f /firmware/verinfo/ver_info.txt -o "$prev_version_info" != "$cur_version_info" ]; then
-    rm -rf /data/misc/radio/modem_config
-    mkdir /data/misc/radio/modem_config
-    mkdir /data/misc/radio/modem_config/mcfg_sw
-    chmod 770 /data/misc/radio/modem_config
-    chmod 770 /data/misc/radio/modem_config/mcfg_sw
-    chown -hR radio.radio /data/misc/radio/modem_config
-    chown -hR radio.radio /data/misc/radio/modem_config/mcfg_sw
 
-    cp /firmware/image/3uk.mbn /data/misc/radio/modem_config/mcfg_sw/3uk.mbn
-    cp /firmware/image/gcf.mbn /data/misc/radio/modem_config/mcfg_sw/gcf.mbn
-    cp /firmware/image/mexico.mbn /data/misc/radio/modem_config/mcfg_sw/mexico.mbn
-    cp /firmware/image/ntel.mbn /data/misc/radio/modem_config/mcfg_sw/ntel.mbn
-    cp /firmware/image/rjil.mbn /data/misc/radio/modem_config/mcfg_sw/rjil.mbn
-    cp /firmware/image/row.mbn /data/misc/radio/modem_config/mcfg_sw/row.mbn
-    cp /firmware/image/smtf.mbn /data/misc/radio/modem_config/mcfg_sw/smtf.mbn
-    cp /firmware/image/ytl.mbn /data/misc/radio/modem_config/mcfg_sw/ytl.mbn
+    rm -rf /data/vendor/radio/modem_config
+    mkdir /data/vendor/radio/modem_config
+    chmod 770 /data/vendor/radio/modem_config
+    cp -r /firmware/image/modem_pr/mcfg/configs/* /data/vendor/radio/modem_config
+    chown -hR radio.radio /data/vendor/radio/modem_config
+    chown -hR radio.radio /data/vendor/radio/modem_config/mcfg_sw
 
-    cp /firmware/verinfo/ver_info.txt /data/misc/radio/ver_info.txt
-    chown radio.radio /data/misc/radio/ver_info.txt
+    cp /firmware/image/3uk.mbn /data/vendor/radio/modem_config/mcfg_sw/3uk.mbn
+    cp /firmware/image/gcf.mbn /data/vendor/radio/modem_config/mcfg_sw/gcf.mbn
+    cp /firmware/image/mexico.mbn /data/vendor/radio/modem_config/mcfg_sw/mexico.mbn
+    cp /firmware/image/ntel.mbn /data/vendor/radio/modem_config/mcfg_sw/ntel.mbn
+    cp /firmware/image/rjil.mbn /data/vendor/radio/modem_config/mcfg_sw/rjil.mbn
+    cp /firmware/image/row.mbn /data/vendor/radio/modem_config/mcfg_sw/row.mbn
+    cp /firmware/image/smtf.mbn /data/vendor/radio/modem_config/mcfg_sw/smtf.mbn
+    cp /firmware/image/ytl.mbn /data/vendor/radio/modem_config/mcfg_sw/ytl.mbn
+
+    cp /firmware/verinfo/ver_info.txt /data/vendor/radio/ver_info.txt
+    chown radio.radio /data/vendor/radio/ver_info.txt
 fi
-cp /firmware/image/modem_pr/mbn_ota.txt /data/misc/radio/modem_config
-chown radio.radio /data/misc/radio/modem_config/mbn_ota.txt
-echo 1 > /data/misc/radio/copy_complete
+cp /firmware/image/modem_pr/mbn_ota.txt /data/vendor/radio/modem_config
+chown radio.radio /data/vendor/radio/modem_config/mbn_ota.txt
+echo 1 > /data/vendor/radio/copy_complete
