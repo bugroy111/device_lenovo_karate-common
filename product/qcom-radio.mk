@@ -16,6 +16,10 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2
 
+# IMS
+PRODUCT_PACKAGES += \
+    ims-ext-common
+
 # Qualcomm broadcast whitelist
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml \
