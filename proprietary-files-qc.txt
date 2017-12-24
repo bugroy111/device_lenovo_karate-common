@@ -526,5 +526,5 @@ vendor/bin/hw/android.hardware.drm@1.0-service.widevine|62dbed3b465a6abe33d03dd6
 vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc|51a3168a0dbc064d78ee11ca83614c0cd2e6daa5
 vendor/lib/libwvhidl.so|88ebba6280bd85e5bfea18efe2f685b0e1fb6f50
 
-# WIFI - from -santoni (Redmi 4X)
-bin/wcnss_service:vendor/bin/wcnss_service|76a7e877f2dfefbb7d139dc5b80e1439bd1bc763
+# WIFI - from tissot - OPR1.170623.026
+vendor/bin/wcnss_service|28b35124227c32964479d9a320180f75caa21142
