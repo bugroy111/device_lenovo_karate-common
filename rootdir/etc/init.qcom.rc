@@ -404,15 +404,8 @@ on boot
     chmod 0664 /sys/class/leds/led:torch_1/brightness
     chown system system /sys/class/leds/led:torch_1/brightness
     chmod 0664 /sys/class/leds/led:switch/brightness
-    chown system /sys/class/leds/led:switch/brightness
-
-    chown system system /sys/class/leds/keyboard-backlight/brightness
-    chown system system /sys/class/leds/lcd-backlight/brightness
-    chown system system /sys/class/leds/torch-light/brightness
-    chown system system /sys/class/leds/flashlight/brightness
-    chown system system /sys/class/leds/button-backlight/brightness
-    chown system system /sys/class/leds/red/brightness
-    chown system system /sys/class/leds/green/brightness
+    chown system /sys/class/leds/led:switch/brightness    
+    chown system system /sys/class/leds/green/pwm_us
 
     start rmt_storage
 
