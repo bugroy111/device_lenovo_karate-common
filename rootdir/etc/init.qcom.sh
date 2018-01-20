@@ -41,26 +41,22 @@ fi
 
 cur_version_info=`cat /firmware/verinfo/ver_info.txt
 if [ ! -f /firmware/verinfo/ver_info.txt -o "$prev_version_info" != "$cur_version_info" ]; then
-
     rm -rf /data/vendor/radio/modem_config
-    mkdir /data/vendor/radio/modem_config
-    chmod 770 /data/vendor/radio/modem_config
-    cp -r /firmware/image/modem_pr/mcfg/configs/* /data/vendor/radio/modem_config
+    # preserve the read only mode for all subdir and files
+    cp --preserve=m -dr /firmware/image/modem_pr/mcfg/configs/* /data/vendor/radio/modem_config
     chown -hR radio.radio /data/vendor/radio/modem_config
     chown -hR radio.radio /data/vendor/radio/modem_config/mcfg_sw
 
-    cp /firmware/image/3uk.mbn /data/vendor/radio/modem_config/mcfg_sw/3uk.mbn
-    cp /firmware/image/gcf.mbn /data/vendor/radio/modem_config/mcfg_sw/gcf.mbn
-    cp /firmware/image/mexico.mbn /data/vendor/radio/modem_config/mcfg_sw/mexico.mbn
-    cp /firmware/image/ntel.mbn /data/vendor/radio/modem_config/mcfg_sw/ntel.mbn
-    cp /firmware/image/rjil.mbn /data/vendor/radio/modem_config/mcfg_sw/rjil.mbn
-    cp /firmware/image/row.mbn /data/vendor/radio/modem_config/mcfg_sw/row.mbn
-    cp /firmware/image/smtf.mbn /data/vendor/radio/modem_config/mcfg_sw/smtf.mbn
-    cp /firmware/image/ytl.mbn /data/vendor/radio/modem_config/mcfg_sw/ytl.mbn
+    cp --preserve=m -d /firmware/image/3uk.mbn /data/vendor/radio/modem_config/mcfg_sw/3uk.mbn
+    cp --preserve=m -d /firmware/image/gcf.mbn /data/vendor/radio/modem_config/mcfg_sw/gcf.mbn
+    cp --preserve=m -d /firmware/image/mexico.mbn /data/vendor/radio/modem_config/mcfg_sw/mexico.mbn
+    cp --preserve=m -d /firmware/image/ntel.mbn /data/vendor/radio/modem_config/mcfg_sw/ntel.mbn
+    cp --preserve=m -d /firmware/image/rjil.mbn /data/vendor/radio/modem_config/mcfg_sw/rjil.mbn
+    cp --preserve=m -d /firmware/image/row.mbn /data/vendor/radio/modem_config/mcfg_sw/row.mbn
+    cp --preserve=m -d /firmware/image/smtf.mbn /data/vendor/radio/modem_config/mcfg_sw/smtf.mbn
+    cp --preserve=m -d /firmware/image/ytl.mbn /data/vendor/radio/modem_config/mcfg_sw/ytl.mbn
 
-    cp /firmware/verinfo/ver_info.txt /data/vendor/radio/ver_info.txt
+    cp --preserve=m -d /firmware/verinfo/ver_info.txt /data/vendor/radio/ver_info.txt
     chown radio.radio /data/vendor/radio/ver_info.txt
 fi
-cp /firmware/image/modem_pr/mbn_ota.txt /data/vendor/radio/modem_config
-chown radio.radio /data/vendor/radio/modem_config/mbn_ota.txt
-echo 1 > /data/vendor/radio/copy_complete
+setprop ro.runtime.mbn_copy_completed 1
