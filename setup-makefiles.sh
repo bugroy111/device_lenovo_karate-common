@@ -39,6 +39,9 @@ setup_vendor "$DEVICE_COMMON" "$VENDOR" "$CM_ROOT" "true"
 # Copyright headers and guards
 write_headers "karate karatep"
 
+# Common QC blobs
+write_makefiles "$MY_DIR"/proprietary-files-qc.txt
+
 # The standard common blobs
 write_makefiles "$MY_DIR"/proprietary-files.txt
 
