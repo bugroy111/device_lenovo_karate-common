@@ -1,2 +1,2 @@
 allow bluetooth_loader persist_bluetooth_file:dir search;
-allow bluetooth_loader persist_bluetooth_file:file { getattr open read };
+allow bluetooth_loader persist_bluetooth_file:file rw_file_perms;
