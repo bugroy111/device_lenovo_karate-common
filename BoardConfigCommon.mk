@@ -16,6 +16,8 @@
 
 LOCAL_PATH := device/lenovo/karate-common
 
+WITH_LINEAGE_CHARGER := false
+
 # Inherit device-specific board fragments
 include $(LOCAL_PATH)/board/*.mk
 

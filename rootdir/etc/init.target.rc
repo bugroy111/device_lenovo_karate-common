@@ -177,8 +177,6 @@ service hvdcp_opti /vendor/bin/hvdcp_opti
     group root
 
 on charger
-    wait /dev/block/bootdevice/by-name/system
-    mount ext4 /dev/block/bootdevice/by-name/system /system ro barrier=1
     load_all_props
     setprop sys.usb.configfs 0
     setprop persist.sys.usb.config mass_storage
