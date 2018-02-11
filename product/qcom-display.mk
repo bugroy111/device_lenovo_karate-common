@@ -8,4 +8,6 @@ PRODUCT_PACKAGES += \
     libgenlock \
     libtinyxml \
     memtrack.msm8937 \
+    libqdMetaData \
+    libqdMetaData.system \
     vendor.lineage.livedisplay@1.0-service-sdm
