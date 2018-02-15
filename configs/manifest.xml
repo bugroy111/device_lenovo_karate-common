@@ -60,6 +60,15 @@ included.
         </interface>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.cas</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IMediaCasService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.configstore</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -220,7 +229,7 @@ included.
     </hal>
     <hal format="hidl">
         <name>android.hardware.vibrator</name>
-        <transport arch="32+64">passthrough</transport>
+        <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
             <name>IVibrator</name>
@@ -275,7 +284,6 @@ included.
     <hal format="hidl">
         <name>vendor.display.config</name>
         <transport>hwbinder</transport>
-        <impl level="generic"></impl>
         <version>1.0</version>
         <interface>
             <name>IDisplayConfig</name>
