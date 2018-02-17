@@ -27,4 +27,5 @@ DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/configs/manifest.xml
 DEVICE_MATRIX_FILE   := $(LOCAL_PATH)/configs/compatibility_matrix.xml
 
 # Properties
-TARGET_SYSTEM_PROP += device/lenovo/karate-common/system.prop
+BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+TARGET_VENDOR_PROP += device/lenovo/karate-common/vendor.prop
