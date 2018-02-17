@@ -155,7 +155,13 @@ on enable-low-power
     rm /data/vendor/perfd/default_values
     start perfd
 
-on class_start:late_start
+on property:sys.boot_completed=1
+    trigger enable-low-power
+
+    # Set I/O squeduler
+    setprop sys.io.scheduler "bfq"
+
+on property:init.svc.recovery=running
     trigger enable-low-power
 
 on charger
@@ -170,9 +176,3 @@ on charger
 
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor powersave
-
-on property:init.svc.recovery=running
-    trigger enable-low-power
-
-on property:dev.bootcomplete=1
-    setprop sys.io.scheduler bfq
