@@ -1,0 +1,30 @@
+on init
+    # Touchscreen
+    chown system system /sys/class/input/input1/device/ftsmcaptest
+    chown system system /sys/class/input/input1/device/ftsdumpinfo
+    # wake gesture
+    chown system system /sys/class/input/input1/device/wake_gesture
+    chmod 0664 /sys/class/input/input1/device/wake_gesture
+
+    # Leds
+    chmod 0664 /sys/class/leds/led:torch_0/brightness
+    chown system system /sys/class/leds/led:torch_0/brightness
+    chmod 0664 /sys/class/leds/led:torch_1/brightness
+    chown system system /sys/class/leds/led:torch_1/brightness
+    chmod 0664 /sys/class/leds/led:switch/brightness
+    chown system /sys/class/leds/led:switch/brightness    
+    chown system system /sys/class/leds/green/pwm_us
+
+on post-fs-data
+    # Create dir for fpc
+    mkdir /data/fpc 0770 system system
+
+on boot
+    # Fpc
+    chown system system /sys/devices/soc/soc:fpc1020/irq
+    chown system system /sys/devices/soc/soc:fpc1020/wakeup_enable
+
+service fingerprintd /system/bin/fingerprintd
+    class late_start
+    user system
+    group system
