@@ -1,5 +1,5 @@
 #!/system/bin/sh
-# Copyright (c) 2009-2016, The Linux Foundation. All rights reserved.
+# Copyright (c) 2009-2017, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
@@ -27,16 +27,18 @@
 #
 
 chown -h system:system /sys/devices/soc/qpnp-smbcharger-*/battery_max_current
-target=`getprop ro.board.platform`
 
-start msm_irqbalance
+start_copying_prebuilt_qcril_db()
+{
+    if [ -f /system/vendor/qcril.db -a ! -f /data/misc/radio/qcril.db ]; then
+        cp /system/vendor/qcril.db /data/misc/radio/qcril.db
+        chown -h radio.radio /data/misc/radio/qcril.db
+    fi
+}
 
-#
-# Copy qcril.db if needed for RIL
-#
+echo 1 > /proc/sys/net/ipv6/conf/default/accept_ra_defrtr
+
 start_copying_prebuilt_qcril_db
-sqlite3 /data/misc/radio/qcril.db "delete from qcril_emergency_source_mcc_table where MCC='716' and NUMBER='105';"
-sqlite3 /data/misc/radio/qcril.db "delete from qcril_emergency_source_mcc_table where MCC='732' and NUMBER='123';"
 echo 1 > /data/misc/radio/db_check_done
 
 #
@@ -73,17 +75,3 @@ fi
 cp /firmware/image/modem_pr/mbn_ota.txt /data/misc/radio/modem_config
 chown radio.radio /data/misc/radio/modem_config/mbn_ota.txt
 echo 1 > /data/misc/radio/copy_complete
-
-#check build variant for printk logging
-#current default minimum boot-time-default
-buildvariant=`getprop ro.build.type`
-case "$buildvariant" in
-    "userdebug" | "eng")
-        #set default loglevel to KERN_INFO
-        echo "6 6 1 7" > /proc/sys/kernel/printk
-        ;;
-    *)
-        #set default loglevel to KERN_WARNING
-        echo "4 4 1 4" > /proc/sys/kernel/printk
-        ;;
-esac
