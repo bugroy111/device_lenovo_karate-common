@@ -14,6 +14,6 @@ TARGET_USES_MKE2FS := true
 TARGET_COPY_OUT_VENDOR := vendor
 
 # Extended Filesystem Support
-TARGET_EXFAT_DRIVER := exfat
+TARGET_EXFAT_DRIVER := sdfat
 
 TARGET_FS_CONFIG_GEN := $(LOCAL_PATH)/config.fs
