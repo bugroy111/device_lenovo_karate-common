@@ -1,8 +1,8 @@
 # Audio - from karatep (K6 Note)
-etc/drc/drc_cfg_5.1.txt
-etc/drc/drc_cfg_AZ.txt
-etc/surround_sound_3mic/surround_sound_rec_5.1.cfg
-etc/surround_sound_3mic/surround_sound_rec_AZ.cfg
+vendor/etc/drc/drc_cfg_5.1.txt
+vendor/etc/drc/drc_cfg_AZ.txt
+vendor/etc/surround_sound_3mic/surround_sound_rec_5.1.cfg
+vendor/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbmapper.so
@@ -32,29 +32,11 @@ vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libqcvirt.so
 
-# Bluetooth - from karatep (K6 Note)
-bin/btnvtool
-bin/hci_qcomm_init
-bin/wcnss_filter
-vendor/lib/libbtnv.so
-vendor/lib64/libbtnv.so
-
-# Bluetooth Firmware - from karatep (K6 Note)
-etc/firmware/nvm_tlv.bin
-etc/firmware/nvm_tlv_1.3.bin
-etc/firmware/nvm_tlv_2.1.bin
-etc/firmware/nvm_tlv_3.0.bin
-etc/firmware/nvm_tlv_3.2.bin
-etc/firmware/rampatch_tlv.img
-etc/firmware/rampatch_tlv_1.3.tlv
-etc/firmware/rampatch_tlv_2.1.tlv
-etc/firmware/rampatch_tlv_3.0.tlv
-etc/firmware/rampatch_tlv_3.2.tlv
-
 # Camera - from karate
 bin/mm-qcamera-daemon
 lib/libivc_smartengine.so
 lib/libmpbase.so
+vendor/lib/libcamera_bm_algo.so
 vendor/lib/libchromaflash.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libjpegdhw.so
@@ -62,7 +44,6 @@ vendor/lib/libjpegehw.so
 vendor/lib/libllvd_smore.so
 vendor/lib/libllvd_sw_tnr.so
 vendor/lib/libmotocalibration.so
-vendor/lib/libcamera_bm_algo.so
 vendor/lib/libmmcamera_chromaflash_lib.so
 vendor/lib/libmmcamera_dbg.so
 vendor/lib/libmmcamera_dcrf_lib.so
