@@ -33,9 +33,9 @@ vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libqcvirt.so
 
 # Camera - from karate
-bin/mm-qcamera-daemon
-lib/libivc_smartengine.so
-lib/libmpbase.so
+bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
+lib/libivc_smartengine.so:vendor/lib/libivc_smartengine.so
+lib/libmpbase.so:vendor/lib/libmpbase.so
 vendor/lib/libcamera_bm_algo.so
 vendor/lib/libchromaflash.so
 vendor/lib/libflash_pmic.so
@@ -108,15 +108,15 @@ vendor/lib/libchromatix_csidtg_preview.so
 vendor/lib/libchromatix_csidtg_zsl_preview.so
 
 # Camera firmware - from karate
-etc/firmware/cpp_firmware_v1_1_1.fw
-etc/firmware/cpp_firmware_v1_1_6.fw
-etc/firmware/cpp_firmware_v1_10_0.fw
-etc/firmware/cpp_firmware_v1_2_0.fw
-etc/firmware/cpp_firmware_v1_4_0.fw
-etc/firmware/cpp_firmware_v1_5_0.fw
-etc/firmware/cpp_firmware_v1_5_2.fw
-etc/firmware/cpp_firmware_v1_6_0.fw
-etc/firmware/cpp_firmware_v1_8_0.fw
+etc/firmware/cpp_firmware_v1_1_1.fw:vendor/firmware/cpp_firmware_v1_1_1.fw
+etc/firmware/cpp_firmware_v1_1_6.fw:vendor/firmware/cpp_firmware_v1_1_6.fw
+etc/firmware/cpp_firmware_v1_10_0.fw:vendor/firmware/cpp_firmware_v1_10_0.fw
+etc/firmware/cpp_firmware_v1_2_0.fw:vendor/firmware/cpp_firmware_v1_2_0.fw
+etc/firmware/cpp_firmware_v1_4_0.fw:vendor/firmware/cpp_firmware_v1_4,0.fw
+etc/firmware/cpp_firmware_v1_5_0.fw:vendor/firmware/cpp_firmware_v1_5_0.fw
+etc/firmware/cpp_firmware_v1_5_2.fw:vendor/firmware/cpp_firmware_v1_5_2.fw
+etc/firmware/cpp_firmware_v1_6_0.fw:vendor/firmware/cpp_firmware_v1_6_0.fw
+etc/firmware/cpp_firmware_v1_8_0.fw:vendor/firmware/cpp_firmware_v1_8_0.fw
 
 # Camera sensors - from karate
 vendor/lib/libmmcamera_isp_abf40.so
@@ -155,13 +155,13 @@ vendor/lib/libmmcamera_isp_template.so
 vendor/lib/libmmcamera_isp_wb40.so
 
 # Fingerprint - from karatep (K6 Note)
-lib/hw/fingerprint.default.so
-lib/libcom_fingerprints_service.so
-lib/lib_fpc_tac_shared.so
-lib64/hw/fingerprint.default.so
-lib64/libcom_fingerprints_service.so
-lib64/lib_fpc_tac_shared.so
+lib/hw/fingerprint.default.so:vendor/lib/hw/fingerprint.default.so
+lib/libcom_fingerprints_service.so:vendor/lib/libcom_fingerprints_service.so
+lib/lib_fpc_tac_shared.so:vendor/lib/lib_fpc_tac_shared.so
+lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.default.so
+lib64/libcom_fingerprints_service.so:vendor/lib64/libcom_fingerprints_service.so
+lib64/lib_fpc_tac_shared.so:vendor/lib64/lib_fpc_tac_shared.so
 
 # Lights - from karatep (K6 Note)
-lib/hw/lights.msm8937.so
-lib64/hw/lights.msm8937.so
+lib/hw/lights.msm8937.so:vendor/lib/hw/lights.msm8937.so
+lib64/hw/lights.msm8937.so:vendor/lib64/hw/lights.msm8937.so
