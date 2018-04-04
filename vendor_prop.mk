@@ -116,6 +116,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=libqti-perfd-client.so \
     ro.vendor.qti.sys.fw.bg_apps_limit=60
 
+# Priv-app permissions whitelist
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.control_privapp_permissions=enforce
+
 # Netmgrd
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.use_data_netmgrd=true \
