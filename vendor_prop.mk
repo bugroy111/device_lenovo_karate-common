@@ -106,8 +106,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
-    mm.enable.qcom_parser=4176895 \
     media.stagefright.audio.sink=280 \
+    vendor.mm.enable.qcom_parser=4176895 \
     vendor.vidc.dec.downscalar_width=1920 \
     vendor.vidc.dec.downscalar_height=1088 \
     vendor.vidc.enc.disable_bframes=1 \
