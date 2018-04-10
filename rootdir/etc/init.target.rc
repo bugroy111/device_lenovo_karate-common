@@ -154,15 +154,6 @@ on property:init.svc.zygote=running
 on property:init.svc.zygote=restarting
     stop ppd
 
-on charger
-    wait /dev/block/bootdevice/by-name/system
-    mount ext4 /dev/block/bootdevice/by-name/system /system ro barrier=1
-    load_all_props
-    setprop sys.usb.configfs 0
-    setprop persist.sys.usb.config mass_storage
-    start hvdcp_opti
-    start thermal-engine
-
 service hbtp /system/vendor/bin/hbtp_daemon
     class main
     user system
@@ -191,6 +182,7 @@ on charger
     load_all_props
     setprop persist.sys.usb.config mass_storage
     start hvdcp_opti
+    start qcom-post-boot
     start thermal-engine
 
 on property:sys.boot_completed=1
