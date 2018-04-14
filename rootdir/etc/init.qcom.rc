@@ -165,7 +165,7 @@ on post-fs-data
     mkdir /data/vendor/radio 0770 system radio
 
     # Create directory for modem_config
-    mkdir /data/vendor/modem_config 0550 system radio
+    mkdir /data/vendor/modem_config 0570 radio root
 
     # Create directory for tftp
     mkdir /data/vendor/tombstones 0771 system system
