@@ -32,5 +32,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     textclassifier.smartselection.bundle1
 
+# Additional native libraries
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/lenovo/karate-common/karate-common-vendor.mk)
