@@ -144,9 +144,6 @@ TARGET_KERNEL_SOURCE := kernel/lenovo/msm8937
 # Lineage Hardware
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
-# Media
-TARGET_USES_MEDIA_EXTENSIONS := true
-
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE     := 67108864
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
