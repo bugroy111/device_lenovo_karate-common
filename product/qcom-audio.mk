@@ -8,7 +8,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml
 
 PRODUCT_PACKAGES += \
-    audiod \
     audio.primary.msm8937 \
     libqcompostprocbundle \
     libqcomvisualizer \
