@@ -28,5 +28,9 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
+# TextClassifier
+PRODUCT_PACKAGES += \
+    textclassifier.smartselection.bundle1
+
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/lenovo/karate-common/karate-common-vendor.mk)
