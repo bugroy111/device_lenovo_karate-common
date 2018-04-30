@@ -39,28 +39,29 @@ else
     prev_version_info=""
 fi
 
-cur_version_info=`cat /firmware/verinfo/ver_info.txt
-if [ ! -f /firmware/verinfo/ver_info.txt -o "$prev_version_info" != "$cur_version_info" ]; then
+cur_version_info=`cat /vendor/firmware_mnt/verinfo/ver_info.txt`
+if [ ! -f /vendor/firmware_mnt/verinfo/ver_info.txt -o "$prev_version_info" != "$cur_version_info" ]; then
     # add W for group recursively before delete
     chmod g+w -R /data/vendor/modem_config/*
     chmod g+w -R /data/vendor/modem_config/mcfg_sw
     rm -rf /data/vendor/radio/modem_config
     # preserve the read only mode for all subdir and files
-    cp --preserve=m -dr /firmware/image/modem_pr/mcfg/configs/* /data/vendor/radio/modem_config
+    cp --preserve=m -dr /vendor/firmware_mnt/image/modem_pr/mcfg/configs/* /data/vendor/radio/modem_config
+
     # the group must be root, otherwise this script could not add "W" for group recursively
     chown -hR radio.root /data/vendor/radio/modem_config
     chown -hR radio.root /data/vendor/radio/modem_config/mcfg_sw
 
-    cp --preserve=m -d /firmware/image/3uk.mbn /data/vendor/radio/modem_config/mcfg_sw/3uk.mbn
-    cp --preserve=m -d /firmware/image/gcf.mbn /data/vendor/radio/modem_config/mcfg_sw/gcf.mbn
-    cp --preserve=m -d /firmware/image/mexico.mbn /data/vendor/radio/modem_config/mcfg_sw/mexico.mbn
-    cp --preserve=m -d /firmware/image/ntel.mbn /data/vendor/radio/modem_config/mcfg_sw/ntel.mbn
-    cp --preserve=m -d /firmware/image/rjil.mbn /data/vendor/radio/modem_config/mcfg_sw/rjil.mbn
-    cp --preserve=m -d /firmware/image/row.mbn /data/vendor/radio/modem_config/mcfg_sw/row.mbn
-    cp --preserve=m -d /firmware/image/smtf.mbn /data/vendor/radio/modem_config/mcfg_sw/smtf.mbn
-    cp --preserve=m -d /firmware/image/ytl.mbn /data/vendor/radio/modem_config/mcfg_sw/ytl.mbn
+    cp --preserve=m -d /vendor/firmware_mnt/image/3uk.mbn /data/vendor/radio/modem_config/mcfg_sw/3uk.mbn
+    cp --preserve=m -d /vendor/firmware_mnt/image/gcf.mbn /data/vendor/radio/modem_config/mcfg_sw/gcf.mbn
+    cp --preserve=m -d /vendor/firmware_mnt/image/mexico.mbn /data/vendor/radio/modem_config/mcfg_sw/mexico.mbn
+    cp --preserve=m -d /vendor/firmware_mnt/image/ntel.mbn /data/vendor/radio/modem_config/mcfg_sw/ntel.mbn
+    cp --preserve=m -d /vendor/firmware_mnt/image/rjil.mbn /data/vendor/radio/modem_config/mcfg_sw/rjil.mbn
+    cp --preserve=m -d /vendor/firmware_mnt/image/row.mbn /data/vendor/radio/modem_config/mcfg_sw/row.mbn
+    cp --preserve=m -d /vendor/firmware_mnt/image/smtf.mbn /data/vendor/radio/modem_config/mcfg_sw/smtf.mbn
+    cp --preserve=m -d /vendor/firmware_mnt/image/ytl.mbn /data/vendor/radio/modem_config/mcfg_sw/ytl.mbn
 
-    cp --preserve=m -d /firmware/verinfo/ver_info.txt /data/vendor/radio/ver_info.txt
+    cp --preserve=m -d /vendor/firmware_mnt/verinfo/ver_info.txt /data/vendor/modem_config/
     chown radio.radio /data/vendor/radio/ver_info.txt
 fi
 chmod g-w /data/vendor/modem_config
