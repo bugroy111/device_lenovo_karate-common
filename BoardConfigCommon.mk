@@ -31,3 +31,8 @@ DEVICE_MATRIX_FILE   := $(LOCAL_PATH)/configs/compatibility_matrix.xml
 # Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 TARGET_VENDOR_PROP += device/lenovo/karate-common/vendor.prop
+
+# Treble
+PRODUCT_FULL_TREBLE_OVERRIDE := true
+PRODUCT_SHIPPING_API_LEVEL := 24
+PRODUCT_COMPATIBILITY_MATRIX_LEVEL_OVERRIDE := 27
