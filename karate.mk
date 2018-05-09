@@ -329,6 +329,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/product-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-qti.xml \
     $(LOCAL_PATH)/permissions/system-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml
 
+# QNS
+PRODUCT_PACKAGES += \
+    libstdc++.vendor
+
 # RCS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
