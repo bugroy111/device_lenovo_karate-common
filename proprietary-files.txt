@@ -180,7 +180,3 @@ lib/lib_fpc_tac_shared.so
 lib64/hw/fingerprint.default.so
 lib64/libcom_fingerprints_service.so
 lib64/lib_fpc_tac_shared.so
-
-# Lights - from karatep (K6 Note)
-lib/hw/lights.msm8937.so
-lib64/hw/lights.msm8937.so
