@@ -161,7 +161,3 @@ lib/lib_fpc_tac_shared.so:vendor/lib/lib_fpc_tac_shared.so|29b67fc11441fe473ba25
 lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.default.so|ae74f78ae5e0ded2c7ef0f1b9c941103ca0ef126
 lib64/libcom_fingerprints_service.so:vendor/lib64/libcom_fingerprints_service.so|3d7aaf2f30192fe5522f8d5fb8b1e675d1e84c70
 lib64/lib_fpc_tac_shared.so:vendor/lib64/lib_fpc_tac_shared.so|d81da2e89a8901a8b91a2ccb95e0cb0a0186c0cf
-
-# Lights - from karatep (K6 Note)
-lib/hw/lights.msm8937.so:vendor/lib/hw/lights.msm8937.so|1c09097987102030e7b30f3a8e9ab0a076ccb140
-lib64/hw/lights.msm8937.so:vendor/lib64/hw/lights.msm8937.so|615a092af15214031c90daae4318c319e9327d0b
