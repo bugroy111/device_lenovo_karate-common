@@ -13,5 +13,10 @@
 /data/fpc(/.*)?                                                      u:object_r:fingerprint_data_file:s0
 /sys/devices/soc/soc:fpc1020(/.*)?		                     u:object_r:sysfs_devices_fingerprint:s0
 
+# Keylayout
+/vendor/usr/keylayout/fts_ts\.kl                                     u:object_r:vendor_keylayout_file:s0
+/vendor/usr/keylayout/gpio-keys\.kl                                  u:object_r:vendor_keylayout_file:s0
+/vendor/usr/keylayout/qpnp_pon\.kl                                   u:object_r:vendor_keylayout_file:s0
+
 # Data files
 /data/misc/netmgr/log\.txt			                     u:object_r:netmgrd_data_file:s0
