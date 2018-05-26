@@ -1,3 +1,3 @@
-# Vndk-sp
+# Vndk
 PRODUCT_PACKAGES += \
-    vndk-sp
+    vndk_package
