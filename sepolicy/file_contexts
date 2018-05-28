@@ -4,6 +4,9 @@
 
 /sys/devices/soc/1c00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/max_gpuclk      u:object_r:sysfs:s0
 
+# Camera
+/data/vendor/qcam(/.*)?                                              u:object_r:vendor_camera_data_file:s0
+
 # Fingerprint
 /dev/socket/fpce(/.*)?                                               u:object_r:fingerprint_socket:s0
 /data/fpc(/.*)?                                                      u:object_r:fingerprint_data_file:s0
