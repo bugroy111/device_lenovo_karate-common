@@ -33,7 +33,7 @@ vendor/lib64/soundfx/libqcreverb.so|1ad0aaf11f742a9a943bb06e962fcd4270feabd5
 vendor/lib64/soundfx/libqcvirt.so|8d0ed98ecf1311aa963f79f496162868d8fecd74
 
 # Camera - from karatep (K6 Note)
-bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon|f528302eb2ede6dac66f3c9c94d1cc2405838991
+bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon|db7348d34ba2ed22a5b21a17b3070f83be4a6b0a
 lib/libivc_smartengine.so:vendor/lib/libivc_smartengine.so|1d4497e88e268918ad1725bf744ab7eee48c374e
 lib/libmpbase.so:vendor/lib/libmpbase.so|a84995e7460e414e27e2803a84c10a8b5e5f3665
 vendor/lib/libcamera_bm_algo.so|1e8c19bc2c6ae8fdc476ab36910d9bf225688926
