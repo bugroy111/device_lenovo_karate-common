@@ -15,8 +15,10 @@
  */
 
 #include <cutils/log.h>
+
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
 #include <errno.h>
 #include <fcntl.h>
 #include <pthread.h>
@@ -65,28 +67,7 @@ static int write_int(char const* path, int value)
     if (fd >= 0) {
         char buffer[20];
         int bytes = sprintf(buffer, "%d\n", value);
-        int amt = write(fd, buffer, bytes);
-        close(fd);
-        return amt == -1 ? -errno : 0;
-    } else {
-        if (already_warned == 0) {
-            ALOGE("%s: failed to open %s\n", __func__, path);
-            already_warned = 1;
-        }
-        return -errno;
-    }
-}
-
-static int write_str(char const* path, char *value)
-{
-    int fd;
-    static int already_warned = 0;
-
-    fd = open(path, O_RDWR);
-    if (fd >= 0) {
-        char buffer[PAGE_SIZE];
-        int bytes = sprintf(buffer, "%s\n", value);
-        int amt = write(fd, buffer, bytes);
+        ssize_t amt = write(fd, buffer, (size_t)bytes);
         close(fd);
         return amt == -1 ? -errno : 0;
     } else {
@@ -292,7 +273,7 @@ struct hw_module_t HAL_MODULE_INFO_SYM = {
     .version_major = 1,
     .version_minor = 0,
     .id = LIGHTS_HARDWARE_MODULE_ID,
-    .name = "MSM8937 lights Module",
+    .name = "Karate lights Module",
     .author = "Google, Inc.",
     .methods = &lights_module_methods,
 };
