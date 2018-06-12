@@ -10,6 +10,5 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_APPEND_DTB := true
 
 TARGET_KERNEL_SOURCE := kernel/lenovo/msm8937
-TARGET_KERNEL_CONFIG := karate_defconfig
 
 TARGET_USE_SDCLANG := true
