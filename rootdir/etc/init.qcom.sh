@@ -65,4 +65,4 @@ if [ ! -f /firmware/verinfo/ver_info.txt -o "$prev_version_info" != "$cur_versio
 fi
 chmod g-w /data/vendor/modem_config
 chmod g-w /data/vendor/modem_config/mcfg_sw
-setprop ro.runtime.mbn_copy_completed 1
+setprop ro.vendor.ril.mbn_copy_completed 1
