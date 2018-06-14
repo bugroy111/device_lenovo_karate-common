@@ -89,6 +89,9 @@ on boot
     mkdir /persist/alarm 0770 system system
     mkdir /persist/time 0770 system system
 
+    # Create hvdcp_opti directory
+    mkdir /persist/hvdcp_opti 0770 root system
+
     # Create NETMGR daemon socket area
     mkdir /dev/socket/netmgr 0750 radio radio
 
