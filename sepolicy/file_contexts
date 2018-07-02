@@ -2,10 +2,7 @@
 /dev/block/bootdevice/by-name/persist                                u:object_r:persist_block_device:s0
 /dev/block/bootdevice/by-name/userdata                               u:object_r:userdata_block_device:s0
 
-/sys/devices/soc/1c00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/max_gpuclk      u:object_r:sysfs:s0
-
 # Camera
-/sys/devices/soc/[a-z0-9]+\.qcom,msm-cam/video4linux/video[0-33]/name(/.*)?   u:object_r:sysfs_graphics:s0
 /data/vendor/qcam(/.*)?                                              u:object_r:vendor_camera_data_file:s0
 
 # Fingerprint
@@ -17,6 +14,10 @@
 /vendor/usr/keylayout/fts_ts\.kl                                     u:object_r:vendor_keylayout_file:s0
 /vendor/usr/keylayout/gpio-keys\.kl                                  u:object_r:vendor_keylayout_file:s0
 /vendor/usr/keylayout/qpnp_pon\.kl                                   u:object_r:vendor_keylayout_file:s0
+/vendor/usr/keylayout/msm8937-[karate-karatep]-snd-card_Button_Jack\.kl    u:object_r:vendor_keylayout_file:s0
 
-# Data files
-/data/misc/netmgr/log\.txt			                     u:object_r:netmgrd_data_file:s0
+# Lights
+/sys/devices/soc/leds-qpnp-[0-9]+/leds(/.*)?                         u:object_r:sysfs_leds:s0
+
+# Wake gesture
+/sys/devices/soc/78b7000\.i2c/i2c-12/3-[0-9a-f]+/input/input[0-9]+/wake_gesture        u:object_r:proc_touchpanel:s0
