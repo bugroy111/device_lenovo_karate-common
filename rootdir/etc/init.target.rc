@@ -30,10 +30,7 @@
 import /vendor/etc/init/hw/init.lenovo.common.rc
 
 on early-init
-    mkdir /firmware 0771 system system
-    mkdir /system 0777 root root
     symlink /data/tombstones /tombstones
-    mkdir /dsp 0771 media media
 
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
@@ -45,7 +42,6 @@ on fs
 
     mkdir /persist/data 0700 system system
     mkdir /persist/display 0770 system graphics
-    mkdir /persist/bms 0700 root system
     restorecon_recursive /persist
 
 on post-fs-data
@@ -81,7 +77,7 @@ service qseecomd /vendor/bin/qseecomd
     user root
     group root
 
-service thermal-engine /system/vendor/bin/thermal-engine -c ${sys.qcom.thermalcfg:-/vendor/etc/thermal-engine.conf}
+service thermal-engine /vendor/bin/thermal-engine -c ${sys.qcom.thermalcfg:-/vendor/etc/thermal-engine.conf}
     class main
     user root
     socket thermal-send-client stream 0666 system system
@@ -138,12 +134,6 @@ service ppd /vendor/bin/mm-pp-dpps
 on property:init.svc.surfaceflinger=restarting
     stop hwcomposer-2-1
     start hwcomposer-2-1
-
-service hbtp /system/vendor/bin/hbtp_daemon
-    class main
-    user system
-    group system
-    disabled
 
 service adsprpcd /vendor/bin/adsprpcd
     class main
