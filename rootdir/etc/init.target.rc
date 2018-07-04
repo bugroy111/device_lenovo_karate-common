@@ -27,7 +27,6 @@
 #
 #
 
-import /vendor/etc/init/hw/init.device.rc
 import /vendor/etc/init/hw/init.lenovo.common.rc
 
 on early-init
