@@ -16,22 +16,11 @@
 
 LOCAL_PATH := device/lenovo/karate-common
 
-WITH_LINEAGE_CHARGER := false
-
 # Inherit device-specific board fragments
 include $(LOCAL_PATH)/board/*.mk
 
 # Inherit the proprietary files
 -include vendor/lenovo/karate-common/BoardConfigVendor.mk
 
-# Manifest
-DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/configs/manifest.xml
-DEVICE_MATRIX_FILE   := $(LOCAL_PATH)/configs/compatibility_matrix.xml
-
 # Properties
-BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 TARGET_VENDOR_PROP += device/lenovo/karate-common/vendor.prop
-
-# Treble
-PRODUCT_FULL_TREBLE_OVERRIDE := true
-PRODUCT_COMPATIBILITY_MATRIX_LEVEL_OVERRIDE := 27
