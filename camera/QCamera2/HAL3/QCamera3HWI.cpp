@@ -3486,6 +3486,7 @@ int QCamera3HardwareInterface::processCaptureRequest(
         int32_t tintless_value = 1;
         ADD_SET_PARAM_ENTRY_TO_BATCH(mParameters,
                 CAM_INTF_PARM_TINTLESS, tintless_value);
+#if 0
         //Disable CDS for HFR mode or if DIS/EIS is on.
         //CDS is a session parameter in the backend/ISP, so need to be set/reset
         //after every configure_stream
@@ -3497,6 +3498,7 @@ int QCamera3HardwareInterface::processCaptureRequest(
                 LOGE("Failed to disable CDS for HFR mode");
 
         }
+#endif
         setMobicat();
 
         if (meta.exists(QCAMERA3_USE_AV_TIMER)) {
@@ -8976,6 +8978,7 @@ int QCamera3HardwareInterface::translateToHalMetadata
         }
     }
 
+#if 0
     // CDS for non-HFR non-video mode
     if ((mOpMode != CAMERA3_STREAM_CONFIGURATION_CONSTRAINED_HIGH_SPEED_MODE) &&
             !(m_bIsVideo) && frame_settings.exists(QCAMERA3_CDS_MODE)) {
@@ -9004,6 +9007,7 @@ int QCamera3HardwareInterface::translateToHalMetadata
             rc = BAD_VALUE;
         }
     }
+#endif
 
     if (frame_settings.exists(ANDROID_SENSOR_TEST_PATTERN_MODE)) {
         int32_t fwk_testPatternMode =
