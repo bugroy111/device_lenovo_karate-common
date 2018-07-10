@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<!-- Copyright (C) 2013 The Android Open Source Project
-     Copyright (C) 2016 The Linux Foundation. All rights reserved.
+<!-- Copyright (C) 2016-2017 The Linux Foundation. All rights reserved.
      Not a contribution.
+
+     Copyright (C) 2013 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -151,8 +152,6 @@ Only the three quirks included above are recognized at this point:
         </MediaCodec>
     </Encoders>
     <Decoders>
-        <!-- Audio Software  -->
-        <MediaCodec name="OMX.qti.audio.decoder.flac" type="audio/flac" />
         <!-- Video Hardware  -->
         <MediaCodec name="OMX.qcom.video.decoder.avc" type="video/avc" >
             <Quirk name="requires-allocate-on-input-ports" />
@@ -255,25 +254,22 @@ Only the three quirks included above are recognized at this point:
             <Limit name="concurrent-instances" max="16" />
         </MediaCodec>
         <!-- DOLBY_UDC -->
-        <MediaCodec name="OMX.dolby.ac3.decoder" >
-            <Type name="audio/ac3" />
-            <Quirk name="needs-flush-before-disable" />
-            <Quirk name="requires-flush-complete-emulation" />
-            <Feature name="adaptive-playback" />
+        <MediaCodec name="OMX.dolby.ac3.decoder" type="audio/ac3">
+            <Limit name="channel-count" max="6" />
+            <Limit name="sample-rate" ranges="32000,44100,48000" />
+            <Limit name="bitrate" range="32000-640000" />
         </MediaCodec>
-        <MediaCodec name="OMX.dolby.eac3.decoder" >
-            <Type name="audio/eac3" />
-            <Quirk name="needs-flush-before-disable" />
-            <Quirk name="requires-flush-complete-emulation" />
-            <Feature name="adaptive-playback" />
+        <MediaCodec name="OMX.dolby.eac3.decoder" type="audio/eac3">
+            <Limit name="channel-count" max="8" />
+            <Limit name="sample-rate" ranges="32000,44100,48000" />
+            <Limit name="bitrate" range="32000-6144000" />
         </MediaCodec>
-        <MediaCodec name="OMX.dolby.eac3_joc.decoder" >
-            <Type name="audio/eac3-joc" />
-            <Quirk name="needs-flush-before-disable" />
-            <Quirk name="requires-flush-complete-emulation" />
-            <Feature name="adaptive-playback" />
+        <MediaCodec name="OMX.dolby.eac3_joc.decoder" type="audio/eac3-joc">
+            <Limit name="channel-count" max="8" />
+            <Limit name="sample-rate" ranges="48000" />
+            <Limit name="bitrate" range="32000-6144000" />
         </MediaCodec>
         <!-- DOLBY_UDC END -->
     </Decoders>
-    <Include href="media_codecs_google_video.xml" />
+    <Include href="media_codecs_google_video_le.xml" />
 </MediaCodecs>
