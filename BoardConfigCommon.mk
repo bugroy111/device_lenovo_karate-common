@@ -21,6 +21,3 @@ include $(LOCAL_PATH)/board/*.mk
 
 # Inherit the proprietary files
 -include vendor/lenovo/karate-common/BoardConfigVendor.mk
-
-# Properties
-TARGET_VENDOR_PROP += device/lenovo/karate-common/vendor.prop
