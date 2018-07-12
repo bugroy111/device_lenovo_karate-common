@@ -1,37 +1,3 @@
-# Audio - from karatep (K6 Note)
-vendor/etc/drc/drc_cfg_5.1.txt|01a86d1c8bd9123ccf763620031c800f624b54b3
-vendor/etc/drc/drc_cfg_AZ.txt|67d6ed8524c6aced5327f3d76141787af7858723
-vendor/etc/surround_sound_3mic/surround_sound_rec_5.1.cfg|ed2a1e071af7ed0ecdbb4f71c4b14c9ca4e5bf7e
-vendor/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg|cc78904b69e85281b91c94f474bdd40b5c4d9907
-vendor/lib/libacdb-fts.so|cb77aaf8b2d45d6beb0367da36b12a0bb8c2340b
-vendor/lib/libacdbloader.so|d84692cef26b59549559bbf1709b4ebadea3df0e
-vendor/lib/libacdbmapper.so|8ec800ad65842d732c85b185976bc2efc96baf17
-vendor/lib/libacdbrtac.so|3dc5ccfa35c85695a282a35b125d6bfeb4d44453
-vendor/lib/libadiertac.so|dea6435ee77b746b1147e44632528e82b98f16e9
-vendor/lib/libadm.so|288c36170c6ad13e0e07ed759f3a111cbf21640e
-vendor/lib/libaudcal.so|de0e6db7a071b3bb857cab5d621156825ee38f64
-vendor/lib/libaudioalsa.so|e88df8d35e5d5f1a1c1334e9ef2673ea7c03383f
-vendor/lib/libaudiodevarb.so|a3e48e0b757a81877230a55ce33cbc22fd1b3f53
-vendor/lib/libdrc.so|02d96e79afd077a64c1317d72bcfd670fd742908
-vendor/lib/libhwdaphal.so|356d9d46adff5ed452011b4d6be3cbd3663b8975
-vendor/lib/libqct_resampler.so|aa4cc47e3d5e4f724ff295912385374d5798207d
-vendor/lib/libsurround_3mic_proc.so|9e217ead971c9be4eae068f1efd2a30b594936d1
-vendor/lib/soundfx/libqcbassboost.so|537451a50127b37a2c957a4c96e3f220b2f41e76
-vendor/lib/soundfx/libqcreverb.so|e18671fd18d25fc80460b7e9f82c919b5f728384
-vendor/lib/soundfx/libqcvirt.so|3ac008928cfd5f72196f287fe767fea0100e8adc
-vendor/lib64/libacdb-fts.so|d745929b5040e06dca9379e713b5b483a83cc12a
-vendor/lib64/libacdbloader.so|9b3db720ec2a28f89d6c66e9ab9791ea8e407633
-vendor/lib64/libacdbmapper.so|b368cb0e5c6783c90709b45847846e575b033e14
-vendor/lib64/libacdbrtac.so|64f690d1be57ac1fcdf13b3659b2971490d81dbd
-vendor/lib64/libadiertac.so|10734479ddb6f9a17132ac6c14073e185daa5e5c
-vendor/lib64/libaudcal.so|ee49ca7e4a52a0b5d6ceb9809cb1ea76d3c20f15
-vendor/lib64/libaudioalsa.so|d12b28a7bf49bd9c33faf8d15fee782d1dfc6ebc
-vendor/lib64/libaudiodevarb.so|4ac23a53ab90d7aa053a2b7e1723989eaa07bc2c
-vendor/lib64/libhwdaphal.so|3b953d19a1349b601d4ae28bfa3bf6df5279f2ac
-vendor/lib64/soundfx/libqcbassboost.so|c287192ff0a3da4dbd33aa0a3dac9d0a9200a8eb
-vendor/lib64/soundfx/libqcreverb.so|1ad0aaf11f742a9a943bb06e962fcd4270feabd5
-vendor/lib64/soundfx/libqcvirt.so|8d0ed98ecf1311aa963f79f496162868d8fecd74
-
 # Camera - from karatep (K6 Note)
 bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon|db7348d34ba2ed22a5b21a17b3070f83be4a6b0a
 lib/libivc_smartengine.so:vendor/lib/libivc_smartengine.so|1d4497e88e268918ad1725bf744ab7eee48c374e

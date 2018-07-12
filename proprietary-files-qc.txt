@@ -20,6 +20,27 @@ vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so|b9f68e320d24e9c51871a20
 vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so|3e9c52069ff07e50191d3b3afb33b30409241ab6
 vendor/lib/rfsa/adsp/libscveT2T_skel.so|91b9200dbb982abf0d6b440668252d892a616f66
 
+# Audio - from - TA-1025 8.1.0 OPR1.170623.026
+vendor/lib/libacdb-fts.so|5387e535cbd3a6c34cc273919b68a23bf422c6cd
+vendor/lib/libacdbloader.so|af2b53dcb2b63c73425a80150054f865ee88bf04
+vendor/lib/libacdbrtac.so|5bb60298dff6c8bf52d27e5ab3e10889d2681ac8
+vendor/lib/libadiertac.so|7ee4317f9f646e19bebe3d12468752a3823862c1
+vendor/lib/libadm.so|6e7caf862635c82c16a3d5d8bc2b0ebda2be2871
+vendor/lib/libaudcal.so|0d18baa9e3e74a86cb1f2664b0135cfd7419acd8
+vendor/lib/libaudioalsa.so|6eb701f70dcb20dbf9399768de082c0c32b01c9f
+vendor/lib/soundfx/libqcbassboost.so|8bc84ce746f48223f2da38b460a5553ecc995b47
+vendor/lib/soundfx/libqcreverb.so|df6f69f4100ba3c5331cc38b2bed03a15a039052
+vendor/lib/soundfx/libqcvirt.so|f0774bffb98d43ebb92bcf02ab14da250e74c61f
+vendor/lib64/libacdb-fts.so|b2ec082093dd38a471270a08e2900b754140363d
+vendor/lib64/libacdbloader.so|45072df42e67c0ae061182c140127cf9c798d5f2
+vendor/lib64/libacdbrtac.so|68a97768230c0948792c81cef4bb60a3e30df358
+vendor/lib64/libadiertac.so|5c410e744d7122dd3eb2fd7c236fee8ac230ca2e
+vendor/lib64/libaudcal.so|568448bccde446f0d07bc0d14e31afa94ad3e735
+vendor/lib64/libaudioalsa.so|3cf9f382c2bdc25d98a48f28aa263e202a7eca31
+vendor/lib64/soundfx/libqcbassboost.so|5c1b170074a996a571a4806b5d2f51f9d0c7487f
+vendor/lib64/soundfx/libqcreverb.so|41218bc69c8e9c13ae853f54805056ce9a308c84
+vendor/lib64/soundfx/libqcvirt.so|c92523d7071d535177c1cccb6a63e93caebd00cc
+
 # Bluetooth - from tissot - OPR1.170623.026
 vendor/bin/hci_qcomm_init|0781c55c080ff2309e1e8d77d9fa0111a827b3c7
 vendor/bin/wcnss_filter|f13b7dd2bc091e73e2c13a9f96affd98340ee9df
