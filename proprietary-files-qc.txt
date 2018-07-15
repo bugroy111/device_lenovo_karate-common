@@ -1,15 +1,15 @@
-# ADSP - from tissot - OPR1.170623.026
-vendor/bin/adsprpcd|35b15f3197e193f742cef0c9f51bbfba9f7e27ad
-vendor/lib/libadsprpc.so|903160c2bf36fd3155720048c3ae2ab5e7fea7b4
-vendor/lib/libadsp_default_listener.so|3b56c2d00bef6585b8de11ba5afbec3772456d2d
-vendor/lib/libfastcvadsp_stub.so|6197157dec6a29931f3af47b1ade006a295d05f5
-vendor/lib/libfastcvopt.so|1eae508500eb3e8bb3e97617a196d054d9d4f11c
-vendor/lib64/libadsprpc.so|88a4f07391e70f9b83a0aae90d087afbe64ecfa5
-vendor/lib64/libadsp_default_listener.so|7ae782755ddc945edb22ae11e964e0118a3b01a9
-vendor/lib64/libfastcvadsp_stub.so|3d175f68145aa59aecd8457d608df15a5156897e
-vendor/lib64/libfastcvopt.so|5c0c7331eb2836ed1791cdefaef20cb66df02cb5
+# ADSP - from vince - OPM1.171019.019
+vendor/bin/adsprpcd|edaaaa249ab22de6fba8bf07d677d060a143218a
+vendor/lib/libadsprpc.so|3786785e33f2596f7a82339eb847c7b2660b4fe5
+vendor/lib/libadsp_default_listener.so|1f6a768235d55446be7b865b950b6589ac487c97
+vendor/lib/libfastcvadsp_stub.so|d3c250fbd82c75667757a1b08949279474a27e1d
+vendor/lib/libfastcvopt.so|882be611d5b2d4bbf0731c379b80341c477fcd4c
+vendor/lib64/libadsprpc.so|57b9dc246a4de1907fd2129fd4d5cfbcf90e3684
+vendor/lib64/libadsp_default_listener.so|686134d7c74a39eb26bc80c4598e61596e9e0765
+vendor/lib64/libfastcvadsp_stub.so|d28fe888b94579428d368f3adbadc59febc280b0
+vendor/lib64/libfastcvopt.so|639a27bff28e8b7cb463f0d34327298b5863c5af
 
-# ADSP modules - from tissot - OPR1.170623.026
+# ADSP modules - from vince - OPM1.171019.019
 vendor/lib/rfsa/adsp/libapps_mem_heap.so|5c82ad9cfe3f30105d899e2a4e90cc7566f81252
 vendor/lib/rfsa/adsp/libdspCV_skel.so|628985174b0088bed21c866d7984d23855e5e150
 vendor/lib/rfsa/adsp/libexternal_dog_skel.so|02b69c54437fb5a6f7ad88c3f58e7c4adfea9ede
@@ -41,46 +41,47 @@ vendor/lib64/soundfx/libqcbassboost.so|5c1b170074a996a571a4806b5d2f51f9d0c7487f
 vendor/lib64/soundfx/libqcreverb.so|41218bc69c8e9c13ae853f54805056ce9a308c84
 vendor/lib64/soundfx/libqcvirt.so|c92523d7071d535177c1cccb6a63e93caebd00cc
 
-# Bluetooth - from tissot - OPR1.170623.026
-vendor/bin/hci_qcomm_init|0781c55c080ff2309e1e8d77d9fa0111a827b3c7
-vendor/bin/wcnss_filter|f13b7dd2bc091e73e2c13a9f96affd98340ee9df
-vendor/lib/libbtnv.so|89b57498c5e5e554f9e36c77b958e8bc8f8ca17c
-vendor/lib64/libbtnv.so|19c1fde09804422dd0988888254383c4b907122e
+# Bluetooth - from vince - OPM1.171019.019
+vendor/bin/hci_qcomm_init|8aa8f5a30226551bfe8ae7c53feac83d7f627d85
+vendor/bin/wcnss_filter|fed92a91176a1c841314e87baa9246c02488740b
+vendor/lib/libbtnv.so|f41e4b8e3a2e1c13b3ab88e11fea7846d03ab7c5
+vendor/lib64/libbtnv.so|6bb070ddfa84d94c26db3788cecb550d9e853087
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|58fde6126c19b8aa00494994c7843af0dab856fd
 
-# CNE - from tissot - OPR1.170623.026
--priv-app/CNEService/CNEService.apk|0a8dd7de727cac5dbeb54f0f1f095839b673e863
-vendor/bin/cnd|93e4c752e71f05018a9f194de09dd394382ffd25
-vendor/lib64/com.quicinc.cne.api@1.0.so|e6282133809e20e63fe202f4991280d334ef89d6
-vendor/lib64/com.quicinc.cne.constants@1.0.so|29b07291f69707cbb38e212a8461e5d1413e912a
-vendor/lib64/com.quicinc.cne.constants@2.0.so|da5bbbe96d78cadbe292b213f2dfb98d2f99a7c7
-vendor/lib64/com.quicinc.cne.server@2.0.so|8af9ec25d0ed4d429bb65abddb8fb8544bfaf218
-vendor/lib64/libcne.so|797e59e8a56066567c776ac196af7de6cea70103
-vendor/lib64/libcneapiclient.so|3788a85afa747f9c7e19468503e6b9c372876d5e
-vendor/lib64/libcneoplookup.so|3ff18100d6516e096bc6c207b8632ed86db17000
-vendor/lib64/libcneqmiutils.so|41bf6f87336faaee239a3047b1fdac3f742ebde9
-vendor/lib64/libwqe.so|1ee0763c75da97daf3ef50a34be34cdb6465683f
-vendor/lib64/libxml.so|28642c2ee9abf46130f5b44b3665b63b008d150d
+# CNE - from vince - OPM1.171019.019
+-priv-app/CNEService/CNEService.apk|4f64533397bcf50ac3126e3f376ceb6ab7c66027
+vendor/bin/cnd|5a408a260bd02f44c4c73c175f6189da74b46116
+vendor/lib64/com.quicinc.cne.api@1.0.so|bd7b0f309dbad959d67fca284f439bc7bc6353b8
+vendor/lib64/com.quicinc.cne.constants@1.0.so|8a5303d4fea47bd9c7bc9dc390c9b8906f1fe8ea
+vendor/lib64/com.quicinc.cne.constants@2.0.so|220c2f66e102e487f95767c7da13824d4dc30c33
+vendor/lib64/com.quicinc.cne.server@2.0.so|bfb17d068704535c45098ab84b87c4f71460a3f1
+vendor/lib64/libcne.so|7a0f3a22665a89981909a958712b2a308cd10e1a
+vendor/lib64/libcneapiclient.so|c0196496ed68bd7334c733660cfa4bad68dee2e2
+vendor/lib64/libcneoplookup.so|aed419cc2a6e321bc332cffe25eeede778c38946
+vendor/lib64/libcneqmiutils.so|cb31ee73289572c75bb055fbf2489ff49f11735f
+vendor/lib64/libwqe.so|cbe62a479ce7441bc7b846a5df91f3edee1f91df
+vendor/lib64/libxml.so|470cacf4ad8f23040286be15a08f1e6ccbd35f22
 
-# Charger - from tissot - OPR1.170623.026
-vendor/bin/hvdcp_opti|629dcb38ee5c65ff07daab35acc02a079d90ed91
+# Charger - from vince - OPM1.171019.019
+vendor/bin/hvdcp_opti|57e6c5bd929173d537c7003096cab430e9422aff
 
-# DPM - from tissot - OPR1.170623.026
-vendor/bin/dpmQmiMgr|2d2c8f1bc822874ae1c335315110756521d0c5da
-vendor/lib64/com.qualcomm.qti.dpm.api@1.0_vendor.so|0f23520fc925b8a5bb4cebc73c544cb2d012ce7e
-vendor/lib64/libdpmqmihal.so|25bcb5d6853ccbf30fbe38230f9442049688c49a
+# DPM - from vince - OPM1.171019.019
+vendor/bin/dpmQmiMgr|e4c66e1111b1d1ca0ef3912730dfcca7d8654f88
+vendor/lib64/com.qualcomm.qti.dpm.api@1.0_vendor.so|6f55fc94e316cae982b83130dd1a9e80d86813f0
+vendor/lib64/libdpmqmihal.so|5d6247043aa9e5d09aa2c57768a93fa7c56a2117
 
-# DRM - from tissot - OPR1.170623.026
-vendor/bin/qseecomd|d51bb2af931ee5404cc06b05c959ff975320c9f3
-vendor/lib/libQSEEComAPI.so|825b1631308309a1357a37695275fd32b85a1436
-vendor/lib64/libQSEEComAPI.so|d0b22d9e627700f63bb20e8b85c9160e36217ed3
-vendor/lib64/libdrmfs.so|e93ad9f371c59a278d92e50735114e2e5e33a3d9
-vendor/lib64/libdrmtime.so|30c4007a4a5888d09a9394147d2c53633f53942d
-vendor/lib64/librpmb.so|4f3dabbd1ae00d2f658137a073f9a97568df90ae
-vendor/lib64/libssd.so|525090a06be89db33b2b1b3295bf708cb1b1245b
+# DRM - from vince - OPM1.171019.019
+vendor/bin/qseecomd|fecd4c1d03ae63c7cd43bb9cda1f89128e415350
+vendor/lib/libQSEEComAPI.so|bfc6cba99c191e29be1525964e8de7735ca5a703
+vendor/lib64/libQSEEComAPI.so|67a1dfa9aa6e1f47f873500bb84e56ffb98c6de9
+vendor/lib64/libdrmfs.so|e69a5f0b2835c9aa15e1f5dc21aa8755288b9867
+vendor/lib64/libdrmtime.so|9106e588ada083c061c44a62bc2cdf7d9123a745
+vendor/lib64/librpmb.so|13e932556c05dcf37b1c6f2038a670e239c56315
+vendor/lib64/libssd.so|baabf76b79866df9dabfd7761d7338e54757bc3f
 
-# Gatekeeper - from tissot - OPR1.170623.026
-vendor/lib/hw/gatekeeper.msm8953.so:vendor/lib/hw/gatekeeper.msm8937.so|8b19d55b1b9587423c354af3b7736df3f5d160d6
-vendor/lib64/hw/gatekeeper.msm8953.so:vendor/lib64/hw/gatekeeper.msm8937.so|4d81962cd8d3debc98a479b27553de7f55b1d93a
+# Gatekeeper - from vince - OPM1.171019.019
+vendor/lib/hw/gatekeeper.msm8953.so:vendor/lib/hw/gatekeeper.msm8937.so|9167fce2796332834d1a209566f6449c954394e3
+vendor/lib64/hw/gatekeeper.msm8953.so:vendor/lib64/hw/gatekeeper.msm8937.so|c7b1fb00d0189513327e93c541c6e9b003bc76e9
 
 # GPS - from bardock-pro - OPM1.171019.011
 vendor/bin/hw/vendor.qti.gnss@1.0-service|bdf23fe2af07c2afb74721023431446104fd828d
@@ -112,70 +113,70 @@ vendor/lib64/libxtadapter.so|7705b2c895dfc91f459f9e69860bc312c16b4216
 vendor/lib64/libxtwifi_ulp_adaptor.so|d2e768c4d5f44a101b12ef668f8b7393a42541ce
 vendor/lib64/vendor.qti.gnss@1.0_vendor.so|249c76153f8de014bf2dd2ab623ee3d87741fbc8
 
-# Graphics - from bardock-pro - OPM1.171019.011
-vendor/lib64/egl/eglSubDriverAndroid.so|2c39ecac957b7ecc1441af8f8ccdd5ca3b3ead00
-vendor/lib64/egl/libEGL_adreno.so|19a25a1177b592eecf3ee2c0f57bd7854ce2612c
-vendor/lib64/egl/libGLESv1_CM_adreno.so|80443ccf296dac68915e686dab54938dfe4f6f5d
-vendor/lib64/egl/libGLESv2_adreno.so|7b29dc90fa084f54f7e3b745396415455269297b
-vendor/lib64/egl/libq3dtools_adreno.so|f3d0bb86e904ad6c5f32ebfad7524c7b8459efd0
-vendor/lib64/egl/libQTapGLES.so|925ef8576f1906d5e1558d1ea9f2279b87f3b6ba
-vendor/lib64/libadreno_utils.so|de5831c58025ea656d66f24baef22ccf7a01e15a
-vendor/lib64/libbccQTI.so|af528ae651c25b080e73710c0a1759619767d651
-vendor/lib64/libC2D2.so|86caba573fd4ac9e5a0ec081f5e653416e257237
-vendor/lib64/libc2d30_bltlib.so|308c848d5690e37edb7efb8bca4d2e60c77ded8d
-vendor/lib64/libc2d30-a5xx.so|eb319e3e40ff53e1be84455592b4c5129da53513
-vendor/lib64/libCB.so|3c77e2bf0f0093b86de0ffffc12e2fa6a7af456c
-vendor/lib64/libgsl.so|eb72f62dd6016cf7fa735c748db79bdfa07845e5
-vendor/lib64/libllvm-glnext.so|907a9db4ee1e08429e8a599518b65f14ce3b9d73
-vendor/lib64/libllvm-qcom.so|737e1e087696742cd47d84b5d60ab65e32e7bc09
-vendor/lib64/libllvm-qgl.so|627de2b5fd310b8f37868701b8140e31bad6bc0d
-vendor/lib64/libmm-disp-apis.so|441556651f498fa612ce08056bca892ff98d6c0f
-vendor/lib64/libmm-qdcm.so|c7cfb4d3d324d2a8f04d3039536908085dc7eab2
-vendor/lib64/libOpenCL.so|290d53b1700b27d645742b9a4a39fcefdad9456d
-vendor/lib64/librs_adreno_sha1.so|c719927929d9ba27c88b5c2466d14273a189fbb9
-vendor/lib64/librs_adreno.so|8a2a9d68fa050668bee4046d6e9bfcdcfb11401d
-vendor/lib64/libRSDriver_adreno.so|3adb8e0a0033e0f30e2057ed701b5e423cc19d93
+# Graphics - from vince - OPM1.171019.019
+vendor/lib64/egl/eglSubDriverAndroid.so|7a51837cf3df8e18d3b305e2f0e7c5981dd39bf3
+vendor/lib64/egl/libEGL_adreno.so|c5034ce4a3b9be40bf220bc4218e74a1699b9747
+vendor/lib64/egl/libGLESv1_CM_adreno.so|edb87661d03a82d4eab2f01da303b1591cc2f2b3
+vendor/lib64/egl/libGLESv2_adreno.so|824319620b78233d0aa2386d64b1348e428b2bd6
+vendor/lib64/egl/libq3dtools_adreno.so|5e02bcc77c594656506bb11ec956f617395ef2a5
+vendor/lib64/egl/libQTapGLES.so|729169f64fdf1bd08379ea0dcce3355196d139df
+vendor/lib64/libadreno_utils.so|6f1ebc945b885a8d8fe083bfb0beebcbceef6dcb
+vendor/lib64/libbccQTI.so|096c6ed5276b37917219dd88019f4cb114de68e2
+vendor/lib64/libC2D2.so|78b194eb31d746c576f4715e69b83e62fed89766
+vendor/lib64/libc2d30_bltlib.so|ab7812a4d96f47e4a3d5779fecf07d008a4d3c8b
+vendor/lib64/libc2d30-a5xx.so|9924c8e2f23007e4ba6a7febaec3179b6dc2ec41
+vendor/lib64/libCB.so|8288a6c881f327be6fd3e8b69e423679bc36844e
+vendor/lib64/libgsl.so|8a19668e9664f00ea6c47aa5d1cbfd7631c7965d
+vendor/lib64/libllvm-glnext.so|db7605f2bb4f11d76a4b1bb7a378eec063273bc6
+vendor/lib64/libllvm-qcom.so|94bb5b909666de7268d5cd4ce7aa851a8bc50ce0
+vendor/lib64/libllvm-qgl.so|b67783a843919be32cd6b67062dc435e8aa689f2
+vendor/lib64/libmm-disp-apis.so|772f21209154701dac8e143b26f42870b45d3e04
+vendor/lib64/libmm-qdcm.so|a3ba21337d710378d758666eb5cdc945bbe369ae
+vendor/lib64/libOpenCL.so|f040a46da08ecb13fb2b062aa9d28c44c0d7c16b
+vendor/lib64/librs_adreno_sha1.so|657e7b8d24583e16370b85cd5611867f851a2f4e
+vendor/lib64/librs_adreno.so|c1b178b27a1b3f3f501a4d02c665122847b7f163
+vendor/lib64/libRSDriver_adreno.so|bfb3bc3396f3b94dd3ba4a8d7fa0b6e9c100daae
 vendor/lib/egl/eglSubDriverAndroid.so|df793571f098118d17791ba41ef6665622537420
 vendor/lib/egl/libEGL_adreno.so|e71d8c2e3cbc45a400eebb06f5b4537765d6774b
 vendor/lib/egl/libGLESv1_CM_adreno.so|6cdf508dc2808ac60f61807602da0ea2546b01f1
-vendor/lib/egl/libGLESv2_adreno.so|070b15c84f40c90d5da62bede1978a7837c54b38
-vendor/lib/egl/libq3dtools_adreno.so|d7d7a70f57ed27862da09c90a5852eb41b71efaf
+vendor/lib/egl/libGLESv2_adreno.so|55168d708a04cd0d39eb4c271c4c58bada58bae5
+vendor/lib/egl/libq3dtools_adreno.so|d5e24aefea281a38763b74bb897ff4a6af868175
 vendor/lib/egl/libQTapGLES.so|69fb946bed7b1e265947573a8492e711bbb3cb8d
 vendor/lib/libadreno_utils.so|453dfc59669960eac1d6043a57277391b8e55c7b
-vendor/lib/libbccQTI.so|0ac30b23edc1d6968c2bb75a61ea4a52ac9132f0
+vendor/lib/libbccQTI.so|7bfe04f475cdd11cfade9672fabbaff9cad9de20
 vendor/lib/libC2D2.so|5b72e7b3974e4e9785df16595ff3a54a97a6f182
-vendor/lib/libc2d30_bltlib.so|f04275a0cfb755a9d04678c3843224d11fb442c8
+vendor/lib/libc2d30_bltlib.so|6f00da3e3abe2d523a32b03005a8c11c6c90deb0
 vendor/lib/libc2d30-a5xx.so|0672672f3fb95eab090ea57553592991c13bc971
-vendor/lib/libCB.so|9d051c6214066172f57e29d80e7948b6e0afff90
-vendor/lib/libgsl.so|5ab1cc255bbbbed36b8d09a201dbaea141c795a4
-vendor/lib/libllvm-glnext.so|49835c8210d973f882b7802dfb1678340c07bb33
-vendor/lib/libllvm-qcom.so|4110785a098f0da0d77417ae2fdde81185801ff8
-vendor/lib/libllvm-qgl.so|99253ceb83c5e57b288b06834ca3c73d41cda8a3
-vendor/lib/libmm-disp-apis.so|aac4871fd05be91bce4344a8623fc7071d4039da
-vendor/lib/libmm-qdcm.so|ce551d1b6227da80ef81ea1dd32b26295927a572
-vendor/lib/libOpenCL.so|693a7a1cf8e725c84dabbacc0eb2df4fa65ab23a
-vendor/lib/librs_adreno_sha1.so|21fbfc3e9a664b133ce66cf677fff9db09c198fd
-vendor/lib/librs_adreno.so|e203398c6cc2a776b7fbde6f559c831f6caaa371
-vendor/lib/libRSDriver_adreno.so|7ac7282500005f8a220c65632246bd69fe13a7e3
+vendor/lib/libCB.so|2fde76ff88f951811a2b41011e4fec52ec5fed54
+vendor/lib/libgsl.so|bebb25960892b3abd17299258a947e5920adfa98
+vendor/lib/libllvm-glnext.so|8ee50f917dd3feeee4bdaa9c977b28a2842347d3
+vendor/lib/libllvm-qcom.so|762ad27c4120b64707dbf7aebe1cc9ef01731a44
+vendor/lib/libllvm-qgl.so|503d7b8ff2c124df1210bec8fffdfb1912a25d37
+vendor/lib/libmm-disp-apis.so|2ce644e3fc59af10df76ca98ac75e8514489d5e2
+vendor/lib/libmm-qdcm.so|82013fd722702f735ea107a7b2d03ef9c0f70045
+vendor/lib/libOpenCL.so|8d699bb6d1245596182b89d5f774fde09372fe61
+vendor/lib/librs_adreno_sha1.so|23113afabde126c856d8237601277562c8cafe99
+vendor/lib/librs_adreno.so|dd85e41bb51c3ce0d5b59fe7f4f6d91365c261a4
+vendor/lib/libRSDriver_adreno.so|c0551aea7d32e21efde69a6a43b8b45bf69e0528
 
-# Graphics (HDR) - from bardock-pro - OPM1.171019.011
-vendor/lib/libhdr_tm.so|9a7bd05a5ba74e53f3a573c13c9041bb376d309e
-vendor/lib64/libhdr_tm.so|b8d140f6ae4ac8e8c4f4762e7a44b85082b969df
+# Graphics (HDR) - from vince - OPM1.171019.019
+vendor/lib/libhdr_tm.so|9f191fda6909c92b29ac15c3d2cbf65c2db94b13
+vendor/lib64/libhdr_tm.so|9a61ddbece993d3329d337265f7be5278c237833
 
-# Graphics (SDM) - from bardock-pro - OPM1.171019.011
-vendor/lib64/libscalar.so|94ebef877b7ea56e94d5749303dd832e3a013145
-vendor/lib64/libsdm-color.so|031e4ee4fd10edaac872aff27ec3ee24b5e16c1a
-vendor/lib64/libsdm-diag.so|e27a62468b4ba69f4b277ba0cde40045a717cd65
-vendor/lib64/libsdm-disp-apis.so|0ccaeceb8922a623fd6fba7461db763d03916646
--vendor/lib64/libsdm-disp-vndapis.so|6e3badb9c989fe0a1a646c4c6e360d94839b123e
-vendor/lib64/libsdmextension.so|e71c53f1edf56dd8e8ead322caae4172f3163808
-vendor/lib64/libtinyxml2_1.so|8876b148e0246a770094b9abf7ee3e581d4ecd29
+# Graphics (SDM) - from vince - OPM1.171019.019
+lib64/libsdm-disp-apis.so:vendor/lib64/libsdm-disp-apis.so|6a43376f167b146a8b8b571d87235a83af9841e1
+vendor/lib64/libscalar.so|fa8715f4ef91443744e921cf7912516a677c9f9d
+vendor/lib64/libsdm-color.so|864ba48cda7279a7c2bb07ce9182bd4417dec4ff
+vendor/lib64/libsdm-diag.so|0e5be5803c36ed004724be97553f5ae18a1f24de
+-vendor/lib64/libsdm-disp-vndapis.so|4e936b7cbc00bb05381d03b70c8c53e377676bb3
+vendor/lib64/libsdmextension.so|393ea6941b07e7dbb2455e427e50a94691616800
+vendor/lib64/libtinyxml2_1.so|5ffb12fd2162910fc95be463fcde04ab5c427045
 
-# Graphics vulkan - from bardock-pro - OPM1.171019.011
-vendor/lib/hw/vulkan.msm8953.so:vendor/lib/hw/vulkan.msm8937.so|266100281c207d7c89517af5fbcdfddc58fd28e1
-vendor/lib64/hw/vulkan.msm8953.so:vendor/lib64/hw/vulkan.msm8937.so|91aecf5dc289edbe0a7943d6f156834dd057fa9b
+# Graphics vulkan - from vince - OPM1.171019.019
+vendor/lib/hw/vulkan.msm8953.so:vendor/lib/hw/vulkan.msm8937.so|9d5e6a3cd8347f35637f10964a136a4be1dfb662
+vendor/lib64/hw/vulkan.msm8953.so:vendor/lib64/hw/vulkan.msm8937.so|a807c89045221b0c99316c637ac69a22d48c11e8
 
-# Graphics firmware - from bardock-pro - OPM1.171019.011
+# Graphics firmware - from vince - OPM1.171019.019
 vendor/firmware/a530_gpmu.fw2|706da8d5ee565dcf456341f805ee75a40773f65a
 vendor/firmware/a530_pfp.fw|448f9db8271fefb08348cbc50409e8e95bd93f78
 vendor/firmware/a530_pm4.fw|5741a28752355b478d455635bab008028ff7e1c6
@@ -185,36 +186,36 @@ vendor/firmware/a530v2_seq.fw2|63b6d25594a5c1f4217d996a2b636e17a29fc840
 vendor/firmware/a530v3_gpmu.fw2|0a2f6f450231673d75ba39e5d28776db3becf810
 vendor/firmware/a530v3_seq.fw2|8963a53acc689725dee4b22881a4dd4b80e5def8
 
-# Ipacm - from tissot - OPR1.170623.026
-vendor/bin/ipacm-diag|789ed0ad27ba7c302ccdd0e9068e43ad88107c52
+# Ipacm - from vince - OPM1.171019.019
+vendor/bin/ipacm-diag|2fbeb33bc020d62d92dfc332e0ed5e561e2100d1
 
-# Keystore - from tissot - OPR1.170623.026
-vendor/lib/hw/keystore.msm8953.so:vendor/lib/hw/keystore.msm8937.so|af18e8b776eba29e961cab728b44c5dd154ac386
-vendor/lib64/hw/keystore.msm8953.so:vendor/lib64/hw/keystore.msm8937.so|a8901a748f3187696a95acc87087806b0a361c7e
+# Keystore - from vince - OPM1.171019.019
+vendor/lib/hw/keystore.msm8953.so:vendor/lib/hw/keystore.msm8937.so|00434c697f84fb0496b2fdbd7797e22ceb2bbed6
+vendor/lib64/hw/keystore.msm8953.so:vendor/lib64/hw/keystore.msm8937.so|c396bd1b3375957af39929ee27155561599ed5cf
 
-# Listen - from tissot - OPR1.170623.026
-vendor/lib64/hw/sound_trigger.primary.msm8953.so:vendor/lib64/hw/sound_trigger.primary.msm8937.so|d7d16c3b1bcee7fe58826dbc8168a9b057a2b983
-vendor/lib/hw/sound_trigger.primary.msm8953.so:vendor/lib/hw/sound_trigger.primary.msm8937.so|86bb2f9fce542d72135b8069ffc192daac6a6fba
-vendor/lib/libadpcmdec.so|ecf004c29b8ff2d9ee6f8c4ec473a56608140b7c
-vendor/lib/libsmwrapper.so|d7663a81dcc9f52eeb51ef1e15203e40ff9fcb15
+# Listen - from vince - OPM1.171019.019
+vendor/lib64/hw/sound_trigger.primary.msm8953.so:vendor/lib64/hw/sound_trigger.primary.msm8937.so|84915e0a3f7e22f34aba58c1a7508b472ef959b5
+vendor/lib/hw/sound_trigger.primary.msm8953.so:vendor/lib/hw/sound_trigger.primary.msm8937.so|ce7deb6520662177ba88518671871478ba802bb8
+vendor/lib/libadpcmdec.so|f535598d22b385456be46db80059755c19db5b7c
+vendor/lib/libsmwrapper.so|5fa8aaf59c4d5c8925f77f28ea56b70d55dbdaee
 
-# Media - from bardock-pro - OPM1.171019.011
--vendor/lib/libgpustats.so|a071c887e20853c975d958fc9a20fc9060bf1c9a
-vendor/lib/libOmxAacDec.so|d9989948a9d69be9147966ae2074c5630283e330
-vendor/lib/libOmxAlacDec.so|66a5b18e216589ff3480f3e2ed7ad9417179bb2d
-vendor/lib/libOmxAlacDecSw.so|f64d854f3c2af958a39789e0cac06e727ae04f02
-vendor/lib/libOmxAmrDec.so|233d986523d24bc17f7ef4493d31ba48cd2805fa
-vendor/lib/libOmxAmrwbplusDec.so|9bc02001fe2c586499c560eeb913179a890f26d0
-vendor/lib/libOmxApeDec.so|43d6dbdcfa2d4e772f9094ae2f58e3ce12045736
-vendor/lib/libOmxApeDecSw.so|6d71e2bf941565c258399df9aad53535f11a37fc
-vendor/lib/libOmxEvrcDec.so|bef6847bc3657b3da05a6fb8889714423df5c9d2
-vendor/lib/libOmxQcelp13Dec.so|0cabcb5c81f5edfa776b90baa6dfc68963b72e0e
-vendor/lib/libOmxVideoDSMode.so|82bf1db2a704a9e659081306d2934b25df389837
-vendor/lib/libOmxVpp.so|c78b1f37f09328f10fbd62edac4f68b3eac7fef5
-vendor/lib/libOmxWmaDec.so|44998108a6a1bc2d089a4e3d0de88cb210f2b7cc
-vendor/lib/libvpplibrary.so|da05a8f39c02b3b46d60ccec4ca76a80c64e3f8b
-vendor/lib/libvqzip.so|9e3204e8f742bdadbe3d624acb42599f8a428bed
--vendor/lib64/libgpustats.so|02800013cce914aae5a529eef1e0cf36673a99e7
+# Media - from vince - OPM1.171019.019
+-vendor/lib/libgpustats.so|6918887a8b766d09aeb83b45fa4ff8edeaefe750
+vendor/lib/libOmxAacDec.so|811f5bcb7eb8bc587cef01eeb6d8a6700e090ed1
+vendor/lib/libOmxAlacDec.so|5ae0453dbf8d8d214a3d32b5a5f612dbc2159a08
+vendor/lib/libOmxAlacDecSw.so|8038041d44ed6d5d894c1314cd645a2d4bfd21fe
+vendor/lib/libOmxAmrDec.so|41e31f50e665102adcb67f5c166494fca9ae9002
+vendor/lib/libOmxAmrwbplusDec.so|b605b30debb5c25fe2d423f3f2ec40d2975567ee
+vendor/lib/libOmxApeDec.so|de5dc26027edf3f49ee33da467a3cfb980424eff
+vendor/lib/libOmxApeDecSw.so|a1355949eee14cd814e29b3c204b975744b8a49c
+vendor/lib/libOmxEvrcDec.so|bc06bdcd812e012541dc59a53cae3f1b8fbca250
+vendor/lib/libOmxQcelp13Dec.so|25c7f4a214b9fb18e006bb3368c032a73e9fc729
+vendor/lib/libOmxVideoDSMode.so|169545ced7000f0950c006677c33537aaa70dcec
+vendor/lib/libOmxVpp.so|6f2cd7977e899a3855e9e9c847fecb06ab88049c
+vendor/lib/libOmxWmaDec.so|4a104c21020e550350eab38a3489ee30fd511993
+vendor/lib/libvpplibrary.so|63a1a466b512af994357a5740824f557045d44bd
+vendor/lib/libvqzip.so|70451e720fb3d5697cf440432c430e3e39e0ad71
+-vendor/lib64/libgpustats.so|60d5afa0c9bbbd11ee1b8d5d9470b8684a590da7
 
 # Media OMX - from TA-1025 - OPR1.170623.026
 -vendor/lib/libMpeg4SwEncoder.so|971eb18b4209287f7c078c082508ebc46c11de0e
@@ -243,33 +244,33 @@ vendor/lib64/libqti-perfd.so|f757c80b719a07ecf08af6c5a0cce8e4fe74e0f3
 vendor/lib64/libqti-util.so|dbb96954a50d36822ddf77a2ff886938d32cbb28
 vendor/lib64/vendor.qti.hardware.perf@1.0_vendor.so|75f2b67fe4ef59eb1a7db3f14620fd2dd5fc20e7
 
-# Peripheral manager - from tissot - OPR1.170623.026
-vendor/bin/pm-proxy|e12c72d05c764a2c45b2a5d4d1886519cba3fb16
-vendor/bin/pm-service|83fac998bf8f651f2f0cd2385f6e1b7c3eefe5ea
-vendor/lib/libperipheral_client.so|0dabab6dc68748c2b0d3a97a5708ee555b3d5650
-vendor/lib64/libperipheral_client.so|d6db5efd4667ae3e831403f4e313fa38a5ae7bc8
+# Peripheral manager - from vince - OPM1.171019.019
+vendor/bin/pm-proxy|3a6e03b81206ac445f70bd04309131e2e6757a53
+vendor/bin/pm-service|d115b6d3e3113e36cf78f9c5e1128bcb6686d528
+vendor/lib/libperipheral_client.so|f8f7ebda2c0f443b811db68e6675e265a0185edf
+vendor/lib64/libperipheral_client.so|5acda41dcc3e85a90220a7cd6eb1ed37f9f67ae1
 
-# Postprocessing - from bardock-pro - OPM1.171019.011
+# Postprocessing - from vince - OPM1.171019.019
 etc/permissions/com.qti.snapdragon.sdk.display.xml|0bff16d681e75f203c1e11ff33afba82490e49b3
-framework/com.qti.snapdragon.sdk.display.jar|cc367fe3c3525bc580f0d3ab41e43190dcee60dc
-lib/libsd_sdk_display.so:vendor/lib/libsd_sdk_display.so|35f948fad2633f8cf2c004655e1c24fa4a2b4eaf
--lib/vendor.display.color@1.0.so|3ace5cf91dd9686a2250dfb7c50f883f81f38b74
-lib/vendor.display.postproc@1.0.so|d6069ae2c43121117acf976c79b1ce59735cfe3b
-lib/vendor.qti.hardware.qdutils_disp@1.0.so|a12b9e484ce9f7ab590b3fee91d320cba903badc
-lib64/libsd_sdk_display.so:vendor/lib64/libsd_sdk_display.so|8b79762452896eaa9ff97b7ae72646bfcf06423d
+framework/com.qti.snapdragon.sdk.display.jar|990071ca0f742f80d91928c8a1e76c4a4fadc77c
+lib/libsd_sdk_display.so:vendor/lib/libsd_sdk_display.so|7d0951f1543a84dfe7b669114862db82f1c80207
+-lib/vendor.display.color@1.0.so|874a549433a551f8f96de8cd21092cd6f5915b85
+lib/vendor.display.postproc@1.0.so|9c1ca9867a829406563a9dc670b603228cb556f4
+lib/vendor.qti.hardware.qdutils_disp@1.0.so|a04c30bcac091271239d039d199d28915ed215b4
+lib64/libsd_sdk_display.so:vendor/lib64/libsd_sdk_display.so|b8a7159c1ab25f752d2c74112c45d2e8fb5679b4
 -lib64/vendor.display.color@1.0.so|ecd9bfd4e7f416218c172481a7192328f5c2a48f
 lib64/vendor.display.postproc@1.0.so|67e865d2c463d36c8eda8528ef4f36462b973eef
 lib64/vendor.qti.hardware.qdutils_disp@1.0.so|182817148907df624dcea5af27fd8d8256e02442
-vendor/bin/hw/vendor.display.color@1.0-service|d425553ff762338a67e3d8b6b98db46357099657
-vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti|90992c4c9a036a1964f6b90acd16fb3e5bb050ad
-vendor/bin/mm-pp-dpps|25195ef9f617154420c9ce5d57499e671c4e6d6a
+vendor/bin/hw/vendor.display.color@1.0-service|fec0d808fa0b795bf3afe8cad8afa06dcc3bf6e1
+vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti|dc6ff7d6bdb4bd7ee248eb03e4b1e53bd04f8221
+vendor/bin/mm-pp-dpps|e14258c9509f82aeb145ef2dd2f3e867c6fecbf9
 vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
 vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc|69d9cbc54f8ac0a0fb010f92bfa7de5981d643cf
-vendor/lib/libdisp-aba.so|1e3115378afe16e1150f5c9750c6c63dfff7de94
-vendor/lib/vendor.display.color@1.0_vendor.so|7ca706d322a38084ea2e6b103efe1acd33183400
-vendor/lib/vendor.display.postproc@1.0_vendor.so|a710a9d7f93892961ff71420fe222add0bfcf57e
-vendor/lib/vendor.qti.hardware.qdutils_disp@1.0_vendor.so|04bf21220673630ebaa4c8e7a84adbcdcf08f0dc
-vendor/lib64/libdisp-aba.so|fc7f1b0104c05fb8b9bec65778542f3a79fec035
+vendor/lib/libdisp-aba.so|a047b2562df0efcaf9821d1c27bd39e7f8339212
+vendor/lib/vendor.display.color@1.0_vendor.so|25099cde413ff77b272f60c057d99b0e80507821
+vendor/lib/vendor.display.postproc@1.0_vendor.so|5e57ead2db9689af2bd69027e7781d70f3ce09de
+vendor/lib/vendor.qti.hardware.qdutils_disp@1.0_vendor.so|32429d815ee67d5bb7402fdcdbaf92029282b5c6
+vendor/lib64/libdisp-aba.so|b48a88c875c910a9a5e8d75306cbf3b01e032d91
 vendor/lib64/vendor.display.color@1.0_vendor.so|25c717f3004a5932dcbb2f55d5165c010f7eac1a
 vendor/lib64/vendor.display.postproc@1.0_vendor.so|503ef07fcfbbfcd8db096de79dfd822c8ada5e9b
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0_vendor.so|d101774878c0374ad805d964c3d00c71b44456d9
@@ -413,18 +414,18 @@ vendor/lib64/lib-uceservice.so|3d782c0bbcc3727541ffa63a887060cdf559d916
 vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so|f6113715ce15dd8c1400d8017e0e033b75e0faf3
 vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so|cda7a4da8436db7a71496fbc6b75136d99af0658
 
-# Sensors - from tissot - OPR1.170623.026
-vendor/bin/sensors.qcom|a175898ba5c55379a4fb15d87703db58666ddeb7
-vendor/lib/hw/activity_recognition.msm8953.so:vendor/lib/hw/activity_recognition.msm8937.so|4fa33baa4233661776cc548133600958a9168abf
-vendor/lib/libsensor1.so|4fce964db2d627f8c76b93c31d7c4f2b3b0fabc9
-vendor/lib/libsensor_reg.so|b4d7021b9f52b1af4b088a53288f17909e6968a4
-vendor/lib/libsensor_user_cal.so|b758a03d38090f15e094d64e64ba898f31b32cce
-vendor/lib/sensors.ssc.so|39d40e928ca9ef558506a7632baa341f16dd85b6
-vendor/lib64/hw/activity_recognition.msm8953.so:vendor/lib64/hw/activity_recognition.msm8937.so|2e485b261024fe1682eb2af733050e82c6e9e576
-vendor/lib64/libsensor1.so|48119f1ae57517699cf4dd5ac665a075465c19fe
-vendor/lib64/libsensor_reg.so|687cac41f342ff446ef4e078079a82b621e9067b
-vendor/lib64/libsensor_user_cal.so|5db27c02f41594740cdf5c0ef75f423bd56d8648
-vendor/lib64/sensors.ssc.so|ab10d321434e08a499dbd58b2ca1a92c74b10674
+# Sensors - from vince - OPM1.171019.019
+vendor/bin/sensors.qcom|2ae8e8cafa9c7a255700ceeac1bed303d6f4b5cf
+vendor/lib/hw/activity_recognition.msm8953.so:vendor/lib/hw/activity_recognition.msm8937.so|d6f053bedb81489d703e45cf2cf6161561359909
+vendor/lib/libsensor1.so|bd4053228834dc07dea1200b240515111870ce1f
+vendor/lib/libsensor_reg.so|1666c33dfc8aebc20b407f91a3cafbd7dbcc1954
+vendor/lib/libsensor_user_cal.so|6a028d786594d9e566a92182a953aaf917ed75b5
+vendor/lib/sensors.ssc.so|ea22e769345e2e84c589e824698ac9f28c18b16a
+vendor/lib64/hw/activity_recognition.msm8953.so:vendor/lib64/hw/activity_recognition.msm8937.so|ac0e5ab3688abd50aedeca267ec6705822877abf
+vendor/lib64/libsensor1.so|b0c685377d00f0c60c7de542690e6f15560ac820
+vendor/lib64/libsensor_reg.so|fa41f0540d5cd4006489a40c6cb166673167b899
+vendor/lib64/libsensor_user_cal.so|185c7856de2aeafa13d5c461d692deac0d49d31a
+vendor/lib64/sensors.ssc.so|a0a951ab797ebac09cff55eaa524ee9133669078
 
 # Thermal - from TA-1025 - OPR1.170623.026
 vendor/bin/thermal-engine|d301c065db3e8e2592e3f5552c38f59dbc5cd31e
@@ -434,24 +435,24 @@ vendor/lib/hw/thermal.msm8937.so|3b64f3f3cd6475e35615e6fa021e17dfa37049ab
 vendor/lib64/libthermalioctl.so|0826999e64d4e75032ceb3533957a7407667ecdc
 vendor/lib64/hw/thermal.msm8937.so|fdb5eeec13c4e669128245e53f6a91cf87e0481a
 
-# Time services - from tissot - OPR1.170623.026
--vendor/app/TimeService/TimeService.apk|0d0b2d8b737b3083668d6cddd41b608825a5e5be
-vendor/bin/time_daemon|aecfad5b0eb3a1ad85cee394cbcb2e2006a8bce7
--vendor/lib/libtime_genoff.so|15c7a4d24b6dcc26a0823e1e7b7874ac07f879b3
--vendor/lib64/libtime_genoff.so|0f5b21c5d9abd69249774a7d5c2c5195558e549d
+# Time services - from vince - OPM1.171019.019
+-vendor/app/TimeService/TimeService.apk|b64fdc36d870686b7d6df427a3f867344369a853
+vendor/bin/time_daemon|367ef27200767dddfdd1d746e9a6bdc9b4f5ee8f
+-vendor/lib/libtime_genoff.so|a69977bdce8f3e79a67ea07577240aa869a46980
+-vendor/lib64/libtime_genoff.so|19e05dc177b6218d87513bfdab3e06690635fad8
 
-# TUI - from tissot - OPR1.170623.026
-lib/vendor.qti.hardware.tui_comm@1.0.so|a6a87a16689f3591e7b3baf3f7761fdd64e3644b
-lib64/vendor.qti.hardware.tui_comm@1.0.so|57fe95d486a3a286d98d8e63baa6c01597185eb8
-vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|b4a0a245048ee7dd6cb66c8954a1248fd7884a0b
+# TUI - from vince - OPM1.171019.019
+lib/vendor.qti.hardware.tui_comm@1.0.so|354622f4707735a66cef7d3a00b228c36537c229
+lib64/vendor.qti.hardware.tui_comm@1.0.so|23259afec43beef5d2314ae814e00475ee34232e
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|df9b713b1f04917646f40d37f1900f013e346ad8
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
-vendor/lib/vendor.qti.hardware.tui_comm@1.0_vendor.so|f2ff7e23ca961bae3ae7ff88f6ca12b5c6949e91
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0_vendor.so|dcafa873cf8a7c5782d62acb607581bbc1f23f9a
+vendor/lib/vendor.qti.hardware.tui_comm@1.0_vendor.so|cd7713df15e6ae976cea11460bcd3af430fd6f13
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0_vendor.so|359b87c1daad8c430005c86c451a7b095a934d91
 
-# Widevine - from tissot - OPR1.170623.026
-vendor/bin/hw/android.hardware.drm@1.0-service.widevine|62dbed3b465a6abe33d03dd66cf89f3227766850
+# Widevine - from vince - OPM1.171019.019
+vendor/bin/hw/android.hardware.drm@1.0-service.widevine|0e19427c710464491d8d3b51bc10271272d51c2e
 vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc|51a3168a0dbc064d78ee11ca83614c0cd2e6daa5
-vendor/lib/libwvhidl.so|88ebba6280bd85e5bfea18efe2f685b0e1fb6f50
+vendor/lib/libwvhidl.so|d45c2570fb08fe81604dd095c64768570708b4e0
 
-# WIFI - from tissot - OPR1.170623.026
-vendor/bin/wcnss_service|28b35124227c32964479d9a320180f75caa21142
+# WIFI - from vince - OPM1.171019.019
+vendor/bin/wcnss_service|ef939c579e060ff5f0be13c8b028e919379cba06
