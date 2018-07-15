@@ -1,3 +1,7 @@
+# Audio
+vendor/lib/libhwdaphal.so|356d9d46adff5ed452011b4d6be3cbd3663b8975
+vendor/lib64/libhwdaphal.so|3b953d19a1349b601d4ae28bfa3bf6df5279f2ac
+
 # Camera - from karatep (K6 Note)
 bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon|db7348d34ba2ed22a5b21a17b3070f83be4a6b0a
 lib/libivc_smartengine.so:vendor/lib/libivc_smartengine.so|1d4497e88e268918ad1725bf744ab7eee48c374e
