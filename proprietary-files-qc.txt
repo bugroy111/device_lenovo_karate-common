@@ -430,10 +430,8 @@ vendor/lib64/sensors.ssc.so|a0a951ab797ebac09cff55eaa524ee9133669078
 # Thermal - from TA-1025 - OPR1.170623.026
 vendor/bin/thermal-engine|d301c065db3e8e2592e3f5552c38f59dbc5cd31e
 -vendor/lib/libthermalclient.so|3afc3a5e5f27d550d1862dd5c4eca7996f411938
-vendor/lib/hw/thermal.msm8937.so|3b64f3f3cd6475e35615e6fa021e17dfa37049ab
 -vendor/lib64/libthermalclient.so|675fbd8d6c78b77468556de63f8b06f7eaedaf0c
 vendor/lib64/libthermalioctl.so|0826999e64d4e75032ceb3533957a7407667ecdc
-vendor/lib64/hw/thermal.msm8937.so|fdb5eeec13c4e669128245e53f6a91cf87e0481a
 
 # Time services - from vince - OPM1.171019.019
 -vendor/app/TimeService/TimeService.apk|b64fdc36d870686b7d6df427a3f867344369a853
