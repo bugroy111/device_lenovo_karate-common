@@ -125,9 +125,9 @@ vendor/lib/libmmcamera_isp_template.so|371bda47ae0367d35a90da56a7775914d43b0810
 vendor/lib/libmmcamera_isp_wb40.so|321663dbc0895e4565ac8397a4d72142cec01433
 
 # Fingerprint - from karatep (K6 Note)
-lib/hw/fingerprint.default.so:vendor/lib/hw/fingerprint.default.so|468e00c6228b51108dd6f02e191497e1a6d4aef5
+lib/hw/fingerprint.default.so:vendor/lib/hw/fingerprint.msm8937.so|468e00c6228b51108dd6f02e191497e1a6d4aef5
 lib/libcom_fingerprints_service.so:vendor/lib/libcom_fingerprints_service.so|8bb940a0d403ed2dc0086aa36d4293f6e7b86111
 lib/lib_fpc_tac_shared.so:vendor/lib/lib_fpc_tac_shared.so|29b67fc11441fe473ba2539018ab75b56df1b92d
-lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.default.so|ae74f78ae5e0ded2c7ef0f1b9c941103ca0ef126
+lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.msm8937.so|ae74f78ae5e0ded2c7ef0f1b9c941103ca0ef126
 lib64/libcom_fingerprints_service.so:vendor/lib64/libcom_fingerprints_service.so|3d7aaf2f30192fe5522f8d5fb8b1e675d1e84c70
 lib64/lib_fpc_tac_shared.so:vendor/lib64/lib_fpc_tac_shared.so|d81da2e89a8901a8b91a2ccb95e0cb0a0186c0cf
