@@ -309,6 +309,18 @@ void IPACM_Wlan::event_callback(ipa_cm_event_id event, void *param)
 					} else {
 						IPACMDBG_H("Wan_V6 haven't up yet \n");
 					}
+#else
+					/* check if Upstream was set before */
+					if (IPACM_Wan::isWanUP(ipa_if_num))
+					{
+						IPACMDBG_H("Upstream was set previously for ipv4, change is_upstream_set flag\n");
+						is_upstream_set[IPA_IP_v4] = true;
+					}
+					if (IPACM_Wan::isWanUP_V6(ipa_if_num))
+					{
+						IPACMDBG_H("Upstream was set previously for ipv6, change is_upstream_set flag\n");
+						is_upstream_set[IPA_IP_v6] = true;
+					}
 #endif
 					/* checking if SW-RT_enable */
 					if (IPACM_Iface::ipacmcfg->ipa_sw_rt_enable == true)
@@ -1722,8 +1734,10 @@ int IPACM_Wlan::handle_down_evt()
 		IPACMDBG_H("LAN IF goes down, backhaul type %d\n", IPACM_Wan::backhaul_is_sta_mode);
 		IPACM_Lan::handle_wan_down(IPACM_Wan::backhaul_is_sta_mode);
 #ifdef FEATURE_IPA_ANDROID
+#ifndef FEATURE_IPACM_HAL
 		/* Clean-up tethered-iface list */
 		IPACM_Wan::delete_tether_iface(IPA_IP_v4, ipa_if_num);
+#endif
 #endif
 	}
 
