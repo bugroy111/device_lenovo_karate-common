@@ -65,6 +65,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.opengles.version=196610 \
     ro.qualcomm.cabl=2 \
     ro.sf.lcd_density=480
 

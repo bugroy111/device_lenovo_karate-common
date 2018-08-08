@@ -1,3 +1,0 @@
-# Media Extensions
-BOARD_SECCOMP_POLICY := $(LOCAL_PATH)/seccomp
-TARGET_USES_MEDIA_EXTENSIONS := true
