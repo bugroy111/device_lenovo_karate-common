@@ -37,7 +37,6 @@
 
 #include "vendor_init.h"
 #include "property_service.h"
-#include "util.h"
 
 #include "init_msm8937.h"
 
