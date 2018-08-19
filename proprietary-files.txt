@@ -224,35 +224,35 @@ lib64/lib_fpc_tac_shared.so:vendor/lib64/lib_fpc_tac_shared.so|d81da2e89a8901a8b
 vendor/lib/hw/gatekeeper.msm8953.so:vendor/lib/hw/gatekeeper.msm8937.so|9167fce2796332834d1a209566f6449c954394e3
 vendor/lib64/hw/gatekeeper.msm8953.so:vendor/lib64/hw/gatekeeper.msm8937.so|c7b1fb00d0189513327e93c541c6e9b003bc76e9
 
-# GPS
-vendor/bin/hw/vendor.qti.gnss@1.0-service
-vendor/bin/loc_launcher
-vendor/bin/lowi-server
-vendor/bin/slim_daemon
-vendor/bin/xtra-daemon
-vendor/etc/init/vendor.qti.gnss@1.0-service.rc
-vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so
-vendor/lib64/libdataitems.so
-vendor/lib64/libdrplugin_client.so
-vendor/lib64/libDRPlugin.so
-vendor/lib64/libevent_observer.so
-vendor/lib64/libflp.so
-vendor/lib64/libgeofence.so
-vendor/lib64/libizat_client_api.so
-vendor/lib64/libizat_core.so
-vendor/lib64/liblbs_core.so
-vendor/lib64/libloc_api_v02.so
-vendor/lib64/libloc_ds_api.so
-vendor/lib64/libloc_externalDr.so
-vendor/lib64/liblocationservice_glue.so
-vendor/lib64/liblocationservice.so
-vendor/lib64/liblowi_client.so
-vendor/lib64/liblowi_wifihal.so
-vendor/lib64/libquipc_os_api.so
-vendor/lib64/libulp2.so
-vendor/lib64/libxtadapter.so
-vendor/lib64/libxtwifi_ulp_adaptor.so
-vendor/lib64/vendor.qti.gnss@1.0_vendor.so
+# GPS - from bardock 8.1.0 OPM1.171019.026
+vendor/bin/hw/vendor.qti.gnss@1.0-service|bdf23fe2af07c2afb74721023431446104fd828d
+vendor/bin/loc_launcher|0675f4524d2c9e94f7e978b5e00734c0835ddf15
+vendor/bin/lowi-server|b9c62aefd4633a2a50287fd768a8000c37ae1b0e
+vendor/bin/slim_daemon|ac7b90dcc27ef1d1fdd6a1c98bc495f90d19ecf4
+vendor/bin/xtra-daemon|29db86b7335caca8e2b34652893c4293aa76c29e
+vendor/etc/init/vendor.qti.gnss@1.0-service.rc|98655e2adc2158a052b0ecf06b065535f0a2aac7
+vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so|238efbd306542db3cf890b250bd38452af0d500e
+vendor/lib64/libdataitems.so|1ffcb1a655738301fda0f2ae5bd458f4901475f0
+vendor/lib64/libdrplugin_client.so|312ef07b275bdbfb923cca18e961edf146736616
+vendor/lib64/libDRPlugin.so|d4f1127ed8f98011fe9687d40e8942e5738f4273
+vendor/lib64/libevent_observer.so|c163884372303f68e1fc073cf42d30959ef771c6
+vendor/lib64/libflp.so|3ccecdd103f0ff8689e22b6f0105ba1b6a1c2b27
+vendor/lib64/libgeofence.so|b666ad9429e910f3644e73066a2fd2fd5bc7df1e
+vendor/lib64/libizat_client_api.so|896931c51c7fa8a9f626c971361679823e635d77
+vendor/lib64/libizat_core.so|49a29753966951814cb94b5ca0b899a3bfb74297
+vendor/lib64/liblbs_core.so|0b82101df79d0694dbd77fce64a067aa34633e60
+vendor/lib64/libloc_api_v02.so|fd06587dbe0e83d698b6f0b8fa2d4035ec5f9fb8
+vendor/lib64/libloc_ds_api.so|88c08388cc003670f46d4f0b2fe44bfdf47cfa2d
+vendor/lib64/libloc_externalDr.so|9165f1621d9d34034c4921c96bf45849429f32fd
+vendor/lib64/liblocationservice_glue.so|982bef4e38c686999633fceb023197477dbc46b5
+vendor/lib64/liblocationservice.so|6db1ec078cc6a15e49b7cdb680a1014d0daa2637
+vendor/lib64/liblowi_client.so|89305e655cbdbe53dde3afc804b5dddb5fa9ce6e
+vendor/lib64/liblowi_wifihal.so|831095ee8091008db81af836cafc8a90b210d4bc
+vendor/lib64/libquipc_os_api.so|12ffd3e3a2d566d68c1ee45b0879597822df7971
+vendor/lib64/libulp2.so|a7325ec5cfdd54a44dca7465f51c531bfcd62062
+vendor/lib64/libxtadapter.so|9a8fbd106994aaaf380be883fa2ef37d04e20401
+vendor/lib64/libxtwifi_ulp_adaptor.so|078124cc018badf89c1f5588e9102e9f7c034da2
+vendor/lib64/vendor.qti.gnss@1.0_vendor.so|07fffa6ef6d22981cd37d2067e9e8f20490213be
 
 # Graphics - from tissot 8.1.0 OPM1.171019.026
 vendor/lib64/egl/eglSubDriverAndroid.so|7a51837cf3df8e18d3b305e2f0e7c5981dd39bf3
