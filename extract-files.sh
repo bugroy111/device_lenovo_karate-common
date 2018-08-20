@@ -74,4 +74,10 @@ sed -i "s|\/data\/vendor\/misc\/audio\/acdbdata\/delta\/|\/data\/vendor\/audio\/
 sed -i "s|\/data\/vendor\/misc\/audio\/acdbdata\/delta\/|\/data\/vendor\/audio\/acdbdata\/delta\/\x00\x00\x00\x00\x00|g" \
     "$COMMON_BLOB_ROOT"/vendor/lib64/libaudcal.so
 
+#
+# Remove unused libmedia.so dependency in the IMS stack
+#
+DPLMEDIA="$COMMON_BLOB_ROOT"/vendor/lib64/lib-dplmedia.so
+patchelf --remove-needed libmedia.so "$DPLMEDIA"
+
 "$MY_DIR"/setup-makefiles.sh
