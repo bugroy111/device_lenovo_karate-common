@@ -144,10 +144,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.sib16_support=1
 
-# Security patch level
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.build.security_patch=2017-11-01
-
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.delta_time.enable=true \
