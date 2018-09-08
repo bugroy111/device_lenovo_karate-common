@@ -20,6 +20,12 @@ vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so|b9f68e320d24e9c51871a20
 vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so|3e9c52069ff07e50191d3b3afb33b30409241ab6
 vendor/lib/rfsa/adsp/libscveT2T_skel.so|91b9200dbb982abf0d6b440668252d892a616f66
 
+# ANT+ - from tissot 8.1.0 OPM1.171019.026
+lib64/com.qualcomm.qti.ant@1.0.so|40f0458ffa4912c3569e41af50a0b8bb03664c86
+-lib64/libantradio.so|475b1c9a21d0e00c0bbbb74a77df600e8bc1479f
+vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|d60fdc9dcf9565a60a2a5dffecba1691d9b14ef5
+vendor/lib64/com.qualcomm.qti.ant@1.0_vendor.so|f5aa67e04c90f4a5e92693384cca81ba0aa38a79
+
 # Audio - from tissot 8.1.0 OPM1.171019.026
 vendor/lib/libacdb-fts.so|17a5d7a23eca76b046142504a7ebe6d0d89d56ed
 vendor/lib/libacdbloader.so|8e7261649c502088e74ae68655a9bab45b6c8625
