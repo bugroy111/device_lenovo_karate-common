@@ -37,9 +37,6 @@ on early-init
 
 on init
 
-    # Support legacy path
-    symlink /sdcard /storage/sdcard0
-
     write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
 
 on post-fs
