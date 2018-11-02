@@ -32,7 +32,7 @@ vendor/lib/libacdbloader.so|8e7261649c502088e74ae68655a9bab45b6c8625
 vendor/lib/libacdbrtac.so|2be1d77e01ee116dea3d83e353e164472f51e9fc
 vendor/lib/libadiertac.so|75a781b4da593b5462877e94a545c2f10956531e
 vendor/lib/libadm.so|9d7fa54689e7ce1b3191a448c1063360cbc68c40
-vendor/lib/libaudcal.so|2847f6c1315338d7b03c45bd1ab8505e3d3e9ab3
+vendor/lib/libaudcal.so|b5fb8a0ea641e84ca83f3ce2247775ec38170682
 vendor/lib/libaudioalsa.so|6eb701f70dcb20dbf9399768de082c0c32b01c9f
 vendor/lib/soundfx/libqcbassboost.so|016528a405f13e9e2bf0793ee98485f19138ca31
 vendor/lib/soundfx/libqcreverb.so|733e30f646b87e4f5ee90baea0ce5e7982d607c9
@@ -41,7 +41,7 @@ vendor/lib64/libacdb-fts.so|94a8765f5a6ba88e9d2d3e7285b22b960e0e20e4
 vendor/lib64/libacdbloader.so|a392a0495ae5aa74a57cd0e21cb6e8666b63ef8f
 vendor/lib64/libacdbrtac.so|2eff4dbc096240a299feb42061051434ed9129d4
 vendor/lib64/libadiertac.so|01b5ab85ccb0f75743ce0f5a8abaa3db3c4404d9
-vendor/lib64/libaudcal.so|c5b6383c8093f9de8a7945aa0477d91509be9972
+vendor/lib64/libaudcal.so|8a3587543fe9ec1ad3c3daba5ebd09ac3084cfd7
 vendor/lib64/libaudioalsa.so|ec1afaf77d82033bf3e603ff54933e7d022633b3
 vendor/lib64/soundfx/libqcbassboost.so|d3575c0e909ef52442f64289deffa95923a69bbd
 vendor/lib64/soundfx/libqcreverb.so|8bdd74d69593cd838e4b92d9b2884e0c4140226f
