@@ -53,6 +53,12 @@ on charger
     write /sys/class/android_usb/android0/enable 1
     setprop sys.usb.config mass_storage
 
+on property:ro.boot.usbconfigfs=true
+    setprop sys.usb.configfs 1
+
+on property:ro.boot.usbconfigfs=false
+    setprop sys.usb.configfs 0
+
 on post-fs
     mkdir /dev/usb-ffs 0770 shell shell
     mkdir /dev/usb-ffs/adb 0770 shell shell
