@@ -56,6 +56,7 @@ PRODUCT_PACKAGES += \
     audio.primary.msm8937 \
     audio.r_submix.default \
     audio.usb.default \
+    libaacwrapper \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing
@@ -217,6 +218,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.0 \
     libandroid_net \
+    libnl \
     netutils-wrapper-1.0
 
 # Optimizations (BUILD)
@@ -395,6 +397,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(TOPDIR)kernel/lenovo/msm8937/drivers/staging/prima/firmware_bin/WCNSS_cfg.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_cfg.dat \
     $(TOPDIR)kernel/lenovo/msm8937/drivers/staging/prima/firmware_bin/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_cfg.ini
+
+# WiFi Display
+PRODUCT_BOOT_JARS += \
+    WfdCommon
 
 # Inherit common proprietary files
 $(call inherit-product-if-exists, vendor/lenovo/karate-common/karate-common-vendor.mk)
