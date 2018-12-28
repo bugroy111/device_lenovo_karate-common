@@ -197,6 +197,7 @@ PRODUCT_PACKAGES += \
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
+    ims_ext_common.xml \
     libui_shim
 
 # IPA Manager
