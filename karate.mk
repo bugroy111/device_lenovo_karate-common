@@ -218,6 +218,10 @@ PRODUCT_PACKAGES += \
     libandroid_net \
     netutils-wrapper-1.0
 
+# Optimizations (BUILD)
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
