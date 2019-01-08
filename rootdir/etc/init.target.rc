@@ -163,6 +163,7 @@ on charger
     setprop sys.usb.configfs 0
     setprop persist.sys.usb.config mass_storage
     start vendor.hvdcp_opti
+    start vendor.power_off_alarm
     start thermal-engine
 
 on property:sys.boot_completed=1
