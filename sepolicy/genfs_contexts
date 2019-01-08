@@ -1,3 +1,6 @@
 genfscon debugfs /rmt_storage u:object_r:debugfs_rmt:s0
 
 genfscon proc /touchpanel     u:object_r:proc_touchpanel:s0
+
+# RTC
+genfscon sysfs /devices/soc/qpnp-rtc-7/rtc     u:object_r:sysfs_rtc:s0
