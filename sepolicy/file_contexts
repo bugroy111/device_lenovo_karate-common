@@ -24,5 +24,9 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.karate  u:object_r:hal_light_default_exec:s0
 /sys/devices/soc/leds-qpnp-[0-9]+/leds(/.*)?                         u:object_r:sysfs_leds:s0
 
+
+# Touch
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.lenovo_karate      u:object_r:hal_lineage_touch_default_exec:s0
+
 # Wake gesture
 /sys/devices/soc/78b7000\.i2c/i2c-12/3-[0-9a-f]+/input/input[0-9]+/wake_gesture        u:object_r:proc_touchpanel:s0
