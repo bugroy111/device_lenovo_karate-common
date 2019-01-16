@@ -111,6 +111,7 @@ PRODUCT_PACKAGES += \
     liboverlay \
     libqdMetaData.system \
     libtinyxml \
+    libvulkan \
     memtrack.msm8937
 
 PRODUCT_PACKAGES += \
@@ -423,8 +424,7 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
-    vndk-ext \
-    vndk-sp
+    vndk_package
 
 # WiFi
 PRODUCT_PACKAGES += \
