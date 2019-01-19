@@ -270,20 +270,13 @@ vendor/bin/dpmQmiMgr|31e019a02d25a959a2edfe2c9a04ab958562bb67
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|2af88934e4039edaac842576a1861cbdfe39838b
 vendor/lib64/libdpmqmihal.so|4254cc9f10f6f3d990958c17f4e43d8e9e09c382
 
-# DRM - from tissot 8.1.0 OPM1.171019.026
-vendor/bin/qseecomd|84c191c59c07422cd34e8fa70780e44c47bdd164
-vendor/lib/libQSEEComAPI.so|bfc6cba99c191e29be1525964e8de7735ca5a703
-vendor/lib64/libGPreqcancel.so|49877718226f7fb7b99c6ed8c0b419d3334b7055
-vendor/lib64/libGPreqcancel_svc.so|dbf8fd85b2c2501c74ac2371e231fd7e94e8d9ff
-vendor/lib64/libQSEEComAPI.so|67a1dfa9aa6e1f47f873500bb84e56ffb98c6de9
-vendor/lib64/libSecureUILib.so|25ce2ecc99119556fb2ccb48f649f8e21a0ffa49
-vendor/lib64/libStDrvInt.so|1edadff6c8b0c1434acab1d29e60570136a405f8
-vendor/lib64/libdrmfs.so|e69a5f0b2835c9aa15e1f5dc21aa8755288b9867
-vendor/lib64/libdrmtime.so|9106e588ada083c061c44a62bc2cdf7d9123a745
-vendor/lib64/librpmb.so|13e932556c05dcf37b1c6f2038a670e239c56315
-vendor/lib64/libsecureui.so|876dddb735c52d2b915fdf870f8106684f28ae6c
-vendor/lib64/libsecureui_svcsock.so|6e8959c43ea33a54c930a054041a372c6923e1ae
-vendor/lib64/libssd.so|baabf76b79866df9dabfd7761d7338e54757bc3f
+# DRM and SEE - from daisy - PKQ1.180917.001
+vendor/bin/qseecomd|8ba233a028eec55d2f57ed7c85c6751e8f5c5d16
+vendor/lib64/libQSEEComAPI.so|1e695dcc9197c685c294d426822d2cb4e4c9c592
+vendor/lib64/libdrmfs.so|e20cc71ac84a7998626e600f4dd9dfe356a1436a
+vendor/lib64/libdrmtime.so|4efeb1449809aa172e68fe5bf5aa68be0f21387d
+vendor/lib64/librpmb.so|ba775205529284dc5d2233f11462037538f763af
+vendor/lib64/libssd.so|0e988e6ef7b1d356f4b92a26a61b96a840de1d20
 
 # Fingerprint - from karatep (K6 Note)
 lib/hw/fingerprint.default.so:vendor/lib/hw/fingerprint.msm8937.so|468e00c6228b51108dd6f02e191497e1a6d4aef5
@@ -293,9 +286,8 @@ lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.msm8937.so|ae74f78ae
 lib64/libcom_fingerprints_service.so:vendor/lib64/libcom_fingerprints_service.so|3d7aaf2f30192fe5522f8d5fb8b1e675d1e84c70
 lib64/lib_fpc_tac_shared.so:vendor/lib64/lib_fpc_tac_shared.so|d81da2e89a8901a8b91a2ccb95e0cb0a0186c0cf
 
-# Gatekeeper - from tissot 8.1.0 OPM1.171019.026
-vendor/lib/hw/gatekeeper.msm8953.so:vendor/lib/hw/gatekeeper.msm8937.so|9167fce2796332834d1a209566f6449c954394e3
-vendor/lib64/hw/gatekeeper.msm8953.so:vendor/lib64/hw/gatekeeper.msm8937.so|c7b1fb00d0189513327e93c541c6e9b003bc76e9
+# Gatekeeper - from daisy - PKQ1.180917.001
+vendor/lib64/hw/gatekeeper.msm8953.so:vendor/lib64/hw/gatekeeper.msm8937.so|c1b386547234815a0d6116b5e4756de66075cd3f
 
 # GPS - from daisy - PKQ1.180917.001
 vendor/bin/hw/vendor.qti.gnss@1.0-service|049201d8e22064b87eb52df208d8cda7066d140a
@@ -396,9 +388,8 @@ vendor/firmware/a530v3_seq.fw2|8963a53acc689725dee4b22881a4dd4b80e5def8
 # Ipacm - from tissot 8.1.0 OPM1.171019.026
 vendor/bin/ipacm-diag|ed9645b4405b572ebdfced36896b0747be4781bc
 
-# Keystore - from tissot 8.1.0 OPM1.171019.026
-vendor/lib/hw/keystore.msm8953.so:vendor/lib/hw/keystore.msm8937.so|00434c697f84fb0496b2fdbd7797e22ceb2bbed6
-vendor/lib64/hw/keystore.msm8953.so:vendor/lib64/hw/keystore.msm8937.so|c396bd1b3375957af39929ee27155561599ed5cf
+# Keystore - from daisy - PKQ1.180917.001
+vendor/lib64/hw/keystore.msm8953.so:vendor/lib64/hw/keystore.msm8937.so|f71f1439c9c356ce05d88b876253b4e3dcb10f4b
 
 # Listen - from tissot 8.1.0 OPM1.171019.026
 vendor/lib64/hw/sound_trigger.primary.msm8953.so:vendor/lib64/hw/sound_trigger.primary.msm8937.so|ebbfb09bf771adccd455751a1f056916efe1df5b
