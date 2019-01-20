@@ -96,22 +96,16 @@ void check_device()
    struct sysinfo sys;
 
    if (sys.totalram > 3072ull * 1024 * 1024) {
-        // from - phone-xxhdpi-4096-dalvik-heap.mk
-        heapstartsize = "16m";
         heapgrowthlimit = "256m";
-        heapsize = "512m";
+        heapsize = "768m";
         heapminfree = "4m";
-        heapmaxfree = "8m";
+        heapmaxfree = "16m";
     } else if (sys.totalram > 2048ull * 1024 * 1024) {
-        // from - phone-xxhdpi-3072-dalvik-heap.mk
-        heapstartsize = "8m";
-        heapgrowthlimit = "288m";
+        heapgrowthlimit = "256m";
         heapsize = "768m";
         heapminfree = "512k";
         heapmaxfree = "8m";
     } else {
-        // from - phone-xxhdpi-2048-dalvik-heap.mk
-        heapstartsize = "16m";
         heapgrowthlimit = "192m";
         heapsize = "512m";
         heapminfree = "2m";
@@ -151,7 +145,7 @@ void vendor_load_properties()
     check_device();
     set_zram_size();
 
-    property_set("dalvik.vm.heapstartsize", heapstartsize);
+    property_set("dalvik.vm.heapstartsize", "8m");
     property_set("dalvik.vm.heapgrowthlimit", heapgrowthlimit);
     property_set("dalvik.vm.heapsize", heapsize);
     property_set("dalvik.vm.heaptargetutilization", "0.75");
