@@ -1,7 +1,7 @@
 type debugfs_rmt, debugfs_type, fs_type;
 type debugfs_wlan, debugfs_type, fs_type;
 type sysfs_devices_fingerprint, sysfs_type, fs_type;
-type fingerprint_data_file, file_type, data_file_type;
+type fingerprint_data_file, file_type, data_file_type, core_data_file_type;
 type fingerprint_socket, file_type;
 type proc_touchpanel, proc_type, sysfs_type, fs_type;
 type vendor_keylayout_file, vendor_file_type, file_type;
