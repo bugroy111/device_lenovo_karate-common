@@ -647,5 +647,5 @@ vendor/bin/hw/android.hardware.drm@1.1-service.widevine|9743c4ecd0fb8773795bcbfb
 vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc|5a01d337c1d375ee24a6c8992ba91f54afb7637e
 vendor/lib64/libwvhidl.so|a3444ac0deb8144a08ba2ed1dad2f2369096c7af
 
-# WIFI - from tissot 8.1.0 OPM1.171019.026
-vendor/bin/wcnss_service|183c15394d1d6df2e5f6d712df80b2b2aa9f5ea6
+# WIFI - from daisy - PKQ1.180917.001
+vendor/bin/wcnss_service|8c18c578a6b96a76e7f2ca614b411d4143d9ba4c
