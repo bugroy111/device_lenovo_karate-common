@@ -159,7 +159,6 @@ service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
     group system wakelock
 
 on charger
-    load_system_props
     setprop sys.usb.configfs 0
     setprop persist.sys.usb.config mass_storage
     start vendor.hvdcp_opti
