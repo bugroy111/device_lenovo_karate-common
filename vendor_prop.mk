@@ -131,9 +131,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Netmgrd
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.use_data_netmgrd=true \
-    persist.data.netmgrd.qos.enable=true \
-    persist.data.mode=concurrent
+    persist.vendor.data.mode=concurrent
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \

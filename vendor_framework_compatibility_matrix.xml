@@ -136,6 +136,15 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
          <instance>qti.ims.connectionmanagerservice</instance>
        </interface>
    </hal>
+   <hal format="hidl" optional="true">
+       <name>com.qualcomm.qti.uceservice</name>
+       <version>1.0</version>
+       <version>2.0</version>
+       <interface>
+         <name>IUceService</name>
+         <instance>com.qualcomm.qti.uceservice</instance>
+       </interface>
+   </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.alarm</name>
         <version>1.0</version>
@@ -236,7 +245,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.radio.uim</name>
-        <version>1.0</version>
+        <version>1.1</version>
         <interface>
             <name>IUim</name>
             <instance>Uim0</instance>
@@ -248,6 +257,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <version>1.0</version>
         <interface>
             <name>ITuiComm</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.ims.callinfo</name>
+        <version>1.0</version>
+        <interface>
+            <name>IService</name>
             <instance>default</instance>
         </interface>
     </hal>
