@@ -390,11 +390,10 @@ vendor/bin/ipacm-diag|ed9645b4405b572ebdfced36896b0747be4781bc
 # Keystore - from daisy - PKQ1.180917.001
 vendor/lib64/hw/keystore.msm8953.so:vendor/lib64/hw/keystore.msm8937.so|f71f1439c9c356ce05d88b876253b4e3dcb10f4b
 
-# Listen - from tissot 8.1.0 OPM1.171019.026
-vendor/lib64/hw/sound_trigger.primary.msm8953.so:vendor/lib64/hw/sound_trigger.primary.msm8937.so|ebbfb09bf771adccd455751a1f056916efe1df5b
-vendor/lib/hw/sound_trigger.primary.msm8953.so:vendor/lib/hw/sound_trigger.primary.msm8937.so|90c31b5f8b4cbff728e9348dd5e58411227b49e6
-vendor/lib/libadpcmdec.so|f535598d22b385456be46db80059755c19db5b7c
-vendor/lib/libsmwrapper.so|d20bd1b3f719bde64b5c32056d5c33cb2df39cf6
+# Listen - from TA-1000_00CN
+vendor/lib/hw/sound_trigger.primary.msm8937.so|43e9806f0196c173ce8ac31f70ac6b2293a75264
+vendor/lib/libadpcmdec.so|eeaef8dd6cad3da613860bb263f192cda56c60b6
+vendor/lib/libsmwrapper.so|0df4be18901fffaa0a7ceecad87b2a29259d5672
 
 # Media - from daisy - PKQ1.180917.001
 -vendor/lib/libgpustats.so|83d8856717923ab389aecf17445e33fc21b90afc
@@ -413,32 +412,35 @@ vendor/lib/libvpplibrary.so|bb818a5b8d62c236963fc094d0c2627bc78c00ef
 vendor/lib/libvqzip.so|0b906db131e99cd5460b8a72d05e86721243de95
 -vendor/lib64/libgpustats.so|35eaab728b21fe7cd33b821bf5cf13ea1117cd90
 
-# Media OMX - from TA-1025 - OPR1.170623.026
--vendor/lib/libMpeg4SwEncoder.so|971eb18b4209287f7c078c082508ebc46c11de0e
--vendor/lib/libOmxSwVdec.so|c1375674bd80792581bb297525fe932ef050424b
--vendor/lib/libOmxSwVencMpeg4.so|024bde5984f312b398d0ae172df7d8fb2db279bc
+# Media OMX - from TA-1000_00CN
+-vendor/lib/libMpeg4SwEncoder.so|ac4aaba9259a4868ad29a96c07a5814e1f569d47
+-vendor/lib/libOmxSwVdec.so|6319c693877364523c2ea28be4e111acd4b5d488
+-vendor/lib/libOmxSwVencMpeg4.so|ed4200c66e3a185dd13952b3ccf6cc2524ded519
 
 # Modem - from tissot - OPR1.170623.026
 vendor/lib/libwms.so|7df491e58c43b1274e9e7ef540aa6d2b3c1dd0d0
 vendor/lib64/libwms.so|57d9f33071f4ae42ac77c98fb82f4e1fe8ac4754
 
-# Perf - from TA-1025 - OPR1.170623.026
-vendor/bin/msm_irqbalance|8bab50c65ed3db7e3ea8c050498fd37f2b857405
-vendor/bin/hw/vendor.qti.hardware.perf@1.0-service|b8cad5f3bdf49c215f2f6a499710d29a7fa18a0d
+# Perf - from TA-1000_00CN
+vendor/bin/msm_irqbalance|bf933b58332cf94fe4a2072bc3e976a6a82efe3c
+vendor/bin/hw/vendor.qti.hardware.perf@1.0-service|1be5ae2497eea201367010ffeb7d9bf4b9f6728e
 vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc|b50182aadab2e31409df61c523d0fb914a394e43
-vendor/etc/perf/perfboostsconfig.xml|9ca7d867f05b4a0b1efc780b04c1892826004854
-vendor/lib/libfeedbackhandler.so|5400c090d77d596642347f3fa5269e12f5f06632
-vendor/lib/libperfgluelayer.so|deb4d538e0f812bf7a806cec2a9811f48a5b68f9
-vendor/lib/libqti-perfd-client.so|d7582c491b1121341beffc6fc3f3ef333f5bc69c
-vendor/lib/libqti-perfd.so|4e4b421c478b40d19dc16d1926e0fa9b74f06dff
-vendor/lib/libqti-util.so|f1b44fac3afbcac35b4fdc691c1a125b5e5302d7
-vendor/lib/vendor.qti.hardware.perf@1.0_vendor.so|c0cc3f681e52159da8e7a7a67478fe5c09ec4a81
-vendor/lib64/libfeedbackhandler.so|e9f304413a5a446e01f80be92fe4c3ac8ba9e242
-vendor/lib64/libperfgluelayer.so|82dd5994f15c3f882ecff7a098f5e194d4b03bda
-vendor/lib64/libqti-perfd-client.so|b7b749d736470ccbca12ac2492f595ec35efb229
-vendor/lib64/libqti-perfd.so|f757c80b719a07ecf08af6c5a0cce8e4fe74e0f3
-vendor/lib64/libqti-util.so|dbb96954a50d36822ddf77a2ff886938d32cbb28
-vendor/lib64/vendor.qti.hardware.perf@1.0_vendor.so|75f2b67fe4ef59eb1a7db3f14620fd2dd5fc20e7
+vendor/etc/perf/commonresourceconfigs.xml|73fc37a6fa498a98758b5a91ebacb87ef0ffdcdf
+vendor/etc/perf/perfboostsconfig.xml|407300899c4d43287ff11dce563187e0215ed861
+vendor/etc/perf/perf-profile0.conf|02204355bf29ceb0460cd53e6716552bb9d9b05f
+vendor/etc/perf/perf-profile1.conf|5ce649b26b71048734b797af7340d9f7f7b83ca0
+vendor/etc/perf/targetconfig.xml|adba1fd9c150e18120545ead8e92d04b866f839a
+vendor/etc/perf/targetresourceconfigs.xml|1817b8766a5b70c40c302f0add16a783fde135a4
+vendor/lib/libperfgluelayer.so|3850d4ea3dbead227b622fcc47fcec29955fcc63
+vendor/lib/libqti-perfd-client.so|a4a6da47ee26fcd5116c514f7fed15b91306aea3
+vendor/lib/libqti-perfd.so|2a2077cf455d5a6b03c0bb2b6eeca554ee28a363
+vendor/lib/libqti-util.so|d65f3ef240cebea73bd1ba8b1132a7e639aa05bb
+vendor/lib/vendor.qti.hardware.perf@1.0.so|39a81e7cc35f542e5e2eeed6f38152b44063928f
+vendor/lib64/libperfgluelayer.so|7dba8556bfbc7f8daa44ea01843319940de3f00e
+vendor/lib64/libqti-perfd-client.so|de9d1128cfcf36b329a750f4ac62fdfefae926da
+vendor/lib64/libqti-perfd.so|51521fda9e30aaea5304e8a08799353c6f9861c1
+vendor/lib64/libqti-util.so|59910418e23268f52399ea74e6f451e07ef1f659
+vendor/lib64/vendor.qti.hardware.perf@1.0.so|17f32c2ce3c5bf1d6557e5d9258f9a7fc6ed5f14
 
 # Peripheral manager - from tissot 8.1.0 OPM1.171019.026
 vendor/bin/pm-proxy|3a6e03b81206ac445f70bd04309131e2e6757a53
@@ -626,11 +628,10 @@ vendor/lib64/libsensor_reg.so|99f62b70bd484c58493ae7cb3a505c05e9364f18
 vendor/lib64/libsensor_user_cal.so|b50089c887ebe7857ae10857dfe3753b94e0c6f3
 vendor/lib64/sensors.ssc.so|c081f1315325cc85fc11d13e8a4bba94964f14c6
 
-# Thermal - from TA-1025 - OPR1.170623.026
-vendor/bin/thermal-engine|d301c065db3e8e2592e3f5552c38f59dbc5cd31e
--vendor/lib/libthermalclient.so|3afc3a5e5f27d550d1862dd5c4eca7996f411938
--vendor/lib64/libthermalclient.so|675fbd8d6c78b77468556de63f8b06f7eaedaf0c
-vendor/lib64/libthermalioctl.so|0826999e64d4e75032ceb3533957a7407667ecdc
+# Thermal - from TA-1000_00CN
+vendor/bin/thermal-engine|d1ef35828e78206f190d9b4fc4b982568a79176c
+-vendor/lib/libthermalclient.so|67a691df34cfef504929af69f0442e4d53991da2
+-vendor/lib64/libthermalclient.so|cc4ac0215208b435f16b46649311c8876a30073a
 
 # Time services - from daisy - PKQ1.180917.001
 -vendor/app/TimeService/TimeService.apk|78109530538aa8fb533ad288c9d356c57481a10e
