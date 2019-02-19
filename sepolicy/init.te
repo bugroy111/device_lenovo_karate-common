@@ -1,1 +1,0 @@
-allow init sysfs_devices_system_cpu:dir write;
