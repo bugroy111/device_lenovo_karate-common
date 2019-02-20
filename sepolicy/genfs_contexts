@@ -2,5 +2,9 @@ genfscon debugfs /rmt_storage u:object_r:debugfs_rmt:s0
 
 genfscon proc /touchpanel     u:object_r:proc_touchpanel:s0
 
+# Power supply
+genfscon sysfs /devices/soc/msm-bcl-19/power_supply    u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/soc/soc:qcom,bcl/power_supply  u:object_r:sysfs_battery_supply:s0
+
 # RTC
 genfscon sysfs /devices/soc/qpnp-rtc-7/rtc     u:object_r:sysfs_rtc:s0
