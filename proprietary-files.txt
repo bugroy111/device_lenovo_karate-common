@@ -47,6 +47,21 @@ vendor/lib64/soundfx/libqcbassboost.so|d3575c0e909ef52442f64289deffa95923a69bbd
 vendor/lib64/soundfx/libqcreverb.so|8bdd74d69593cd838e4b92d9b2884e0c4140226f
 vendor/lib64/soundfx/libqcvirt.so|54ef8e9f310df831066103ab5c8bd24e9c30565f
 
+# Audio ACDB - from karate
+etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Bluetooth_cal.acdb:vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_General_cal.acdb|7580b9bc1285d64f059a30d53628dd81a4aed53e
+etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_General_cal.acdb:vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_General_cal.acdb|7580b9bc1285d64f059a30d53628dd81a4aed53e
+etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Global_cal.acdb:vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Global_cal.acdb|c0620d43324260da22b71b742e588edc0a8166ea
+etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Handset_cal.acdb:vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Handset_cal.acdb|7b2a9898aab0468cad9c2fc674151d43ace8551a
+etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Hdmi_cal.acdb:vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Hdmi_cal.acdb|39f1d884c5cd40691bc9349bf57372c68269efa2
+etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Headset_cal.acdb:vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Headset_cal.acdb|bf2bec4b1934f7f006ee40359b6186855b400e04
+etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Speaker_cal.acdb:vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Speaker_cal.acdb|49d26f0e6530f3f60dbaaa800378c1e57863965c
+etc/acdbdata/QRD/QRD_General_cal.acdb:vendor/etc/acdbdata/QRD/QRD_General_cal.acdb|7580b9bc1285d64f059a30d53628dd81a4aed53e
+etc/acdbdata/QRD/QRD_Global_cal.acdb:vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb|c0620d43324260da22b71b742e588edc0a8166ea
+etc/acdbdata/QRD/QRD_Handset_cal.acdb:vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb|7b2a9898aab0468cad9c2fc674151d43ace8551a
+etc/acdbdata/QRD/QRD_Hdmi_cal.acdb:vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb|39f1d884c5cd40691bc9349bf57372c68269efa2
+etc/acdbdata/QRD/QRD_Headset_cal.acdb:vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb|bf2bec4b1934f7f006ee40359b6186855b400e04
+etc/acdbdata/QRD/QRD_Speaker_cal.acdb:vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb|49d26f0e6530f3f60dbaaa800378c1e57863965c
+
 # Audio - from karatep (K6 Note)
 vendor/lib/libhwdaphal.so|356d9d46adff5ed452011b4d6be3cbd3663b8975
 vendor/lib64/libhwdaphal.so|3b953d19a1349b601d4ae28bfa3bf6df5279f2ac
