@@ -235,6 +235,10 @@ PRODUCT_PACKAGES += \
     libnl \
     netutils-wrapper-1.0
 
+# OEM Unlock reporting
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.oem_unlock_supported=1
+
 # Optimizations (BUILD)
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
