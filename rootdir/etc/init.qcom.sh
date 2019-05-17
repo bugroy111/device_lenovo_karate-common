@@ -30,6 +30,9 @@ chown -h system:system /sys/devices/soc/qpnp-smbcharger-*/battery_max_current
 
 echo 1 > /proc/sys/net/ipv6/conf/default/accept_ra_defrtr
 
+# Remove recovery cache from persist
+rm -rf /mnt/vendor/persist/cache/recovery
+
 #
 # Make modem config folder and copy firmware config to that folder for RIL
 #
