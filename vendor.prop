@@ -20,7 +20,6 @@ vendor.audio.offload.multiple.enabled=false
 vendor.audio.offload.passthrough=false
 vendor.audio.offload.track.enable=true
 vendor.audio.parser.ip.buffer.size=262144
-vendor.audio.pp.asphere.enabled=false
 vendor.audio.safx.pbe.enabled=true
 vendor.tunnel.audio.encode=false
 vendor.voice.conc.fallbackpath=deep-buffer
