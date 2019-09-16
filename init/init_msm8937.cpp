@@ -55,6 +55,8 @@ void check_device()
 {
    struct sysinfo sys;
 
+   sysinfo(&sys);
+
    if (sys.totalram > 3072ull * 1024 * 1024) {
         heapgrowthlimit = "256m";
         heapsize = "768m";
