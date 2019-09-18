@@ -106,7 +106,7 @@ void vendor_load_properties()
     check_device();
     set_zram_size();
 
-    property_set("dalvik.vm.heapstartsize", "8m");
+    property_set("dalvik.vm.heapstartsize", "16m");
     property_set("dalvik.vm.heapgrowthlimit", heapgrowthlimit);
     property_set("dalvik.vm.heapsize", heapsize);
     property_set("dalvik.vm.heaptargetutilization", "0.75");
