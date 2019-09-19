@@ -77,8 +77,8 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so|fc7ad886f82089edf36509865fadac17a7340
 
 # Camera - from karatep (K6 Note)
 bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon|b2ba00f7aa653802c2dca78bd8ff45f6fca829de
-lib/libivc_smartengine.so:vendor/lib/libivc_smartengine.so|1d4497e88e268918ad1725bf744ab7eee48c374e
-lib/libmpbase.so:vendor/lib/libmpbase.so|a84995e7460e414e27e2803a84c10a8b5e5f3665
+lib/libivc_smartengine.so:vendor/lib/libivc_smartengine.so|cb09d55d66336c48877058dbfe9f413e9f6a5832
+lib/libmpbase.so:vendor/lib/libmpbase.so|253d48407f26620c0b9b62f937352d6d15a408da
 vendor/lib/libcamera_bm_algo.so|1e8c19bc2c6ae8fdc476ab36910d9bf225688926
 vendor/lib/libchromaflash.so|cf85560822e04014b8950a1abae9c2843069101d
 vendor/lib/libflash_pmic.so|93b4fa934156215eb13332e1cae3a6dc1a5378a0
@@ -125,7 +125,7 @@ vendor/lib/libmmcamera2_pp_buf_mgr.so|b01959aee188eaa51e10771369c255b4377b304a
 vendor/lib/libmmcamera2_pproc_modules.so|162367a2422af07a5de56c3a1960e8b338b18289
 vendor/lib/libmmcamera2_q3a_core.so|60151ae93a539d82f5579632ced1f0bfb5b6caa0
 vendor/lib/libmmcamera2_stats_algorithm.so|de18172e9c2cb31c4f168a486ea1ee79b44e350b
-vendor/lib/libmmcamera2_stats_modules.so|ed3a668d4ba54d4c9d2418f0677cf9aa1fd4c656
+vendor/lib/libmmcamera2_stats_modules.so|367ac9e984ea7c15fc4fac46caee0a66c4b5a6f8
 vendor/lib/libmmjpeg.so|81fb672f6cdec6627072bcaa2c3195fbe820485e
 vendor/lib/libmmqjpeg_codec.so|d4a7d86647ca9f6d2faa441260e86661eb9d5d0c
 vendor/lib/libmmqjpegdma.so|2e106456e4adb85017e8ef4b65859a562fd346e0

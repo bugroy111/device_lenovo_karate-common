@@ -15,6 +15,15 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := libcamshim
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := android.cpp
+LOCAL_CFLAGS := -Werror -Wextra -Wall
+LOCAL_SHARED_LIBRARIES := libutils
+LOCAL_VENDOR_MODULE := true
+include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := libshims_android
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := android_runtime.cpp

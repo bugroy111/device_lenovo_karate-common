@@ -89,6 +89,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     camera.msm8937 \
     Snap \
+    libcamshim \
     libfui \
     libshims_android
 
@@ -381,6 +382,10 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# Shims
+PRODUCT_PACKAGES += \
+    libcamshim
 
 # Telephony
 PRODUCT_PACKAGES += \
