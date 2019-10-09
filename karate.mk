@@ -154,10 +154,13 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    gps.msm8937 \
+    android.hardware.gnss@2.0-impl-qti \
+    android.hardware.gnss@2.0-service-qti \
+    libbatching \
+    libgeofencing \
     libgnss \
-    libgnsspps \
-    libsensorndkbridge
+    libsensorndkbridge \
+    libwifi-hal-ctrl
 
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl-qti \
