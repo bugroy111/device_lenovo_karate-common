@@ -105,6 +105,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcnefeatureconfig
 
+# Component overrides
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
+
 # Device mapper verity
 PRODUCT_SYSTEM_VERITY_PARTITION=/dev/block/bootdevice/by-name/system
 $(call inherit-product, build/target/product/verity.mk)
