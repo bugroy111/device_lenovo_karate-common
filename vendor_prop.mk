@@ -155,6 +155,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.sib16_support=1
 
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.sys.fflag.override.settings_network_and_internet_v2=true
+
 # Surfaceflinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
