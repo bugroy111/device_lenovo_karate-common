@@ -150,6 +150,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.fflag.override.settings_network_and_internet_v2=true
+    ro.telephony.use_old_mnc_mcc_format=true
 
 # Surfaceflinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
