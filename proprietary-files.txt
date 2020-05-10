@@ -76,7 +76,7 @@ vendor/lib64/com.qualcomm.qti.ant@1.0.so|f40868ad57012f1a512b14c889bc8380652cc50
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|fc7ad886f82089edf36509865fadac17a7340f32
 
 # Camera - from karatep (K6 Note)
-bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon|db7348d34ba2ed22a5b21a17b3070f83be4a6b0a
+bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon|b2ba00f7aa653802c2dca78bd8ff45f6fca829de
 lib/libivc_smartengine.so:vendor/lib/libivc_smartengine.so|1d4497e88e268918ad1725bf744ab7eee48c374e
 lib/libmpbase.so:vendor/lib/libmpbase.so|a84995e7460e414e27e2803a84c10a8b5e5f3665
 vendor/lib/libcamera_bm_algo.so|1e8c19bc2c6ae8fdc476ab36910d9bf225688926
