@@ -3,7 +3,7 @@ allow hal_fingerprint_default fingerprint_data_file:sock_file create_file_perms;
 allow hal_fingerprint_default fingerprint_socket:file rw_file_perms;
 allow hal_fingerprint_default sysfs_devices_fingerprint:dir r_dir_perms;
 allow hal_fingerprint_default sysfs_devices_fingerprint:file rw_file_perms;
-allow hal_fingerprint_default uhid_device:chr_file w_file_perms;
+allow hal_fingerprint_default uhid_device:chr_file { w_file_perms ioctl };
 r_dir_file(hal_fingerprint_default, firmware_file)
 
 # TODO(b/36644492): Remove data_between_core_and_vendor_violators once
@@ -11,4 +11,4 @@ r_dir_file(hal_fingerprint_default, firmware_file)
 typeattribute hal_fingerprint_default data_between_core_and_vendor_violators;
 # access to /data/system/users/[0-9]+/fpdata
 allow hal_fingerprint_default fingerprintd_data_file:file create_file_perms;
-allow hal_fingerprint_default fingerprintd_data_file:dir rw_dir_perms;
+allow hal_fingerprint_default fingerprintd_data_file:dir { search rw_dir_perms };
