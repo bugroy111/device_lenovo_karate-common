@@ -1,15 +1,15 @@
-# ADSP - from TA-1000_00CN - PKQ1.181105.001
-vendor/bin/adsprpcd|3d1e7e14dfc2f2468a06e0af9c0d34f4bda28d4b
-vendor/lib/libadsprpc.so|570ffdd910de5433783c0389a9e04dbc15c71342
-vendor/lib/libadsp_default_listener.so|d9de89d55eba2d35a7583584b51335a663705fa7
-vendor/lib/libfastcvadsp_stub.so|6b50fd7d53811b51e06fedd87c12a794d0c2f645
-vendor/lib/libfastcvopt.so|350d7d38b85715aee1fb3b215727317a463ef33b
-vendor/lib64/libadsprpc.so|8b04b3fd18c936bb22c65c50c26e35d323052e4c
-vendor/lib64/libadsp_default_listener.so|f7ea94537c66dfa11e1235064d43c8f56c3b3c51
-vendor/lib64/libfastcvadsp_stub.so|ad72fe745a7a8f4b3a355cc0aaf177c29301f29f
-vendor/lib64/libfastcvopt.so|8740dabeaac8e8e3f258ca4b3c6d69bdd297fa19
+# ADSP - from X00PD - QKQ1.191002.002-17.00.2003.23-20200401
+vendor/bin/adsprpcd|a5e878691577485c9f7ee33dfe02384a13f0a265
+vendor/lib/libadsprpc.so|c015a2b2b0c5255140a9c437a295c79b4a17e3fb
+vendor/lib/libadsp_default_listener.so|c9a1ee00b32a93a9496ec84393afa0625e929eed
+vendor/lib/libfastcvadsp_stub.so|996345605e1d631151a6b4e9cd9f65b2c7e82dac
+vendor/lib/libfastcvopt.so|1f187a924fe8c925cd03e18941f7895a09cc8f6f
+vendor/lib64/libadsprpc.so|4a6477929f3d25f9ee8fb97ae06115f035626249
+vendor/lib64/libadsp_default_listener.so|d7436ae6255671b4c3af533b5c89d91d75d5069e
+vendor/lib64/libfastcvadsp_stub.so|f101b66fa4a450b5af2e6aa9f7aaa28f9a876005
+vendor/lib64/libfastcvopt.so|10a613bfd248ede032b6dad556235656d45a23a6
 
-# ADSP modules - from TA-1000_00CN - PKQ1.181105.001
+# ADSP modules - from X00PD - QKQ1.191002.002-17.00.2003.23-20200401
 vendor/lib/rfsa/adsp/libapps_mem_heap.so|5c82ad9cfe3f30105d899e2a4e90cc7566f81252
 vendor/lib/rfsa/adsp/libdspCV_skel.so|628985174b0088bed21c866d7984d23855e5e150
 vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|1ff4a48009e88435d93fd2b9b0c5ea59cedbb4f7
@@ -19,7 +19,7 @@ vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so|b9f68e320d24e9c51871a20
 vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so|3e9c52069ff07e50191d3b3afb33b30409241ab6
 vendor/lib/rfsa/adsp/libscveT2T_skel.so|91b9200dbb982abf0d6b440668252d892a616f66
 
-# Audio - from TA-1000_00CN - PKQ1.181105.001
+# Audio - from X00PD - QKQ1.191002.002-17.00.2003.23-20200401
 vendor/lib/libacdb-fts.so|cadbfc33608eb4c5591204fa9195b9651a2a31a1
 vendor/lib/libacdbloader.so|04637c4bd24a9188aefe1784401f8cea53da153a
 vendor/lib/libacdbrtac.so|874c27ed2473283a1cefd4d7fd7a6ad9731afd4b
@@ -35,7 +35,7 @@ vendor/lib64/libacdbrtac.so|1662decf81c6230f74cb4ba063478772b6b7cd0b
 vendor/lib64/libadiertac.so|262afd30c2ad8ae9c65c5f2d2a4f223cf08042c6
 vendor/lib64/libaudcal.so|22a32dae59b94732f596c009e44d24daff195eca
 
-# Audio ACDB - from TA-100_00CN - PKQ1.181105.001
+# Audio ACDB - from X00PD - QKQ1.191002.002-17.00.2003.23-20200401
 vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Bluetooth_cal.acdb|303020d5e3cf05dc253ee5f83cbc01ca367232d3
 vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_General_cal.acdb|0d5d92d7b4877f657716a38526b2b9bd736e9faa
 vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Global_cal.acdb|f72b4b28a115d752ac9e97b122dba02f5a79bdee
@@ -45,7 +45,7 @@ vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Headset_cal.acdb|c36fbb1a
 vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Speaker_cal.acdb|f16c9a88733ba989bbbc5b96850aafb91cec9bc0
 vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb|ec3fa563591efa98b243f3dcb1c5a1fd6dde5578
 vendor/etc/acdbdata/QRD/QRD_General_cal.acdb|6fe827a0420a1d1a0cf00493c6daf8e4ee472ab2
-vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb|b4476b1f7cb63fefe1a64e38eeff35ef049552f6
+vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb|2340e4baf0b1c35e70c31555df5b4f6141ec7286
 vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb|67204eb7f8b663cb6d8b35c8bfc1c709bea24173
 vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb|56e3b9b992ad75c9838d4174414f349404419b85
 vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb|d7282c72f1feea38691eba1c210d0285bfdc558b
