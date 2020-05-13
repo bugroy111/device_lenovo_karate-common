@@ -286,8 +286,8 @@ lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.msm8937.so|ae74f78ae
 lib64/libcom_fingerprints_service.so:vendor/lib64/libcom_fingerprints_service.so|3d7aaf2f30192fe5522f8d5fb8b1e675d1e84c70
 lib64/lib_fpc_tac_shared.so:vendor/lib64/lib_fpc_tac_shared.so|d81da2e89a8901a8b91a2ccb95e0cb0a0186c0cf
 
-# Gatekeeper - from tissot - PKQ1.180917.001.V10.0.4.0.PDHMIXM
-vendor/lib64/hw/gatekeeper.msm8953.so:vendor/lib64/hw/gatekeeper.msm8937.so|c1b386547234815a0d6116b5e4756de66075cd3f
+# Gatekeeper - from X00PD - QKQ1.191002.002-17.00.2003.23-20200401
+vendor/lib64/hw/gatekeeper.msm8937.so|c1b386547234815a0d6116b5e4756de66075cd3f
 
 # GPS - from tissot - PKQ1.180917.001.V10.0.4.0.PDHMIXM
 vendor/bin/hw/vendor.qti.gnss@1.0-service|049201d8e22064b87eb52df208d8cda7066d140a
@@ -428,8 +428,8 @@ vendor/lib64/vendor.qti.imsrtpservice@1.0.so|559a2dbf409d86746ed4303f2e0089256bb
 # Ipacm - from tissot 8.1.0 OPM1.171019.026
 vendor/bin/ipacm-diag|ed9645b4405b572ebdfced36896b0747be4781bc
 
-# Keystore - from tissot - PKQ1.180917.001.V10.0.4.0.PDHMIXM
-vendor/lib64/hw/keystore.msm8953.so:vendor/lib64/hw/keystore.msm8937.so|f71f1439c9c356ce05d88b876253b4e3dcb10f4b
+# Keystore - from X00PD - QKQ1.191002.002-17.00.2003.23-20200401
+vendor/lib64/hw/keystore.msm8937.so|d1fe5f528f218fbb90917ce061fad64fba3f2f16
 
 # Listen - from TA-1000_00CN - PKQ1.181105.001
 vendor/lib/hw/sound_trigger.primary.msm8937.so|43e9806f0196c173ce8ac31f70ac6b2293a75264
