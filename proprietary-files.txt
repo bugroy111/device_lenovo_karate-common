@@ -56,16 +56,25 @@ vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp|914ba47e90af024c2cdb6406a17d1441e
 vendor/lib/libhwdaphal.so|356d9d46adff5ed452011b4d6be3cbd3663b8975
 vendor/lib64/libhwdaphal.so|3b953d19a1349b601d4ae28bfa3bf6df5279f2ac
 
-# Bluetooth - from tissot - PKQ1.180917.001.V10.0.4.0.PDHMIXM
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|9178856dc8651b499d1b155825b6115a486ee05e
+# Bluetooth - from daisy - QKQ1.191002.002/V11.0.4.0.QDLMIXM
+-lib64/libbtconfigstore.so|a65efb84466346cfcb92cef590f0bfb4bd03adf5
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|378ad8ce95651b4bf81ad73aaffbdf0666c55432
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|8c68d863da2456efbc95046519b99f23e517c9ab
-vendor/lib64/libbtnv.so|35444e0ca93a50751db92aa4871cf277dc66b1fa
-vendor/lib64/libbt-hidlclient.so|0b0b69ef9787e3cd5409f0050cad03698dd6ce26
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|a244ce3acd958c31865e048e0ead9bc54d1c0465
+vendor/lib64/libbtnv.so|ce4e129e4b7ed7a25a663c26139e5efc0ef88215
+vendor/lib64/libbt-hidlclient.so|8941f5c8f9e1422117685b2e76f35ced85b167c0
 
-# Bluetooth (shared dependencies) - from tissot - PKQ1.180917.001.V10.0.4.0.PDHMIXM
-vendor/lib64/com.qualcomm.qti.ant@1.0.so|3a19c81d66ef1190d0b2f361420d5cbf707cc600
-vendor/lib64/vendor.qti.hardware.fm@1.0.so|dc576dfcb0bf390a106b5ed8861e7f547110cbf1
+# Bluetooth (Audio) - from daisy - QKQ1.191002.002/V11.0.4.0.QDLMIXM
+vendor/lib64/hw/audio.bluetooth_qti.default.so|41fc011c61a572abc8f83d3a23dace98a7d04080
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|76134fb75ff99948e0d00728db058aed8f519c3f
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|51b017a7d35d71522319d2a3d5922b53e0f18230
+vendor/lib64/libbluetooth_audio_session_qti.so|ba33d6868daf56ddce6065f2a03be651b16f98df
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|7cdd376b08b8571e51674e0e61607c6a52a5a24a
+vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|42aa6258f3bf4e8ef72b7664f2277db49837e4da
+
+# Bluetooth (shared dependencies) - from daisy - QKQ1.191002.002/V11.0.4.0.QDLMIXM
+vendor/lib64/com.qualcomm.qti.ant@1.0.so|f40868ad57012f1a512b14c889bc8380652cc50f
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|fc7ad886f82089edf36509865fadac17a7340f32
 
 # Camera - from karatep (K6 Note)
 bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon|db7348d34ba2ed22a5b21a17b3070f83be4a6b0a
@@ -475,7 +484,7 @@ vendor/lib64/libwms.so|ed3cc676c0951a462e81135159c53e4c79ed2bbd
 # Perf - from X00PD - QKQ1.191002.002-17.00.2003.23-20200401
 vendor/bin/msm_irqbalance|b5e55b4b0934b65b7dd5d2201f9a70f6f77a4e7c
 vendor/bin/hw/vendor.qti.hardware.perf@2.0-service|ed731317514e1992ac919a49a1f98e14e7a60eff
-vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc|cc8658db5e19f8e5e575fb986e7d38147e675f8d
+vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc|48b5addbcbdee3efaf65ee824c262f2997864bd9
 vendor/etc/perf/commonresourceconfigs.xml|d9fc3b49481536d6c7a25eb13f9f1d52d3ee8ff1
 vendor/etc/perf/perfboostsconfig.xml|7613142d183c5c3bba03af7ae7cb24d517219141
 vendor/etc/perf/perfconfigstore.xml|b6bd028c054d7e50ebef81dc1cd34b58e91e6890
