@@ -109,11 +109,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.disable_skip_validate=1 \
     sdm.perf_hint_window=50
 
-# IMS
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.dbg.volte_avail_ovr=1 \
-    persist.dbg.vt_avail_ovr=1
-
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     media.stagefright.audio.sink=280 \
