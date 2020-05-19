@@ -635,18 +635,22 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so|f3a3051e4a904268
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so|ab552724f7d723a70a4e730dba52ab220d33a33e
 vendor/radio/qcril_database/qcril.db|f25a9215fcc2445e73d1aa0b7ef9bdbd97e33f56
 
-# Sensors - from tissot - PKQ1.180917.001.V10.0.4.0.PDHMIXM
-vendor/bin/sensors.qti|3f6368e8d7484f5610fbf899dbe2a95e7cd6855e
-vendor/lib/hw/activity_recognition.msm8953.so:vendor/lib/hw/activity_recognition.msm8937.so|f9247646a5e2b28473753da06f832ae5f702f7c4
-vendor/lib/libsensor1.so|48727a05c1b91051d5ec53860124f1f1c0d8ca53
-vendor/lib/libsensor_reg.so|8ae3b9d1a54feb9f0af55a8fff50410f53660318
-vendor/lib/libsensor_user_cal.so|df85342393b56994b4f4b4c33aad97928bc6f023
-vendor/lib/sensors.ssc.so|c4b5ee167e5b06fde7143007b87ea5dbe90b0565
-vendor/lib64/hw/activity_recognition.msm8953.so:vendor/lib64/hw/activity_recognition.msm8937.so|5531da4cf2451f899602fb7e3f0e80775bb7e5ff
-vendor/lib64/libsensor1.so|48dedf69781fb146fc35e622f1c80a635530da22
-vendor/lib64/libsensor_reg.so|74659858f5abcfa0d8c826af2e2e46addc9f5f87
-vendor/lib64/libsensor_user_cal.so|92de798c64f9e23ca1069a5a4bec5895fafa9a22
-vendor/lib64/sensors.ssc.so|3d6eed945ab3ec2d91517cd6e9941df17a290445
+# Sensors - from X00PD - QKQ1.191002.002-17.00.2003.23-20200401
+vendor/bin/sensors.qti|b8130b2cd6e905c8a096893230bc06fe1b5ef495
+vendor/lib/hw/activity_recognition.msm8937.so|3c242692489ea0d6c953e83081cc9bef3cf55a34
+vendor/lib/hw/sensors.msm8937_64.so|0df565ba6c6031136171fdacd0a09ef954b0733f
+vendor/lib/libsensor1.so|55ce19a402bf2298d2a2700ae1044cb8e08e5e1e
+vendor/lib/libsensor_reg.so|f9fdb165f502e54349f8e83b778ec4c926325959
+vendor/lib/libssc_default_listener.so|45e87d0dbaf0c15b9bfd598f8c044b5330f639ba
+vendor/lib/sensor_calibrate.so|11013ba04c532b7a9b5d511ff6231c0a060ebb86
+vendor/lib/sensors.ssc.so|661a887e5e4fb0f6601603487f468dc94d5ecf70
+vendor/lib64/hw/activity_recognition.msm8937.so|b7c6b3c5fbf530b7754a22b8627ab4e8b38d982d
+vendor/lib64/hw/sensors.msm8937_64.so|af79ee87d98f4ccdf500cf67522011f456c6b16c
+vendor/lib64/libsensor1.so|0f5b50c2195995d81bbcbfcbe359c3064865f4cf
+vendor/lib64/libsensor_reg.so|da3d8894dc50b26980e2542e5881e1b9ff9db5c0
+vendor/lib64/libssc_default_listener.so|125d692f30609c62d9289fbab8958c23be4db878
+vendor/lib64/sensor_calibrate.so|51c0bb2f5098ae02353858d6c39480292fab9449
+vendor/lib64/sensors.ssc.so|94befb222788f7ae15c757e12fe3eda93bf583b5
 
 # Thermal - from daisy - QKQ1.191002.002/V11.0.4.0.QDLMIXM
 vendor/bin/thermal-engine|4ab3c410fbcf9f8cae711ea4ba16cd2797712de6
