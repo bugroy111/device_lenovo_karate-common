@@ -524,11 +524,11 @@ vendor/lib64/libqti-utils.so|c74e0e5c650ecb9a0bb8e6fd7d95fc1e521597f6
 vendor/lib64/vendor.qti.hardware.perf@1.0.so|125a5c14b4e768ef7ce1d89abee9b2421f17b7ba
 vendor/lib64/vendor.qti.hardware.perf@2.0.so|d4f082dcf0fedec3376144f91bc163c3c863ebd4
 
-# Peripheral manager - from tissot - PKQ1.180917.001.V10.0.4.0.PDHMIXM
-vendor/bin/pm-proxy|56e9bdaa39270aa4456c9995a8a9e4618ba616a6
-vendor/bin/pm-service|7cbca1671529a805177f11f3f72defdbbe48a61c
-vendor/lib/libperipheral_client.so|6e06ff7e89cb8054612c98c25240e7570c069752
-vendor/lib64/libperipheral_client.so|e2fbf94c589dbf8ae6c544a34441783ae9db3a08
+# Peripheral manager - from daisy - QKQ1.191002.002/V11.0.4.0.QDLMIXM
+vendor/bin/pm-proxy|1f216a6f54e9b97c026f3f3bc4d7d441d58d90a7
+vendor/bin/pm-service|8a521f14576d0d2edf03b4500a54379d37e15d4e
+vendor/lib/libperipheral_client.so|b75a6adac094ddcd6ded9415cae83e18d1e7e5d0
+vendor/lib64/libperipheral_client.so|20c8ab21fe28e41f60b59af0ba72de9f6b1996d2
 
 # Postprocessing - from daisy - QKQ1.191002.002/V11.0.4.0.QDLMIXM
 etc/permissions/com.qti.snapdragon.sdk.display.xml|0bff16d681e75f203c1e11ff33afba82490e49b3
