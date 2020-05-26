@@ -164,10 +164,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
     ro.surface_flinger.max_virtual_display_dimension=4096
 
-# Time Services
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.delta_time.enable=true
-
 # Usb
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config.extra=none
