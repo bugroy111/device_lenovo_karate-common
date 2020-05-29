@@ -17,7 +17,6 @@
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
     af.fast_track_multiplier=1 \
-    audio.deep_buffer.media=true \
     audio.dolby.ds2.enabled=true \
     audio.dolby.ds2.hardbypass=true \
     audio.heap.size.multiplier=7 \
