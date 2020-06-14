@@ -201,7 +201,6 @@ BOARD_KERNEL_CMDLINE += dm=\"system none ro,0 1 android-verity /dev/mmcblk0p52\"
 USE_DEVICE_SPECIFIC_THERMAL := true
 
 # Treble
-BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 BOARD_VNDK_VERSION := current
 
