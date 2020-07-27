@@ -97,7 +97,6 @@ PRODUCT_PACKAGES += \
 
 # Device mapper verity
 PRODUCT_SYSTEM_VERITY_PARTITION=/dev/block/bootdevice/by-name/system
-PRODUCT_VENDOR_VERITY_PARTITION=/dev/block/bootdevice/by-name/preload
 $(call inherit-product, build/target/product/verity.mk)
 
 # Display
