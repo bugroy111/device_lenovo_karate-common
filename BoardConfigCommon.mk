@@ -146,9 +146,6 @@ TARGET_KERNEL_SOURCE := kernel/lenovo/msm8937
 # Lineage Hardware
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
-# Malloc
-MALLOC_SVELTE := true
-
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
