@@ -104,6 +104,10 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl:32 \
     android.hardware.camera.provider@2.4-service
 
+# b/166675194
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.camera.provider24.disable_mem_init=1
+
 # CNE
 PRODUCT_PACKAGES += \
     libcnefeatureconfig
