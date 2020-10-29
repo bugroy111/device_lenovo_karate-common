@@ -1,4 +1,5 @@
 # Dalvik
+dalvik.vm.dex2oat64.enabled=true
 dalvik.vm.heapminfree=4m
 dalvik.vm.heapstartsize=16m
 
