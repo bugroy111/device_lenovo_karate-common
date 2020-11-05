@@ -80,13 +80,13 @@ function blob_fixup() {
         sed -i "s/name=\"android.hidl.manager-V1.0-java/name=\"android.hidl.manager@1.0-java/g" "${2}"
         ;;
     product/lib64/libdpmframework.so)
-        patchelf --add-needed "libshim_dpmframework.so" "${2}"
+        "${PATCHELF}" --add-needed "libshim_dpmframework.so" "${2}"
         ;;
     product/lib64/lib-imsvideocodec.so)
-        patchelf --add-needed "libui_shim.so" "${2}"
+        "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
         ;;
     vendor/bin/mm-qcamera-daemon)
-        patchelf --add-needed "libshims_android.so" "${2}"
+        "${PATCHELF}" --add-needed "libshims_android.so" "${2}"
         ;;
     vendor/lib/libaudcal.so)
         sed -i "s|\/data\/vendor\/misc\/audio\/acdbdata\/delta\/|\/data\/vendor\/audio\/acdbdata\/delta\/\x00\x00\x00\x00\x00|g" "${2}"
@@ -99,10 +99,10 @@ function blob_fixup() {
          sed -i "s|libgui.so|libfui.so|g" "${2}"
         ;;
     vendor/lib64/libsettings.so)
-        patchelf --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v28.so" "${2}"
+        "${PATCHELF}" --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v28.so" "${2}"
         ;;
     vendor/lib64/libwvhidl.so)
-        patchelf --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v28.so" "${2}"
+        "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v28.so" "${2}"
         ;;
     esac
 }
