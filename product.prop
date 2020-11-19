@@ -1,3 +1,6 @@
+# Boot
+sys.vendor.shutdown.waittime=500
+
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
 dalvik.vm.heapminfree=4m
