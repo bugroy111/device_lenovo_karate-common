@@ -41,9 +41,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.safx.pbe.enabled=true \
     vendor.tunnel.audio.encode=false \
     vendor.voice.conc.fallbackpath=deep-buffer \
-    vendor.voice.path.for.pcm.voip=true \
-    vendor.audio.dolby.ds2.enabled=true \
-    vendor.audio.dolby.ds2.hardbypass=false \
+    vendor.voice.path.for.pcm.voip=true
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
