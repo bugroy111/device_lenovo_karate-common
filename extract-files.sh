@@ -69,15 +69,15 @@ fi
 #
 function blob_fixup() {
     case "${1}" in
-
+    product/lib64/lib-imsvideocodec.so)
+        patchelf --add-needed "libui_shim.so" "${2}"
+        ;;
     vendor/bin/mm-qcamera-daemon)
         patchelf --add-needed "libshims_android.so" "${2}"
         ;;
-
     vendor/lib/libaudcal.so)
          sed -i "s|\/data\/vendor\/misc\/audio\/acdbdata\/delta\/|\/data\/vendor\/audio\/acdbdata\/delta\/\x00\x00\x00\x00\x00|g" "${2}"
         ;;
-
     vendor/lib64/libaudcal.so)
          sed -i "s|\/data\/vendor\/misc\/audio\/acdbdata\/delta\/|\/data\/vendor\/audio\/acdbdata\/delta\/\x00\x00\x00\x00\x00|g" "${2}"
         ;;
