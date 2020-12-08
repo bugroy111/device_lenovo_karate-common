@@ -81,6 +81,9 @@ function blob_fixup() {
     vendor/lib64/libaudcal.so)
          sed -i "s|\/data\/vendor\/misc\/audio\/acdbdata\/delta\/|\/data\/vendor\/audio\/acdbdata\/delta\/\x00\x00\x00\x00\x00|g" "${2}"
         ;;
+    vendor/lib/libmmcamera2_stats_modules.so | vendor/lib/libmmsw_platform.so | vendor/lib/libmmsw_detail_enhancement.so)
+         sed -i "s|libgui.so|libfui.so|g" "${2}"
+        ;;
     esac
 }
 

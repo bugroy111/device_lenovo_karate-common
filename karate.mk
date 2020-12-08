@@ -89,6 +89,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     camera.msm8937 \
     Snap \
+    libfui \
     libshims_android
 
 PRODUCT_PACKAGES += \
