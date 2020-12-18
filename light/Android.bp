@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2018 The LineageOS Project
+// Copyright (C) 2018,2021 The LineageOS Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -19,6 +19,7 @@ cc_binary {
     name: "android.hardware.light@2.0-service.karate",
     proprietary: true,
     init_rc: ["android.hardware.light@2.0-service.karate.rc"],
+    vintf_fragments: ["android.hardware.light@2.0-service.karate.xml"],
     srcs: ["service.cpp", "Light.cpp"],
     shared_libs: [
         "libhardware",
