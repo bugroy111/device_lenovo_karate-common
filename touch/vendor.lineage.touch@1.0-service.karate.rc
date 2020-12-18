@@ -1,4 +1,5 @@
 service vendor.touch-hal-1-0-karate /vendor/bin/hw/vendor.lineage.touch@1.0-service.karate
+    interface vendor.lineage.touch@1.0::IKeyDisabler default
     class hal
     user system
     group system
