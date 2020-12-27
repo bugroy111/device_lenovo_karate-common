@@ -2,6 +2,9 @@
 dalvik.vm.heapminfree=4m
 dalvik.vm.heapstartsize=16m
 
+# Recovery
+persist.vendor.recovery_update=false
+
 # ZRAM
 ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=180
