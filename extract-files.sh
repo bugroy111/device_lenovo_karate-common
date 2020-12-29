@@ -129,3 +129,7 @@ if [ -z "${ONLY_COMMON}" ] && [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt
 fi
 
 "${MY_DIR}/setup-makefiles.sh"
+
+cd "${LINEAGE_ROOT}/vendor/${VENDOR}/"
+git checkout HEAD ${DEVICE}
+git checkout HEAD "${DEVICE_COMMON}/proprietary/vendor/bin/mm-qcamera-daemon"
