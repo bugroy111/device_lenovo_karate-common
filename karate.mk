@@ -280,7 +280,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.0 \
     libandroid_net \
-    libnl \
     netutils-wrapper-1.0
 
 # OEM Unlock reporting
@@ -496,6 +495,10 @@ PRODUCT_COPY_FILES += \
     $(TOPDIR)kernel/lenovo/msm8937/drivers/staging/prima/firmware_bin/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_cfg.ini
 
 # WiFi Display
+PRODUCT_PACKAGES += \
+    libavservices_minijail \
+    libnl
+
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
