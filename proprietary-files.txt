@@ -76,7 +76,7 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Camera - from karatep (K6 Note)
-bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon|b2ba00f7aa653802c2dca78bd8ff45f6fca829de
+bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon|a5fb319e9067790706585fb8389837624239dd1a
 lib/libivc_smartengine.so:vendor/lib/libivc_smartengine.so|cb09d55d66336c48877058dbfe9f413e9f6a5832
 lib/libmpbase.so:vendor/lib/libmpbase.so|253d48407f26620c0b9b62f937352d6d15a408da
 vendor/lib/libcamera_bm_algo.so|1e8c19bc2c6ae8fdc476ab36910d9bf225688926
