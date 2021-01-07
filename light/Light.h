@@ -13,8 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#ifndef ANDROID_HARDWARE_LIGHT_V2_0_LIGHT_H
-#define ANDROID_HARDWARE_LIGHT_V2_0_LIGHT_H
+#pragma once
 
 #include <android/hardware/light/2.0/ILight.h>
 #include <hardware/lights.h>
@@ -64,5 +63,3 @@ class Light : public ILight {
 }  // namespace light
 }  // namespace hardware
 }  // namespace android
-
-#endif  // ANDROID_HARDWARE_LIGHT_V2_0_LIGHT_H
