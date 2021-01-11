@@ -25,9 +25,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
-# Properties
--include $(LOCAL_PATH)/vendor_prop.mk
-
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "Lenovo/karatep/K53a48:7.0/NRD90N/K53_S228_171114_ROW:user/release-keys"
 
