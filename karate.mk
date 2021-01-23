@@ -496,5 +496,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
+# Do not spin up a separate process for the network stack, use an in-process APK.
+PRODUCT_PACKAGES += InProcessNetworkStack
+PRODUCT_PACKAGES += com.android.tethering.inprocess
+
 # Inherit common proprietary files
 $(call inherit-product-if-exists, vendor/lenovo/karate-common/karate-common-vendor.mk)
