@@ -64,9 +64,6 @@ ro.fm.transmitter=false
 # FRP
 ro.frp.pst=/dev/block/platform/soc/7824900.sdhci/by-name/config
 
-# GPS
-ro.gps.agps_provider=1
-
 # Graphics
 debug.egl.hw=0
 debug.enable.sglscale=1
