@@ -121,6 +121,7 @@ PRODUCT_PACKAGES += \
     gralloc.msm8937 \
     hwcomposer.msm8937 \
     libdisplayconfig.qti \
+    libdisplayconfig.qti.vendor \
     liboverlay \
     libqdMetaData \
     libtinyxml \
