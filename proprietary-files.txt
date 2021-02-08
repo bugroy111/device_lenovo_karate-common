@@ -287,9 +287,6 @@ vendor/lib64/librpmb.so|b74dce3afd27fee2caf7604032dad696211dd050
 vendor/lib64/libssd.so|33d717f793c2579e3bd17b5ce6534cb68c12887d
 
 # Fingerprint - from karatep (K6 Note)
-lib/hw/fingerprint.default.so:vendor/lib/hw/fingerprint.msm8937.so|468e00c6228b51108dd6f02e191497e1a6d4aef5
-lib/libcom_fingerprints_service.so:vendor/lib/libcom_fingerprints_service.so|8bb940a0d403ed2dc0086aa36d4293f6e7b86111
-lib/lib_fpc_tac_shared.so:vendor/lib/lib_fpc_tac_shared.so|29b67fc11441fe473ba2539018ab75b56df1b92d
 lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.msm8937.so|ae74f78ae5e0ded2c7ef0f1b9c941103ca0ef126
 lib64/libcom_fingerprints_service.so:vendor/lib64/libcom_fingerprints_service.so|3d7aaf2f30192fe5522f8d5fb8b1e675d1e84c70
 lib64/lib_fpc_tac_shared.so:vendor/lib64/lib_fpc_tac_shared.so|d81da2e89a8901a8b91a2ccb95e0cb0a0186c0cf
@@ -366,12 +363,6 @@ vendor/lib/libhdr_tm.so
 vendor/lib64/libhdr_tm.so
 
 # Graphics (SDM)
-vendor/lib/libscalar.so
-vendor/lib/libsdm-color.so
-vendor/lib/libsdm-diag.so
--vendor/lib/libsdm-disp-vndapis.so
-vendor/lib/libsdmextension.so
-vendor/lib/libtinyxml2_1.so
 vendor/lib64/libscalar.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-diag.so
@@ -496,16 +487,6 @@ vendor/etc/perf/perf-profile0.conf
 vendor/etc/perf/perf-profile1.conf
 vendor/etc/perf/targetconfig.xml
 vendor/etc/perf/targetresourceconfigs.xml
-vendor/lib/libperfconfig.so
-vendor/lib/libperfgluelayer.so
-vendor/lib/libqti-perfd-client.so
-vendor/lib/libqti-perfd.so
-vendor/lib/libqti-util.so
-vendor/lib/libqti-utils.so
-vendor/lib/vendor.qti.hardware.perf@1.0.so
-vendor/lib/vendor.qti.hardware.perf@2.0.so
-vendor/lib/vendor.qti.hardware.perf@2.1.so
-vendor/lib/vendor.qti.hardware.perf@2.2.so
 vendor/lib64/libperfconfig.so
 vendor/lib64/libperfgluelayer.so
 vendor/lib64/libqti-perfd-client.so
@@ -520,7 +501,6 @@ vendor/lib64/vendor.qti.hardware.perf@2.2.so
 # Peripheral manager - from daisy - QKQ1.191002.002/V11.0.4.0.QDLMIXM
 vendor/bin/pm-proxy|1f216a6f54e9b97c026f3f3bc4d7d441d58d90a7
 vendor/bin/pm-service|8a521f14576d0d2edf03b4500a54379d37e15d4e
-vendor/lib/libperipheral_client.so|b75a6adac094ddcd6ded9415cae83e18d1e7e5d0
 vendor/lib64/libperipheral_client.so|20c8ab21fe28e41f60b59af0ba72de9f6b1996d2
 
 # Postprocessing
@@ -529,12 +509,6 @@ framework/com.qti.snapdragon.sdk.display.jar
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/mm-pp-dpps
 vendor/etc/init/vendor.display.color@1.0-service.rc
-vendor/lib/libdisp-aba.so
-vendor/lib/vendor.display.color@1.0.so
-vendor/lib/vendor.display.color@1.1.so
-vendor/lib/vendor.display.color@1.2.so
-vendor/lib/vendor.display.postproc@1.0.so
-vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/lib64/libdisp-aba.so
 vendor/lib64/vendor.display.color@1.0.so
 vendor/lib64/vendor.display.color@1.1.so
@@ -632,13 +606,6 @@ vendor/radio/qcril_database/qcril.db|f25a9215fcc2445e73d1aa0b7ef9bdbd97e33f56
 
 # Sensors - from X00PD - QKQ1.191002.002-17.00.2003.23-20200401
 vendor/bin/sensors.qti|b8130b2cd6e905c8a096893230bc06fe1b5ef495
-vendor/lib/hw/activity_recognition.msm8937.so|3c242692489ea0d6c953e83081cc9bef3cf55a34
-vendor/lib/hw/sensors.msm8937_64.so|0df565ba6c6031136171fdacd0a09ef954b0733f
-vendor/lib/libsensor1.so|55ce19a402bf2298d2a2700ae1044cb8e08e5e1e
-vendor/lib/libsensor_reg.so|f9fdb165f502e54349f8e83b778ec4c926325959
-vendor/lib/libssc_default_listener.so|45e87d0dbaf0c15b9bfd598f8c044b5330f639ba
-vendor/lib/sensor_calibrate.so|11013ba04c532b7a9b5d511ff6231c0a060ebb86
-vendor/lib/sensors.ssc.so|661a887e5e4fb0f6601603487f468dc94d5ecf70
 vendor/lib64/hw/activity_recognition.msm8937.so|b7c6b3c5fbf530b7754a22b8627ab4e8b38d982d
 vendor/lib64/hw/sensors.msm8937_64.so|af79ee87d98f4ccdf500cf67522011f456c6b16c
 vendor/lib64/libsensor1.so|0f5b50c2195995d81bbcbfcbe359c3064865f4cf
@@ -649,7 +616,6 @@ vendor/lib64/sensors.ssc.so|94befb222788f7ae15c757e12fe3eda93bf583b5
 
 # Thermal - from daisy - QKQ1.191002.002/V11.0.4.0.QDLMIXM
 vendor/bin/thermal-engine|4ab3c410fbcf9f8cae711ea4ba16cd2797712de6
--vendor/lib/libthermalclient.so|6077e27e15d9e3e43fa57d6d5405c49284f48949
 -vendor/lib64/libthermalclient.so|12b26d4242b1a8913ddcb511f42a1debb83689af
 vendor/lib64/libthermalfeature.so|829b2fc0aa8c863d4b4b331e0a2c00663e01efe6
 vendor/lib64/libthermalioctl.so|24b22582f3f77769c5fbca06fcc1d3b6533cdf40
@@ -660,7 +626,6 @@ vendor/lib64/libtime_genoff.so|06df52867790cdbbcc674a3a28d7ad7c8cc161ac
 # TUI - from daisy - QKQ1.191002.002/V11.0.4.0.QDLMIXM
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|05c0a47f24e38b14fc7c1ccfa64c585692277ee5
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
-vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|313677dd28de6f6b2a5cf8b136d8ce0723bb5a65
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|b478f9ba87abd265ac15a154ab7412fed5839664
 
 # Widevine - from daisy - QKQ1.191002.002/V11.0.4.0.QDLMIXM
