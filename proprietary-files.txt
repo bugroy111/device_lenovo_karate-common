@@ -682,3 +682,4 @@ vendor/lib/libwfdhaldsmanager.so
 vendor/lib/libwfdhdcpcp.so
 vendor/lib/libwfdmmservice.so
 vendor/lib/libwfdmodulehdcpsession.so
+vendor/lib/libstagefright_enc_common.so:lib/libstagefright_enc_common.so
