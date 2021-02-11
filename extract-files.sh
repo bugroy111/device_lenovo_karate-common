@@ -80,13 +80,19 @@ function blob_fixup() {
         sed -i "s/name=\"android.hidl.manager-V1.0-java/name=\"android.hidl.manager@1.0-java/g" "${2}"
         ;;
     product/lib64/libdpmframework.so)
-        "${PATCHELF}" --add-needed "libshim_dpmframework.so" "${2}"
+        for LIBDPM_SHIM in $(grep -L "libshim_dpmframework.so" "${2}"); do
+            "${PATCHELF}" --add-needed "libshim_dpmframework.so" "$LIBDPM_SHIM"
+        done
         ;;
     product/lib64/lib-imsvideocodec.so)
-        "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
+        for LIBUI_SHIM in $(grep -L "libui_shim.so" "${2}"); do
+            "${PATCHELF}" --add-needed "libui_shim.so" "$LIBUI_SHIM"
+        done
         ;;
     vendor/bin/mm-qcamera-daemon)
-        "${PATCHELF}" --add-needed "libshims_android.so" "${2}"
+        for LIBSHIMS_ANDROID in $(grep -L "libshims_android.so" "${2}"); do
+	    "${PATCHELF}" --add-needed "libshims_android.so" "$LIBSHIMS_ANDROID"
+        done
         ;;
     vendor/lib/libaudcal.so)
         sed -i "s|\/data\/vendor\/misc\/audio\/acdbdata\/delta\/|\/data\/vendor\/audio\/acdbdata\/delta\/\x00\x00\x00\x00\x00|g" "${2}"
