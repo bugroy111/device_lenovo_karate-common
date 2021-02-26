@@ -493,10 +493,6 @@ vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
 vendor/lib64/libqti-utils.so
-vendor/lib64/vendor.qti.hardware.perf@1.0.so
-vendor/lib64/vendor.qti.hardware.perf@2.0.so
-vendor/lib64/vendor.qti.hardware.perf@2.1.so
-vendor/lib64/vendor.qti.hardware.perf@2.2.so
 
 # Peripheral manager - from daisy - QKQ1.191002.002/V11.0.4.0.QDLMIXM
 vendor/bin/pm-proxy|1f216a6f54e9b97c026f3f3bc4d7d441d58d90a7
