@@ -1,39 +1,40 @@
-# ADSP - from X00PD - QKQ1.191002.002-17.00.2003.23-20200401
-vendor/bin/adsprpcd|a5e878691577485c9f7ee33dfe02384a13f0a265
-vendor/lib/libadsprpc.so|c015a2b2b0c5255140a9c437a295c79b4a17e3fb
-vendor/lib/libadsp_default_listener.so|c9a1ee00b32a93a9496ec84393afa0625e929eed
-vendor/lib/libfastcvadsp_stub.so|996345605e1d631151a6b4e9cd9f65b2c7e82dac
-vendor/lib/libfastcvopt.so|1f187a924fe8c925cd03e18941f7895a09cc8f6f
-vendor/lib64/libadsprpc.so|4a6477929f3d25f9ee8fb97ae06115f035626249
-vendor/lib64/libadsp_default_listener.so|d7436ae6255671b4c3af533b5c89d91d75d5069e
-vendor/lib64/libfastcvadsp_stub.so|f101b66fa4a450b5af2e6aa9f7aaa28f9a876005
-vendor/lib64/libfastcvopt.so|10a613bfd248ede032b6dad556235656d45a23a6
+# ADSP
+vendor/bin/adsprpcd
+vendor/lib/libadsprpc.so
+vendor/lib/libadsp_default_listener.so
+vendor/lib/libfastcvadsp_stub.so
+vendor/lib/libfastcvopt.so
+vendor/lib64/libadsprpc.so
+vendor/lib64/libadsp_default_listener.so
+vendor/lib64/libfastcvadsp_stub.so
+vendor/lib64/libfastcvopt.so
 
-# ADSP modules - from X00PD - QKQ1.191002.002-17.00.2003.23-20200401
-vendor/lib/rfsa/adsp/libapps_mem_heap.so|5c82ad9cfe3f30105d899e2a4e90cc7566f81252
-vendor/lib/rfsa/adsp/libdspCV_skel.so|628985174b0088bed21c866d7984d23855e5e150
-vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|1ff4a48009e88435d93fd2b9b0c5ea59cedbb4f7
-vendor/lib/rfsa/adsp/libfastcvadsp.so|9818625bfa018f517e32a8f4a1e7fb4b255e5049
-vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so|f4d8675a46c5e52add8f8e90e35b29cd33ac582b
-vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so|b9f68e320d24e9c51871a2056e1f47239bd1cb40
-vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so|3e9c52069ff07e50191d3b3afb33b30409241ab6
-vendor/lib/rfsa/adsp/libscveT2T_skel.so|91b9200dbb982abf0d6b440668252d892a616f66
+# ADSP modules
+vendor/lib/rfsa/adsp/libapps_mem_heap.so
+vendor/lib/rfsa/adsp/libdspCV_skel.so
+vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
+vendor/lib/rfsa/adsp/libfastcvadsp.so
+vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so
+vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so
+vendor/lib/rfsa/adsp/libscveT2T_skel.so
 
-# Audio - from X00PD - QKQ1.191002.002-17.00.2003.23-20200401
-vendor/lib/libacdb-fts.so|cadbfc33608eb4c5591204fa9195b9651a2a31a1
-vendor/lib/libacdbloader.so|04637c4bd24a9188aefe1784401f8cea53da153a
-vendor/lib/libacdbrtac.so|874c27ed2473283a1cefd4d7fd7a6ad9731afd4b
-vendor/lib/libadiertac.so|a11915224c0822d2e27d83ab61ae05126f3aa88b
-vendor/lib/libadm.so|355bbe01f7117f3e16435224ce0c75b111a0f5b8
-vendor/lib/libaudcal.so|4ec309be49d566903f26e733edafff3f117ff4da
-vendor/lib/soundfx/libqcbassboost.so|b3d324c2eceaeded46e6862a845a18fb4b2bf702
-vendor/lib/soundfx/libqcreverb.so|f3ad64417bad59ecfa18d6d3d3bb4da41d3d974e
-vendor/lib/soundfx/libqcvirt.so|57f527f946584eff5a6279853116fcf290c89178
-vendor/lib64/libacdb-fts.so|ba00436f78242e24d388fc31e421ba156e8a7693
-vendor/lib64/libacdbloader.so|babb82ab593d97d808847be1a1312f42c35de3c2
-vendor/lib64/libacdbrtac.so|1662decf81c6230f74cb4ba063478772b6b7cd0b
-vendor/lib64/libadiertac.so|262afd30c2ad8ae9c65c5f2d2a4f223cf08042c6
-vendor/lib64/libaudcal.so|22a32dae59b94732f596c009e44d24daff195eca
+# Audio
+vendor/lib/libacdb-fts.so
+vendor/lib/libacdbloader.so
+vendor/lib/libacdbrtac.so
+vendor/lib/libadiertac.so
+vendor/lib/libadm.so
+vendor/lib/libaudcal.so
+-vendor/lib/libaudioparsers.so
+vendor/lib/soundfx/libqcbassboost.so
+vendor/lib/soundfx/libqcreverb.so
+vendor/lib/soundfx/libqcvirt.so
+vendor/lib64/libacdb-fts.so
+vendor/lib64/libacdbloader.so
+vendor/lib64/libacdbrtac.so
+vendor/lib64/libadiertac.so
+vendor/lib64/libaudcal.so
+-vendor/lib64/libaudioparsers.so
 
 # Audio ACDB - from X00PD - QKQ1.191002.002-17.00.2003.23-20200401
 vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Bluetooth_cal.acdb|303020d5e3cf05dc253ee5f83cbc01ca367232d3
@@ -286,6 +287,12 @@ vendor/lib64/libdrmtime.so|a8b04641f437e6235b3d708fe9ba486526f91ab2
 vendor/lib64/librpmb.so|b74dce3afd27fee2caf7604032dad696211dd050
 vendor/lib64/libssd.so|33d717f793c2579e3bd17b5ce6534cb68c12887d
 
+# DSP
+vendor/bin/dspservice
+vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
+vendor/lib/vendor.qti.hardware.dsp@1.0.so
+vendor/lib64/vendor.qti.hardware.dsp@1.0.so
+
 # Fingerprint - from karatep (K6 Note)
 lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.msm8937.so|ae74f78ae5e0ded2c7ef0f1b9c941103ca0ef126
 lib64/libcom_fingerprints_service.so:vendor/lib64/libcom_fingerprints_service.so|3d7aaf2f30192fe5522f8d5fb8b1e675d1e84c70
@@ -430,10 +437,10 @@ vendor/bin/ipacm-diag|f08be0dfb0cedecfdf8fae261a3b06f416b56dc2
 # Keystore - from X00PD - QKQ1.191002.002-17.00.2003.23-20200401
 vendor/lib64/hw/keystore.msm8937.so|d1fe5f528f218fbb90917ce061fad64fba3f2f16
 
-# Listen - from X00PD - QKQ1.191002.002-17.00.2003.23-20200401
-vendor/lib/hw/sound_trigger.primary.msm8937.so|305f7f8ba1ab05c464ef669cfaa6e5bd3432f73b
-vendor/lib/libadpcmdec.so|be5fdf08a08b635816381e61b6bbf2874c62f613
-vendor/lib/libsmwrapper.so|1ab31b5378265784145defa47d50435029cf5f57
+# Listen
+vendor/lib/hw/sound_trigger.primary.msm8953.so:vendor/lib/hw/sound_trigger.primary.msm8937.so
+vendor/lib/libadpcmdec.so
+vendor/lib/libsmwrapper.so
 
 # Media
 system_ext/lib/extractors/libmmparserextractor.so
