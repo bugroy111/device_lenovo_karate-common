@@ -449,7 +449,6 @@ vendor/lib/libI420colorconvert.so
 vendor/lib/libmm-color-convertor.so
 vendor/lib/libmmosal.so
 vendor/lib/libOmxVpp.so
-vendor/lib/libswvdec.so
 vendor/lib/libvpplibrary.so
 vendor/lib/libOmxAacDec.so
 vendor/lib/libOmxAlacDec.so
@@ -466,12 +465,11 @@ vendor/lib/libOmxVideoDSMode.so
 vendor/lib/libOmxWmaDec.so
 vendor/lib/libvqzip.so
 vendor/lib64/libmmosal.so
-vendor/lib64/libswvdec.so
 
-# Media OMX
--vendor/lib/libMpeg4SwEncoder.so
--vendor/lib/libOmxSwVdec.so
--vendor/lib/libOmxSwVencMpeg4.so
+# Media OMX - from X00PD - QKQ1.191002.002-17.00.2003.23-20200401
+-vendor/lib/libMpeg4SwEncoder.so|ddc71f9b9dcecbef4925d11176d9032f3131710b
+-vendor/lib/libOmxSwVdec.so|9fe2bf7b0c3b73424ea1f6d71152460caaca02b0
+-vendor/lib/libOmxSwVencMpeg4.so|527dea7f01e92d3cf20893bf1213c670b50e515f
 
 # Modem - from tissot - OPR1.170623.026
 vendor/lib/libwms.so|7df491e58c43b1274e9e7ef540aa6d2b3c1dd0d0
@@ -483,8 +481,6 @@ vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
 vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
 vendor/etc/perf/commonresourceconfigs.xml
 vendor/etc/perf/perfconfigstore.xml
-vendor/etc/perf/perf-profile0.conf
-vendor/etc/perf/perf-profile1.conf
 vendor/etc/perf/targetconfig.xml
 vendor/etc/perf/targetresourceconfigs.xml
 vendor/lib/libperfconfig.so
