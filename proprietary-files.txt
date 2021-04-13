@@ -36,22 +36,21 @@ vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
 -vendor/lib64/libaudioparsers.so
 
-# Audio ACDB - from X00PD - QKQ1.191002.002-17.00.2003.23-20200401
-vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Bluetooth_cal.acdb|303020d5e3cf05dc253ee5f83cbc01ca367232d3
-vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_General_cal.acdb|0d5d92d7b4877f657716a38526b2b9bd736e9faa
-vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Global_cal.acdb|f72b4b28a115d752ac9e97b122dba02f5a79bdee
-vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Handset_cal.acdb|d9ded9f3f14af37453abc131966604bf897c45f7
-vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Hdmi_cal.acdb|6e6258eb433bf9ad2397d9779664c62710b5fe51
-vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Headset_cal.acdb|c36fbb1aa80cd785c21503dff286ed7400b9fa69
-vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Speaker_cal.acdb|f16c9a88733ba989bbbc5b96850aafb91cec9bc0
-vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb|ec3fa563591efa98b243f3dcb1c5a1fd6dde5578
-vendor/etc/acdbdata/QRD/QRD_General_cal.acdb|6fe827a0420a1d1a0cf00493c6daf8e4ee472ab2
-vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb|2340e4baf0b1c35e70c31555df5b4f6141ec7286
-vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb|67204eb7f8b663cb6d8b35c8bfc1c709bea24173
-vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb|56e3b9b992ad75c9838d4174414f349404419b85
-vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb|d7282c72f1feea38691eba1c210d0285bfdc558b
-vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb|1716fb9f49a21a81f2ac3b594efd3aa049695ef9
-vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp|914ba47e90af024c2cdb6406a17d1441e8b765f0
+# Audio ACDB - from DPL_sprout - RKQ1.200928.002-00WW_3_140
+vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Bluetooth_cal.acdb|04cd8629bfe610062eeec5db8d6151594b74a62e
+vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_General_cal.acdb|e4370a8498a2bd49ce1639d245c9eca48832209e
+vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Global_cal.acdb|f50b7c8dfc857bfbac43cb3a74a685de3befd236
+vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Handset_cal.acdb|9001326a7a67c74f69e8c46e88f6ec84cf787fb1
+vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Hdmi_cal.acdb|466fe18cae37f72c5e67ece45076ccf71b7655e4
+vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Headset_cal.acdb|69a4b6a6bbefd4c783286f8f6b451b739f3c96c3
+vendor/etc/acdbdata/QRD/msm8952-sku2-snd-card/QRD_SKU2_Speaker_cal.acdb|54650187d94e6a8e36a6663028f7149352569e3e
+vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb|373f5784a9e584de1f6eb0852186f5a65f773a91
+vendor/etc/acdbdata/QRD/QRD_General_cal.acdb|4643c70136c8af401fbfd8e34718d18246e39e7b
+vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb|af444fde611a3d80f4755db45c0baf974585ae30
+vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb|ec41fcd2d85894c7e4e1710a2ca2086008546a12
+vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb|88d30123e0f930627764d5ffd99683865174b311
+vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb|28bb8689c548683e70fb38652d090d3feb219df6
+vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb|81f2959087d87388e455c18bc0896780fb89656f
 
 # Audio - from karatep (K6 Note)
 vendor/lib/libhwdaphal.so|356d9d46adff5ed452011b4d6be3cbd3663b8975
