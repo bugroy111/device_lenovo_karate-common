@@ -515,7 +515,9 @@ framework/com.qti.snapdragon.sdk.display.jar
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/mm-pp-dpps
 vendor/etc/init/vendor.display.color@1.0-service.rc
+vendor/lib/libmm-hdcpmgr.so
 vendor/lib64/libdisp-aba.so
+vendor/lib64/libmm-hdcpmgr.so
 vendor/lib64/vendor.display.color@1.0.so
 vendor/lib64/vendor.display.color@1.1.so
 vendor/lib64/vendor.display.color@1.2.so
@@ -682,6 +684,7 @@ vendor/bin/wifidisplayhalservice
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
 vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0.so
 vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so
+vendor/lib/libDxHdcp.so
 vendor/lib/libwfdcommonutils_proprietary.so
 vendor/lib/libwfddisplayconfig_proprietary.so
 vendor/lib/libwfdhaldsmanager.so
