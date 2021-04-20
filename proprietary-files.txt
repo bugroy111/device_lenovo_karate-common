@@ -670,11 +670,11 @@ vendor/lib64/libssc_default_listener.so|125d692f30609c62d9289fbab8958c23be4db878
 vendor/lib64/sensor_calibrate.so|51c0bb2f5098ae02353858d6c39480292fab9449
 vendor/lib64/sensors.ssc.so|94befb222788f7ae15c757e12fe3eda93bf583b5
 
-# Thermal - from daisy - QKQ1.191002.002/V11.0.4.0.QDLMIXM
-vendor/bin/thermal-engine|4ab3c410fbcf9f8cae711ea4ba16cd2797712de6
--vendor/lib64/libthermalclient.so|12b26d4242b1a8913ddcb511f42a1debb83689af
-vendor/lib64/libthermalfeature.so|829b2fc0aa8c863d4b4b331e0a2c00663e01efe6
-vendor/lib64/libthermalioctl.so|24b22582f3f77769c5fbca06fcc1d3b6533cdf40
+# Thermal - from olive - QKQ1.191014.001 V11.0.1.0.QCNCNXM
+vendor/bin/thermal-engine|633b9cff05ba176a18101bdfc03ecacc98e1e0f0
+-vendor/lib/libthermalclient.so|8837ba9f8f43d4cfbec00d8055fef4c9a7434931
+-vendor/lib64/libthermalclient.so|148421212c4b2d3bcb37cb08f9542d3286f008c1
+vendor/lib64/libthermalfeature.so|1c408911610e5b6a11853aff1900860f9e9a861f
 
 # Time services - from daisy - QKQ1.191002.002/V11.0.4.0.QDLMIXM
 vendor/lib64/libtime_genoff.so|06df52867790cdbbcc674a3a28d7ad7c8cc161ac
