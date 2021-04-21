@@ -660,15 +660,17 @@ system_ext/lib/libmmrtpencoder.so|5614934db1f7302b91abf5ed123132b346b24038
 system_ext/lib64/libmmrtpdecoder.so|5f468a1a97b28fa5212205e57b849605d5cb6b10
 system_ext/lib64/libmmrtpencoder.so|42b99f85469607c6c03d3701885e5f198305b971
 
-# Sensors - from X00PD - QKQ1.191002.002-17.00.2003.23-20200401
-vendor/bin/sensors.qti|b8130b2cd6e905c8a096893230bc06fe1b5ef495
-vendor/lib64/hw/activity_recognition.msm8937.so|b7c6b3c5fbf530b7754a22b8627ab4e8b38d982d
-vendor/lib64/hw/sensors.msm8937_64.so|af79ee87d98f4ccdf500cf67522011f456c6b16c
-vendor/lib64/libsensor1.so|0f5b50c2195995d81bbcbfcbe359c3064865f4cf
-vendor/lib64/libsensor_reg.so|da3d8894dc50b26980e2542e5881e1b9ff9db5c0
-vendor/lib64/libssc_default_listener.so|125d692f30609c62d9289fbab8958c23be4db878
-vendor/lib64/sensor_calibrate.so|51c0bb2f5098ae02353858d6c39480292fab9449
-vendor/lib64/sensors.ssc.so|94befb222788f7ae15c757e12fe3eda93bf583b5
+# Sensors
+system_ext/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
+system_ext/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
+vendor/bin/sensors.qti
+vendor/lib64/hw/activity_recognition.msm8953.so:vendor/lib64/hw/activity_recognition.msm8937.so
+vendor/lib64/libsensor1.so
+vendor/lib64/libsensor_reg.so
+vendor/lib64/libsensor_thresh.so
+vendor/lib64/sensor_calibrate.so
+vendor/lib64/sensors.ssc.so
+vendor/lib64/libsensor_user_cal.so
 
 # Thermal - from olive - QKQ1.191014.001 V11.0.1.0.QCNCNXM
 vendor/bin/thermal-engine|633b9cff05ba176a18101bdfc03ecacc98e1e0f0
