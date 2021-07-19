@@ -1,4 +1,5 @@
 allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
+allow hal_fingerprint_default fingerprint_data_file:dir { search rw_dir_perms };
 allow hal_fingerprint_default fingerprint_data_file:sock_file create_file_perms;
 allow hal_fingerprint_default fingerprint_socket:file rw_file_perms;
 allow hal_fingerprint_default sysfs_devices_fingerprint:dir r_dir_perms;
