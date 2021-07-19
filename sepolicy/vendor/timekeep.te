@@ -12,8 +12,8 @@ allow timekeep self:capability sys_time;
 
 # Write to /data/vendor/time/ats_2
 typeattribute timekeep data_between_core_and_vendor_violators;
-allow timekeep time_data_file:dir rw_dir_perms;
-allow timekeep time_data_file:file create_file_perms;
+allow timekeep vendor_time_data_file:dir rw_dir_perms;
+allow timekeep vendor_time_data_file:file create_file_perms;
 
 # Set persist.vendor.timeadjust
 set_prop(timekeep, vendor_timekeep_prop)

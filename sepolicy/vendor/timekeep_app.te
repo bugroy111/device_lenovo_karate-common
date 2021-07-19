@@ -14,8 +14,8 @@ dontaudit timekeep_app app_data_file:dir { getattr search };
 allow timekeep_app activity_service:service_manager find;
 
 # Read from /data/vendor/time/ats_2
-allow timekeep_app time_data_file:dir create_dir_perms;
-allow timekeep_app time_data_file:file create_file_perms;
+allow timekeep_app vendor_time_data_file:dir create_dir_perms;
+allow timekeep_app vendor_time_data_file:file create_file_perms;
 
 # Read /sys/class/rtc/rtc0/since_epoch
 allow timekeep_app sysfs_rtc:dir { search };
