@@ -672,11 +672,11 @@ vendor/lib64/sensor_calibrate.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/libsensor_user_cal.so
 
-# Thermal - from olive - QKQ1.191014.001 V11.0.1.0.QCNCNXM
-vendor/bin/thermal-engine|633b9cff05ba176a18101bdfc03ecacc98e1e0f0
--vendor/lib/libthermalclient.so|8837ba9f8f43d4cfbec00d8055fef4c9a7434931
--vendor/lib64/libthermalclient.so|148421212c4b2d3bcb37cb08f9542d3286f008c1
-vendor/lib64/libthermalfeature.so|1c408911610e5b6a11853aff1900860f9e9a861f
+# Thermal - from daisy - QKQ1.191002.002
+vendor/bin/thermal-engine|bbf772d4acf6c11413d2f728140aae63a49d3eae
+-vendor/lib/libthermalclient.so|523476e106337823696f0600b48f057d8c629465
+-vendor/lib64/libthermalclient.so|796c3e071fe9d6fa57598e1205a762cb55720f88
+vendor/lib64/libthermalioctl.so|6eed5b8ca6989809eac27abd4af19bbd6f3845ee
 
 # Time services - from daisy - QKQ1.191002.002/V11.0.4.0.QDLMIXM
 vendor/lib64/libtime_genoff.so|06df52867790cdbbcc674a3a28d7ad7c8cc161ac
