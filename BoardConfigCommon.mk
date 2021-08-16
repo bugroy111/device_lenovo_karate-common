@@ -188,9 +188,6 @@ VENDOR_SECURITY_PATCH := 2017-11-01
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy/vendor
 
-# Thermal
-USE_DEVICE_SPECIFIC_THERMAL := true
-
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 BOARD_VNDK_VERSION := current
